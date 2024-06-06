@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
     
     'main',
+    'personal',
+    'peoples',
     'debug_toolbar',
 ]
 
