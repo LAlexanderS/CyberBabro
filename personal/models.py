@@ -14,23 +14,18 @@ class Personal(models.Model):
     r_tel = models.CharField(max_length=50,blank=True, null=True, verbose_name = 'Номер личного телефона')
     zdo = models.BooleanField(blank=False, verbose_name = 'Может ли сотрудник выполнять тяжелую работу')
 
-    def last_name_with_initials(self):
-       initials = f"{self.first_name[0]}. {self.second_name[0]}." if self.second_name else f"{self.first_name[0]}."
-       return f"{self.last_name} {initials}"
+    # def last_name_with_initials(self):
+    #    initials = f"{self.first_name[0]}. {self.second_name[0]}." if self.second_name else f"{self.first_name[0]}."
+    #    return f"{self.last_name} {initials}"
 
   
-    class Meta:
-        db_table = 'Personal'
-        verbose_name = 'сотрудника'
-        verbose_name_plural = 'Сотрудники'
+    # def __str__(self):
+    #     return self.name
     
-    def __str__(self):
-        return self.name
-    
-    def save(self, *args, **kwargs):
-        if not self.pk:
-            self.category = "Сотрудники"
-        super(Personal, self).save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     if not self.pk:
+    #         self.category = "Сотрудники"
+    #     super(Personal, self).save(*args, **kwargs)
 
 class Shift(models.Model):
     id_smena = models.AutoField(primary_key=True)
@@ -48,8 +43,8 @@ class Shift(models.Model):
         verbose_name = 'Смена'
         verbose_name_plural = 'Смены'
 
-    def save(self, *args, **kwargs):
-        if not self.pk:
-            self.category = "Смены"
-        super(Shift, self).save(*args, **kwargs)    
+    # def save(self, *args, **kwargs):
+    #     if not self.pk:
+    #         self.category = "Смены"
+    #     super(Shift, self).save(*args, **kwargs)    
 
