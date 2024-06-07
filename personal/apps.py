@@ -5,3 +5,7 @@ class PersonalConfig(AppConfig):
     name = 'personal'
     verbose_name = 'Сотрудники'
 
+class ShiftConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'Shift'
+    verbose_name = 'Смены'
