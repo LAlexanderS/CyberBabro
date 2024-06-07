@@ -5,10 +5,12 @@ __pycache__/
 .idea
 db.sqlite3
 .env
+applications/migrations/*
 main/migrations/*
+metro/migrations/*
 passengrs/migrations/*
 personal/migrations/*
-metro/migrations/*
+
 
 
 
