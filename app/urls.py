@@ -11,6 +11,8 @@ urlpatterns = [
     path('personal/', include('personal.urls', namespace='personal')),
     path('metro/', include('metro.urls', namespace='metro')),
     path('applications/', include('applications.urls', namespace='applications')),
+    path('user/', include('users.urls', namespace='user')),
+	
 	
 	
     

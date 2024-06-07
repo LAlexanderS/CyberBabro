@@ -36,6 +36,7 @@ INSTALLED_APPS = [
 	'applications',
 	'metro',
 	'passengers',
+	'users',
     'debug_toolbar',
 ]
 
