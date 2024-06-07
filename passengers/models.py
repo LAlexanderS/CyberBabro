@@ -1,6 +1,7 @@
 from django.db import models
 
 class Passengers(models.Model):
+
     id_pas = models.AutoField(primary_key=True)
     fio_p = models.CharField(max_length=255, verbose_name = 'ФИО Пассажира')
     tep_p = models.CharField(max_length=50, verbose_name = 'Номер телефона')
@@ -16,7 +17,7 @@ class Passengers(models.Model):
         verbose_name_plural = 'Пассажиры'
     
     def __str__(self):
-        return self.name
+        return self.fio_p
     
     def save(self, *args, **kwargs):
         if not self.pk:

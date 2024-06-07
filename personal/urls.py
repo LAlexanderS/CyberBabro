@@ -5,5 +5,5 @@ app_name = 'personal'
 
 urlpatterns = [
     path('', views.index, name='personal'),
-    path('', views.index, name='shift'),
+   # path('', views.index, name='shift'),
 ]
