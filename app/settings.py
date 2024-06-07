@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     
     'main',
     'personal',
-    'peoples',
+    'passengers',
     'debug_toolbar',
 ]
 
