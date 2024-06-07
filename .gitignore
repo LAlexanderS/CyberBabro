@@ -6,8 +6,9 @@ __pycache__/
 db.sqlite3
 .env
 main/migrations/*
-peoples/migrations/*
+passengrs/migrations/*
 personal/migrations/*
+metro/migrations/*
 
 
 
