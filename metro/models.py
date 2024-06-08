@@ -1,7 +1,7 @@
 from django.db import models
 
 class Station(models.Model):
-    id_station = models.AutoField(primary_key=True)
+    id_station = models.AutoField(primary_key=True, verbose_name = 'ID')
     name_station = models.CharField(max_length=255,verbose_name='Название станции')
     name_line = models.CharField(max_length=255,verbose_name='Название линии метро')
 

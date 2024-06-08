@@ -2,7 +2,7 @@ from django.db import models
 
 class Passengers(models.Model):
 
-    id_pas = models.AutoField(primary_key=True)
+    id_pas = models.AutoField(primary_key=True, verbose_name = 'ID')
     fio_p = models.CharField(max_length=255, verbose_name = 'ФИО Пассажира')
     tep_p = models.CharField(max_length=50, verbose_name = 'Номер телефона')
     sex_p = models.CharField(max_length=8, verbose_name = 'Пол')
