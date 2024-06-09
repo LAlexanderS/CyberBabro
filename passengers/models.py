@@ -18,7 +18,7 @@ class Passengers(models.Model):
   
     class Meta:
         db_table = 'Passengers'
-        verbose_name = 'пассажира'
+        verbose_name = 'Пассажира'
         verbose_name_plural = 'Пассажиры'
     
     def __str__(self):

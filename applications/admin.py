@@ -13,10 +13,14 @@ class ApplicationAdmin(admin.ModelAdmin):
     search_fields = ('id_pas__fio_p', 'status')
 
 class ApplicationTransferAdmin(admin.ModelAdmin):
-    list_display = ('id_adit', 'id_bid', 'time_edit', 'time_s', 'time_f')
+    list_display = ('id_adit', 'id_bid', 'time_edit', 'get_in_p', 'time_f')
     list_display_links = ('id_adit', 'id_bid')
     list_filter = ('time_edit',)
     search_fields = ('id_bid__id_z',)
+
+    def get_in_p(self, obj):
+        return obj.time_s.in_p
+    get_in_p.short_description = 'Изначальное время заявки'
 
 admin.site.register(Application, ApplicationAdmin)
 admin.site.register(ApplicationTransfer, ApplicationTransferAdmin)

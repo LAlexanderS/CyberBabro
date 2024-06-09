@@ -3,7 +3,7 @@ from .models import Shift,Personal
 
 class ShiftAdmin(admin.ModelAdmin):
     list_display = ('id_smena', 'id_insp_display', 'smena', 'date', 'time_work_begin_display', 'time_work_end_display')
-    list_display_links = ('id_smena',)
+    list_display_links = ('id_smena','id_insp_display')
     list_filter = ('date', 'smena')
     search_fields = ('smena', 'id_insp__id_personal')
 

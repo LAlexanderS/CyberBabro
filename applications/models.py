@@ -7,7 +7,7 @@ class Application(models.Model):
     id_z = models.AutoField(primary_key=True)
     id_pas = models.ForeignKey(Passengers, on_delete=models.CASCADE, verbose_name='Пассажир')
     datetime = models.DateTimeField(verbose_name='Дата и время начала заявки')
-    in_p = models.DateTimeField(verbose_name='Время встречи с пассажиром')
+    in_p = models.DateTimeField(verbose_name='Время встречи с пассажиром',unique=True)
     out_p = models.DateTimeField(verbose_name='Время исполнения заявки')
     tpz = models.DateTimeField(verbose_name='Время регистрации заявки')
     insp_sex_m = models.IntegerField(verbose_name='Количество сотрудников мужчин')
@@ -24,7 +24,7 @@ class Application(models.Model):
 
     class Meta:
         db_table = 'Application'
-        verbose_name = 'Заявка'
+        verbose_name = 'Заявку'
         verbose_name_plural = 'Заявки'
 
     def __str__(self):
@@ -34,14 +34,14 @@ class ApplicationTransfer(models.Model):
     id_adit = models.AutoField(primary_key=True)
     id_bid = models.ForeignKey(Application, on_delete=models.CASCADE, verbose_name='Заявка')
     time_edit = models.DateTimeField(verbose_name='Время изменения')
-    time_s = models.DateTimeField(verbose_name='Изначальное время')
+    time_s = models.ForeignKey(Application, on_delete=models.CASCADE, verbose_name='Изначальное время заявки', to_field='in_p', related_name='initial_transfers')
     time_f = models.DateTimeField(verbose_name='Желаемое время')
 
     class Meta:
         db_table = 'ApplicationTransfer'
         verbose_name = 'Перенос заявки'
         verbose_name_plural = 'Переносы заявок'
-
+   
     def __str__(self):
         return f'Перенос заявки {self.id_adit}'
 # Create your models here.
