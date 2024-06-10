@@ -1,8 +1,9 @@
-from django.urls import path, include
+from django.urls import path
 from . import views
+
 
 app_name = 'passengers'
 
 urlpatterns = [
-	path('', views.index, name="passengers")
+    path('', views.add_passenger, name='passengers'),
 ]

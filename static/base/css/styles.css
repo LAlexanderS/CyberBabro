@@ -1,0 +1,40 @@
+/* base/css/styles.css */
+
+/* Кастомные стили для бургер-меню */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Стили для кнопки бургер-меню */
+.navbar-toggler {
+    border-color: #155724;/* Цвет кнопки btn-outline-success при наведении */
+}
+
+.navbar-toggler:hover {
+    border-color: #198754; /* Цвет кнопки btn-outline-success при активном состоянии */
+}
+
+.navbar-brand {
+    color: #198754; /* Цвет текста Home */
+}
+
+/* Убедитесь, что стили применяются к классу .text-green */
+.text-green {
+    color: #198754 !important; /* Цвет текста Home */
+}
+
+/* Стили для навигационных ссылок при наведении и активном состоянии */
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: #a9a9a9 !important; /* Более темный цвет при наведении и активном состоянии */
+}
+
+/* Дополнительные стили для dropdown меню */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:active {
+    color: #a9a9a9 !important; /* Более темный цвет при наведении и активном состоянии */
+}
+
+
