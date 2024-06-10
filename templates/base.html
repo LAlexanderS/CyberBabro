@@ -25,16 +25,16 @@
                             </li>
                             {% else %}
                             <li class="nav-item">
-                                <a class="nav-link text-white" aria-current="page" href="{% url 'passengers:passengers' %}">Пассажиры</a>
+                                <a class="nav-link {% if request.path == '/passengers/' %}text-darker{% else %}text-white{% endif %}" aria-current="page" href="{% url 'passengers:passengers' %}">Пассажиры</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" aria-current="page" href="{% url 'personal:personal' %}">Сотрудники</a>
+                                <a class="nav-link {% if request.path == '/personal/' %}text-darker{% else %}text-white{% endif %}" aria-current="page" href="{% url 'personal:personal' %}">Сотрудники</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" aria-current="page" href="{% url 'Station:Station' %}">Метро</a>
+                                <a class="nav-link {% if request.path == '/Station/' %}text-darker{% else %}text-white{% endif %}" aria-current="page" href="{% url 'Station:Station' %}">Метро</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" aria-current="page" href="{% url 'applications:applications' %}">Заявки</a>
+                                <a class="nav-link {% if request.path == '/applications/' %}text-darker{% else %}text-white{% endif %}" aria-current="page" href="{% url 'applications:applications' %}">Заявки</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Мой профиль </a>

@@ -37,4 +37,14 @@
     color: #a9a9a9 !important; /* Более темный цвет при наведении и активном состоянии */
 }
 
+.text-darker {
+    color: #cf0d0d !important; /* Темный цвет для активной ссылки */
+}
+
+.text-white:hover,
+.text-darker:hover {
+    color: #999999 !important; /* Темнее при наведении */
+}
+
+
 
