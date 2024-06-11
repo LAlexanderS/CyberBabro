@@ -1,20 +1,13 @@
 from django.db import models
+from personal.models import Personal
+from applications.models import Application
 
-class Personal(models.Model):
-    name = models.CharField(max_length=150, unique=False, blank=False, null=False, verbose_name='Название')
-    description = models.TextField(blank=True, null=True, verbose_name='Описание')
-    
+class Personalapplication(models.Model):
+	id_pa = models.AutoField(primary_key=True)
+	person = models.ForeignKey(Personal, related_name='person', on_delete=models.CASCADE, verbose_name='Сотрудник', to_field='id_personal')
+	application = models.ForeignKey(Application, related_name='application', on_delete=models.CASCADE, verbose_name='Сотрудник', to_field='id_z')
 
-    
-    class Meta:
-        db_table = 'Personal'
-        verbose_name = 'сотрудника'
-        verbose_name_plural = 'Сотрудники'
-    
-    def __str__(self):
-        return self.name
-    
-    def save(self, *args, **kwargs):
-        if not self.pk:
-            self.category = "Сотрудники"
-        super(Personal, self).save(*args, **kwargs)
+	class Meta:
+	  	db_table = 'Personalapplication'
+  		verbose_name = 'Заявки сотрудника'
+  		verbose_name_plural = 'Заявки сотрудника'	
