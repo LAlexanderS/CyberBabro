@@ -4,6 +4,6 @@ from . import views
 app_name = 'personal'
 
 urlpatterns = [
-    path('', views.index, name='personal'),
+    path('', views.add_personal_and_shift, name='personal'),
    # path('', views.index, name='shift'),
 ]
