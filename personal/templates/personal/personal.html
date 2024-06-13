@@ -1,10 +1,10 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-<div class="container-fluid" style="min-height: 80vh">
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
+<div class="container-fluid d-flex justify-content-center align-items-center" style="min-height: 80vh; padding-left: 0; padding-right: 0">
+    <div class="row w-100">
+        <div class="col-md-6">
+            <div class="card mb-3">
                 <div class="card-body">
-                    <h2 class="card-title text-center">Добавить сотрудника</h2>
+                    <h1 class="card-title text-center">Добавить сотрудника</h1>
                     <form method="post">
                         {% csrf_token %} {{ personal_form.as_p }}
                         <div class="d-grid">
@@ -14,11 +14,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
+        <div class="col-md-6">
+            <div class="card mb-3">
                 <div class="card-body">
-                    <h2 class="card-title text-center">Добавить смену</h2>
+                    <h1 class="card-title text-center">Добавить смену</h1>
                     <form method="post">
                         {% csrf_token %} {{ shift_form.as_p }}
                         <div class="d-grid">

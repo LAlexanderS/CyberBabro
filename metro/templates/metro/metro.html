@@ -4,18 +4,6 @@
         <div class="col-md-6">
             <div class="card mb-3">
                 <div class="card-body">
-                    <h2 class="card-title text-center">Добавить линию метро</h2>
-                    <form method="post">
-                        {% csrf_token %} {{ line_form.as_p }}
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Сохранить линию</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="card mb-3">
-                <div class="card-body">
                     <h2 class="card-title text-center">Добавить станцию</h2>
                     <form method="post">
                         {% csrf_token %} {{ station_form.as_p }}
@@ -25,7 +13,8 @@
                     </form>
                 </div>
             </div>
-
+        </div>
+        <div class="col-md-6">
             <div class="card mb-3">
                 <div class="card-body">
                     <h2 class="card-title text-center">Добавить время прибытия</h2>
@@ -37,7 +26,6 @@
                     </form>
                 </div>
             </div>
-
             <div class="card mb-3">
                 <div class="card-body">
                     <h2 class="card-title text-center">Добавить время пересадки</h2>
@@ -45,32 +33,6 @@
                         {% csrf_token %} {{ transfertime_form.as_p }}
                         <div class="d-grid">
                             <button type="submit" class="btn btn-primary">Сохранить время пересадки</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h2 class="card-title text-center">Добавить сотрудника</h2>
-                    <form method="post">
-                        {% csrf_token %} {{ personal_form.as_p }}
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Сохранить сотрудника</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h2 class="card-title text-center">Добавить смену</h2>
-                    <form method="post">
-                        {% csrf_token %} {{ shift_form.as_p }}
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Сохранить смену</button>
                         </div>
                     </form>
                 </div>

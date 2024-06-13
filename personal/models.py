@@ -30,24 +30,7 @@ class Personal(models.Model):
         verbose_name = 'Сотрудник'
         verbose_name_plural = 'Сотрудники'
 
-    # def __str__(self):
-        # return f"{self.last_name} {self.first_name[0]}. {self.second_name[0]}." if self.second_name else f"{self.last_name} {self.first_name[0]}."
 
-    # def full_name_initials(self):
-        # if self.second_name:
-            # return f'{self.last_name} {self.first_name[0]}. {self.second_name[0]}.'
-        # else:
-            # return f'{self.last_name} {self.first_name[0]}.'
-    # full_name_initials.short_description = 'Сотрудник'
-
-  
-    # def __str__(self):
-    #     return self.name
-    
-    # def save(self, *args, **kwargs):
-    #     if not self.pk:
-    #         self.category = "Сотрудники"
-    #     super(Personal, self).save(*args, **kwargs)
 
 class Shift(models.Model):
     id_SMENA = models.AutoField(primary_key=True, verbose_name = 'ID')
