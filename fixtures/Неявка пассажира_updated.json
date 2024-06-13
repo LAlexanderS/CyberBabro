@@ -1,0 +1,58 @@
+[
+	{
+		"model": "applications.ApplicationTransfer",
+		"pk": 1,
+		"fields": {
+			"id_bid": "489087",
+			"date_time": "2024-04-24 11:12"
+		}
+	},
+	{
+		"model": "applications.ApplicationTransfer",
+		"pk": 2,
+		"fields": {
+			"id_bid": "488717",
+			"date_time": "2024-04-24 12:28"
+		}
+	},
+	{
+		"model": "applications.ApplicationTransfer",
+		"pk": 3,
+		"fields": {
+			"id_bid": "488523",
+			"date_time": "2024-04-24 14:12"
+		}
+	},
+	{
+		"model": "applications.ApplicationTransfer",
+		"pk": 4,
+		"fields": {
+			"id_bid": "488527",
+			"date_time": "2024-04-24 14:13"
+		}
+	},
+	{
+		"model": "applications.ApplicationTransfer",
+		"pk": 5,
+		"fields": {
+			"id_bid": "489288",
+			"date_time": "2024-04-24 14:27"
+		}
+	},
+	{
+		"model": "applications.ApplicationTransfer",
+		"pk": 6,
+		"fields": {
+			"id_bid": "489051",
+			"date_time": "2024-04-24 15:58"
+		}
+	},
+	{
+		"model": "applications.ApplicationTransfer",
+		"pk": 7,
+		"fields": {
+			"id_bid": "488935",
+			"date_time": "2024-04-24 17:08"
+		}
+	}
+]

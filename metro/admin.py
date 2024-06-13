@@ -19,16 +19,16 @@ class StationAdmin(admin.ModelAdmin):
 
 admin.site.register(Station, StationAdmin)
 
-# class StationtimeAdmin(admin.ModelAdmin):
-    # list_display = ('id_st_time', 'st_time')
-    # list_display_links = ['id_st_time']
-    # search_fields = ['id_st_time']
+class StationtimeAdmin(admin.ModelAdmin):
+     list_display = ('id_st_time', 'time')
+     list_display_links = ['id_st_time']
+     search_fields = ['id_st_time']
 
 
-# admin.site.register(Stationtime,StationtimeAdmin)
+admin.site.register(Stationtime,StationtimeAdmin)
 
 class TransfertimeAdmin(admin.ModelAdmin):
-    list_display = ('id_t_time', 'transfer_time')
+    list_display = ('id_t_time', 'time')
     list_display_links = ['id_t_time']
     search_fields = ['id_t_time']
 

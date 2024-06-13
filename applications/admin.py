@@ -22,6 +22,7 @@ class ApplicationTransferAdmin(admin.ModelAdmin):
         return obj.time_s.time3
     get_time3.short_description = 'Изначальное время заявки'
 
+
 admin.site.register(Application, ApplicationAdmin)
 admin.site.register(ApplicationTransfer, ApplicationTransferAdmin)
 
