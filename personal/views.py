@@ -17,6 +17,12 @@ def add_personal_and_shift(request):
         personal_form = PersonalForm(prefix='personal')
         shift_form = ShiftForm(prefix='shift')
 
+    context = {
+        'personal_form': personal_form, 
+        'shift_form': shift_form
+        }
 
-    return render(request, 'personal/personal.html', {'personal_form': personal_form, 'shift_form': shift_form})
+
+
+    return render(request, 'personal/personal.html', context)
 
