@@ -22,4 +22,4 @@ def add_station(request):
         'stationtime_form': stationtime_form,
         'transfertime_form': transfertime_form,
     }
-    return render(request, 'metro.html', context)
+    return render(request, 'metro/metro.html', context)

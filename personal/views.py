@@ -5,6 +5,7 @@ def add_personal_and_shift(request):
     if request.method == 'POST':
         personal_form = PersonalForm(request.POST)
         shift_form = ShiftForm(request.POST)
+        
         if personal_form.is_valid() and shift_form.is_valid():
             personal_form.save()
             shift_form.save()
@@ -13,4 +14,8 @@ def add_personal_and_shift(request):
         personal_form = PersonalForm()
         shift_form = ShiftForm()
     
-    return render(request, 'personal.html', {'personal_form': personal_form, 'shift_form': shift_form})
+    context = {
+        'personal_form': personal_form,
+        'shift_form': shift_form,
+    }
+    return render(request, 'personal/personal.html', context)

@@ -10,4 +10,4 @@ def add_passenger(request):
     else:
         form = PassengersForm()
     
-    return render(request, 'passengers.html', {'form': form})
+    return render(request, 'passengers/passengers.html', {'form': form})

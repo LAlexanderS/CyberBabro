@@ -1,6 +1,6 @@
 import datetime
 import heapq
-import routes
+from . import routes
 
 class Scheduler:
 	def __init__(self, data):
