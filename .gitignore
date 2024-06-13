@@ -11,11 +11,5 @@ metro/migrations/*
 passengers/migrations/*
 personal/migrations/*
 users/migrations/*
-
-
-
-
-
-
 examples/
 .gitingnore

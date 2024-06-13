@@ -3,7 +3,6 @@ import networkx as nx
 class Routes:
 	def __init__(self, vertexes):
 		self.graph = nx.Graph()
-		#self.graph.add_nodes_from(vertexes)
 		for record in vertexes:
 			record['time'] = record['time'].replace(',', '.')
 			if 'id_st1' in record:
@@ -16,8 +15,12 @@ class Routes:
 	
 	def CalcDistance(self, source, destination):
 		try:
-			path = nx.shortest_path(self.graph, source=source, target=destination)
-			distance = nx.shortest_path_length(self.graph, source=source, target=destination)
-			return path, distance
+			return nx.shortest_path_length(self.graph, source=source, target=destination)
 		except nx.NetworkXNoPath:
-			return None, float('inf')
+			return float('inf')
+	
+	def CreateShortestPath(self, source, destination):
+		try:
+			return nx.shortest_path(self.graph, source=source, target=destination)
+		except nx.NetworkXNoPath:
+			return None
