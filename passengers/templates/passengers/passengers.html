@@ -1,4 +1,17 @@
-{% extends 'base.html' %} {% load static %} 
-{% block content %}
-	<p>passengers</p>
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container-fluid d-flex justify-content-center align-items-center" style="min-height: 80vh; padding-left: 0; padding-right: 0">
+    <div class="col-12 col-md-8 col-lg-6">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title text-center">Добавить пассажира</h1>
+                <form method="post">
+                    {% csrf_token %} {{ form.as_p }}
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}

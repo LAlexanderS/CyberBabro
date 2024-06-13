@@ -1,4 +1,32 @@
-{% extends 'base.html' %} {% load static %} 
-{% block content %}
-	<p>applications</p>
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container-fluid" style="min-height: 80vh">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Добавить заявку</h2>
+                    <form method="post">
+                        {% csrf_token %} {{ application_form.as_p }}
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Сохранить заявку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Перенос заявки</h2>
+                    <form method="post">
+                        {% csrf_token %} {{ application_transfer_form.as_p }}
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Сохранить перенос</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}

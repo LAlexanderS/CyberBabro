@@ -1,3 +1,33 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-<p>personal</p>
+<div class="container-fluid" style="min-height: 80vh">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Добавить сотрудника</h2>
+                    <form method="post">
+                        {% csrf_token %} {{ personal_form.as_p }}
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Сохранить сотрудника</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Добавить смену</h2>
+                    <form method="post">
+                        {% csrf_token %} {{ shift_form.as_p }}
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Сохранить смену</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}
