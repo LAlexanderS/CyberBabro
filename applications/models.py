@@ -14,6 +14,7 @@ class Application(models.Model):
     INSP_SEX_M = models.IntegerField(verbose_name='Количество сотрудников мужчин')
     INSP_SEX_F = models.IntegerField(verbose_name='Количество сотрудников женщин')
     TIME_OVER = models.TimeField(verbose_name='Время окончания заявки', blank=True, null=True)
+    cat_pas = models.CharField(max_length=50, verbose_name='Категория пассажиров',blank=True, null=True)
     id_st1 = models.ForeignKey(Station, related_name='departure_station', on_delete=models.CASCADE, verbose_name='Станция отправления')
     id_st2 = models.ForeignKey(Station, related_name='arrival_station', on_delete=models.CASCADE, verbose_name='Станция прибытия')
     status = models.CharField(max_length=50, verbose_name='Текущий статус заявки')

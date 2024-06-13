@@ -15,9 +15,9 @@ from django.db import models
 
 class Station(models.Model):
     id = models.AutoField(primary_key=True, verbose_name = 'ID')
-    name_station = models.CharField(max_length=255,verbose_name='Название станции',unique=True)
+    name_station = models.CharField(max_length=255,verbose_name='Название станции')
     id_line = models.CharField(max_length=255,verbose_name='ID линии')
-    name_line = models.CharField(max_length=255,verbose_name='Линия метро',unique=True) 
+    name_line = models.CharField(max_length=255,verbose_name='Линия метро') 
 
     # line = models.ForeignKey(Line,blank=True, null=True, to_field='name_line', on_delete=models.CASCADE,verbose_name='Линия метро')
 
@@ -33,8 +33,8 @@ class Station(models.Model):
 
 class Stationtime(models.Model):
     id_st_time = models.AutoField(primary_key=True, verbose_name = 'ID')
-    st_1 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция отправления',related_name='st_transfer_1')
-    st_2 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция прибытия',related_name='st_transfer_2')
+   # st_1 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция отправления',related_name='st_transfer_1')
+   # st_2 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция прибытия',related_name='st_transfer_2')
     st_time = models.IntegerField(verbose_name='Время в пути',blank=True, null=True)
 
     class Meta:
@@ -45,8 +45,8 @@ class Stationtime(models.Model):
 
 class Transfertime(models.Model):
     id_t_time = models.AutoField(primary_key=True, verbose_name = 'ID')
-    tr_1 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция пересадки 1',related_name='transfer_1')
-    tr_2 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция пересадки 2',related_name='transfer_2')
+  #  tr_1 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция пересадки 1',related_name='transfer_1')
+   # tr_2 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция пересадки 2',related_name='transfer_2')
     transfer_time = models.IntegerField(verbose_name='Время в пути')
 
     class Meta:
