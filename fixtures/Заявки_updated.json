@@ -1,0 +1,7004 @@
+[
+	{
+		"model": "applications.Application",
+		"pk": 1,
+		"fields": {
+			"id": "477354",
+			"datetime": "2024-04-24 07:30:00",
+			"time3": "07:13:52",
+			"time4": "07:51:11",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-03-15 22:48:43",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:52:20",
+			"id_st1": "5",
+			"id_st2": "97"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 2,
+		"fields": {
+			"id": "477370",
+			"datetime": "2024-04-24 15:10:00",
+			"time3": "15:07:12",
+			"time4": "16:17:21",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-03-15 22:51:28",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:07:20",
+			"id_st1": "97",
+			"id_st2": "5"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 3,
+		"fields": {
+			"id": "478278",
+			"datetime": "2024-04-24 07:13:00",
+			"time3": "07:11:24",
+			"time4": "08:06:44",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-03-18 15:40:11",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:20:10",
+			"id_st1": "422",
+			"id_st2": "224"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 4,
+		"fields": {
+			"id": "478293",
+			"datetime": "2024-04-24 20:20:00",
+			"time3": "20:27:23",
+			"time4": "21:29:54",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-03-18 16:02:49",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:19:10",
+			"id_st1": "224",
+			"id_st2": "422"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 5,
+		"fields": {
+			"id": "480889",
+			"datetime": "2024-04-24 06:20:00",
+			"time3": "06:11:28",
+			"time4": "07:29:25",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-03-27 20:17:45",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:50:00",
+			"id_st1": "256",
+			"id_st2": "249"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 6,
+		"fields": {
+			"id": "480915",
+			"datetime": "2024-04-24 15:10:00",
+			"time3": "15:10:16",
+			"time4": "16:19:45",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-03-27 20:23:15",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:50:00",
+			"id_st1": "249",
+			"id_st2": "256"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 7,
+		"fields": {
+			"id": "481183",
+			"datetime": "2024-04-24 07:51:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-03-28 21:52:59",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:13:00",
+			"id_st1": "284",
+			"id_st2": "246"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 8,
+		"fields": {
+			"id": "481199",
+			"datetime": "2024-04-24 17:40:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-03-28 21:55:27",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:08:00",
+			"id_st1": "246",
+			"id_st2": "284"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 9,
+		"fields": {
+			"id": "481251",
+			"datetime": "2024-04-24 07:10:00",
+			"time3": "07:10:34",
+			"time4": "07:54:50",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-03-29 08:48:27",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:54:40",
+			"id_st1": "93",
+			"id_st2": "13"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 10,
+		"fields": {
+			"id": "481488",
+			"datetime": "2024-04-24 06:10:00",
+			"time3": "06:11:26",
+			"time4": "06:52:04",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-03-29 18:10:13",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:42:15",
+			"id_st1": "87",
+			"id_st2": "51"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 11,
+		"fields": {
+			"id": "481912",
+			"datetime": "2024-04-24 07:50:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-03-30 21:43:09",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:45:50",
+			"id_st1": "230",
+			"id_st2": "206"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 12,
+		"fields": {
+			"id": "482595",
+			"datetime": "2024-04-24 11:05:00",
+			"time3": "11:10:23",
+			"time4": "11:17:59",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-01 20:49:23",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:25:00",
+			"id_st1": "161",
+			"id_st2": "161"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 13,
+		"fields": {
+			"id": "482974",
+			"datetime": "2024-04-24 08:58:00",
+			"time3": "09:06:00",
+			"time4": "10:28:03",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-03 12:04:13",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:46:00",
+			"id_st1": "29",
+			"id_st2": "6"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 14,
+		"fields": {
+			"id": "484122",
+			"datetime": "2024-04-24 14:30:00",
+			"time3": "14:28:29",
+			"time4": "15:20:56",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-07 09:25:34",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:53:20",
+			"id_st1": "117",
+			"id_st2": "73"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 15,
+		"fields": {
+			"id": "484123",
+			"datetime": "2024-04-24 18:00:00",
+			"time3": "18:02:25",
+			"time4": "18:45:48",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-07 09:25:47",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:55:20",
+			"id_st1": "73",
+			"id_st2": "117"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 16,
+		"fields": {
+			"id": "484165",
+			"datetime": "2024-04-24 20:20:00",
+			"time3": "20:29:25",
+			"time4": "21:16:28",
+			"cat_pas": "ПЛ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-07 11:21:35",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:52:30",
+			"id_st1": "6",
+			"id_st2": "139"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 17,
+		"fields": {
+			"id": "484238",
+			"datetime": "2024-04-24 06:50:00",
+			"time3": "06:56:33",
+			"time4": "07:47:46",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-07 13:16:08",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:59:00",
+			"id_st1": "135",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 18,
+		"fields": {
+			"id": "485000",
+			"datetime": "2024-04-24 17:45:00",
+			"time3": "17:39:17",
+			"time4": "18:35:26",
+			"cat_pas": "ПЛ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-10 10:06:27",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:52:10",
+			"id_st1": "116",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 19,
+		"fields": {
+			"id": "485041",
+			"datetime": "2024-04-24 07:15:00",
+			"time3": "07:13:01",
+			"time4": "07:31:04",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-10 12:15:09",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:25:00",
+			"id_st1": "246",
+			"id_st2": "246"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 20,
+		"fields": {
+			"id": "485822",
+			"datetime": "2024-04-24 12:00:00",
+			"time3": "11:55:10",
+			"time4": "12:55:34",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-13 08:49:50",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:30:40",
+			"id_st1": "96",
+			"id_st2": "134"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 21,
+		"fields": {
+			"id": "485823",
+			"datetime": "2024-04-24 18:55:00",
+			"time3": "18:58:14",
+			"time4": "20:03:21",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-13 08:50:12",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:30:40",
+			"id_st1": "134",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 22,
+		"fields": {
+			"id": "486441",
+			"datetime": "2024-04-24 10:00:00",
+			"time3": "09:42:48",
+			"time4": "10:39:36",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-14 19:35:19",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:11:40",
+			"id_st1": "42",
+			"id_st2": "28"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 23,
+		"fields": {
+			"id": "486447",
+			"datetime": "2024-04-24 19:30:00",
+			"time3": "19:15:25",
+			"time4": "20:14:35",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-14 19:35:59",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:11:40",
+			"id_st1": "28",
+			"id_st2": "42"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 24,
+		"fields": {
+			"id": "486665",
+			"datetime": "2024-04-24 08:45:00",
+			"time3": "08:46:38",
+			"time4": "09:29:49",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-15 15:12:25",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:47:50",
+			"id_st1": "87",
+			"id_st2": "6"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 25,
+		"fields": {
+			"id": "486993",
+			"datetime": "2024-04-24 07:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-16 19:11:53",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:10:15",
+			"id_st1": "169",
+			"id_st2": "246"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 26,
+		"fields": {
+			"id": "486997",
+			"datetime": "2024-04-24 16:40:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-16 19:14:25",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:10:30",
+			"id_st1": "246",
+			"id_st2": "364"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 27,
+		"fields": {
+			"id": "487157",
+			"datetime": "2024-04-24 09:45:00",
+			"time3": "09:28:28",
+			"time4": "10:33:37",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-17 13:14:44",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:55:10",
+			"id_st1": "20",
+			"id_st2": "175"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 28,
+		"fields": {
+			"id": "487158",
+			"datetime": "2024-04-24 14:00:00",
+			"time3": "14:06:10",
+			"time4": "14:47:20",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-17 13:15:27",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:52:10",
+			"id_st1": "158",
+			"id_st2": "20"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 29,
+		"fields": {
+			"id": "487160",
+			"datetime": "2024-04-24 09:45:00",
+			"time3": "09:31:28",
+			"time4": "10:33:42",
+			"cat_pas": "РДК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-17 13:17:53",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:55:10",
+			"id_st1": "20",
+			"id_st2": "175"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 30,
+		"fields": {
+			"id": "487161",
+			"datetime": "2024-04-24 14:00:00",
+			"time3": "14:06:45",
+			"time4": "14:47:34",
+			"cat_pas": "РДК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-17 13:18:25",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:52:10",
+			"id_st1": "158",
+			"id_st2": "20"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 31,
+		"fields": {
+			"id": "487162",
+			"datetime": "2024-04-24 15:37:00",
+			"time3": "15:35:45",
+			"time4": "16:26:20",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-17 13:23:13",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "29",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 32,
+		"fields": {
+			"id": "487164",
+			"datetime": "2024-04-24 20:00:00",
+			"time3": "20:07:18",
+			"time4": "20:42:11",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-17 13:29:15",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "96",
+			"id_st2": "29"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 33,
+		"fields": {
+			"id": "487168",
+			"datetime": "2024-04-24 15:37:00",
+			"time3": "15:35:53",
+			"time4": "16:26:25",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-17 13:33:45",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "29",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 34,
+		"fields": {
+			"id": "487171",
+			"datetime": "2024-04-24 20:00:00",
+			"time3": "19:23:44",
+			"time4": "20:42:22",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-17 13:34:28",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "96",
+			"id_st2": "29"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 35,
+		"fields": {
+			"id": "487356",
+			"datetime": "2024-04-24 17:00:00",
+			"time3": "17:02:57",
+			"time4": "18:00:30",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-18 08:55:04",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:44:00",
+			"id_st1": "135",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 36,
+		"fields": {
+			"id": "487460",
+			"datetime": "2024-04-24 12:45:00",
+			"time3": "12:39:31",
+			"time4": "13:51:42",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-18 13:46:32",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:13:10",
+			"id_st1": "138",
+			"id_st2": "93"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 37,
+		"fields": {
+			"id": "487461",
+			"datetime": "2024-04-24 18:00:00",
+			"time3": "17:49:14",
+			"time4": "19:18:06",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-18 13:47:12",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:13:10",
+			"id_st1": "93",
+			"id_st2": "138"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 38,
+		"fields": {
+			"id": "487468",
+			"datetime": "2024-04-24 16:30:00",
+			"time3": "16:28:00",
+			"time4": "17:29:00",
+			"cat_pas": "РДК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-18 14:05:35",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:57:20",
+			"id_st1": "140",
+			"id_st2": "349"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 39,
+		"fields": {
+			"id": "487482",
+			"datetime": "2024-04-24 09:00:00",
+			"time3": "08:57:12",
+			"time4": "09:50:31",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-18 14:44:24",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:18:20",
+			"id_st1": "263",
+			"id_st2": "1"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 40,
+		"fields": {
+			"id": "487501",
+			"datetime": "2024-04-24 07:45:00",
+			"time3": "07:50:00",
+			"time4": "07:59:41",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-18 15:44:10",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:30:20",
+			"id_st1": "350",
+			"id_st2": "109"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 41,
+		"fields": {
+			"id": "487542",
+			"datetime": "2024-04-24 06:46:00",
+			"time3": "06:36:00",
+			"time4": "07:23:57",
+			"cat_pas": "ПЛ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-18 18:19:24",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:46:00",
+			"id_st1": "29",
+			"id_st2": "6"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 42,
+		"fields": {
+			"id": "487578",
+			"datetime": "2024-04-24 10:00:00",
+			"time3": "10:15:57",
+			"time4": "10:40:44",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-18 21:49:53",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:28:00",
+			"id_st1": "81",
+			"id_st2": "80"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 43,
+		"fields": {
+			"id": "487603",
+			"datetime": "2024-04-24 09:00:00",
+			"time3": "08:59:23",
+			"time4": "10:07:19",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 08:36:36",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:02:00",
+			"id_st1": "37",
+			"id_st2": "1"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 44,
+		"fields": {
+			"id": "487609",
+			"datetime": "2024-04-24 16:50:00",
+			"time3": "16:39:59",
+			"time4": "17:27:10",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 08:37:57",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:02:00",
+			"id_st1": "1",
+			"id_st2": "37"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 45,
+		"fields": {
+			"id": "487616",
+			"datetime": "2024-04-24 08:50:00",
+			"time3": "08:45:28",
+			"time4": "09:47:12",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 08:39:07",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:07:00",
+			"id_st1": "48",
+			"id_st2": "109"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 46,
+		"fields": {
+			"id": "487620",
+			"datetime": "2024-04-24 13:40:00",
+			"time3": "13:35:24",
+			"time4": "14:25:10",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 08:39:43",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:07:00",
+			"id_st1": "109",
+			"id_st2": "48"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 47,
+		"fields": {
+			"id": "487625",
+			"datetime": "2024-04-24 09:00:00",
+			"time3": "08:54:43",
+			"time4": "09:26:57",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 08:42:45",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:35:00",
+			"id_st1": "145",
+			"id_st2": "90"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 48,
+		"fields": {
+			"id": "487629",
+			"datetime": "2024-04-24 13:40:00",
+			"time3": "13:38:55",
+			"time4": "14:21:21",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 09:02:18",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:54:00",
+			"id_st1": "133",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 49,
+		"fields": {
+			"id": "487634",
+			"datetime": "2024-04-24 21:00:00",
+			"time3": "20:57:40",
+			"time4": "21:41:27",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 09:03:33",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:55:00",
+			"id_st1": "34",
+			"id_st2": "133"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 50,
+		"fields": {
+			"id": "487683",
+			"datetime": "2024-04-24 09:00:00",
+			"time3": "08:46:36",
+			"time4": "10:00:23",
+			"cat_pas": "ИУ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 11:46:15",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:16:20",
+			"id_st1": "244",
+			"id_st2": "1"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 51,
+		"fields": {
+			"id": "487686",
+			"datetime": "2024-04-24 17:00:00",
+			"time3": "17:06:14",
+			"time4": "18:23:02",
+			"cat_pas": "ИУ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 11:47:10",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:16:20",
+			"id_st1": "1",
+			"id_st2": "244"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 52,
+		"fields": {
+			"id": "487705",
+			"datetime": "2024-04-24 07:15:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-19 12:21:19",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:39:20",
+			"id_st1": "168",
+			"id_st2": "109"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 53,
+		"fields": {
+			"id": "487710",
+			"datetime": "2024-04-24 14:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-19 12:22:53",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:39:20",
+			"id_st1": "109",
+			"id_st2": "168"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 54,
+		"fields": {
+			"id": "487724",
+			"datetime": "2024-04-24 06:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-19 12:54:02",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "02:05:50",
+			"id_st1": "197",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 55,
+		"fields": {
+			"id": "487728",
+			"datetime": "2024-04-24 10:10:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-19 12:54:33",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "02:05:50",
+			"id_st1": "96",
+			"id_st2": "197"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 56,
+		"fields": {
+			"id": "487735",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "14:56:27",
+			"time4": "15:56:21",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 13:04:05",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:54:00",
+			"id_st1": "96",
+			"id_st2": "123"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 57,
+		"fields": {
+			"id": "487736",
+			"datetime": "2024-04-24 20:00:00",
+			"time3": "20:02:17",
+			"time4": "21:04:25",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 13:04:42",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:57:00",
+			"id_st1": "123",
+			"id_st2": "97"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 58,
+		"fields": {
+			"id": "487748",
+			"datetime": "2024-04-24 07:15:00",
+			"time3": "07:23:50",
+			"time4": "08:01:38",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 13:23:43",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:55:00",
+			"id_st1": "93",
+			"id_st2": "361"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 59,
+		"fields": {
+			"id": "487861",
+			"datetime": "2024-04-24 06:50:00",
+			"time3": "06:42:29",
+			"time4": "07:45:37",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 19:29:32",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:00:10",
+			"id_st1": "142",
+			"id_st2": "224"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 60,
+		"fields": {
+			"id": "487863",
+			"datetime": "2024-04-24 17:05:00",
+			"time3": "17:00:59",
+			"time4": "18:13:39",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 19:30:10",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:07:10",
+			"id_st1": "224",
+			"id_st2": "142"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 61,
+		"fields": {
+			"id": "487874",
+			"datetime": "2024-04-24 10:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по неявке пассажира",
+			"tpz": "2024-04-19 20:31:54",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:12:10",
+			"id_st1": "199",
+			"id_st2": "157"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 62,
+		"fields": {
+			"id": "487875",
+			"datetime": "2024-04-24 19:15:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-19 20:32:28",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:12:10",
+			"id_st1": "157",
+			"id_st2": "199"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 63,
+		"fields": {
+			"id": "487882",
+			"datetime": "2024-04-24 08:15:00",
+			"time3": "07:58:38",
+			"time4": "08:34:19",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 21:02:55",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:38:40",
+			"id_st1": "106",
+			"id_st2": "224"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 64,
+		"fields": {
+			"id": "487887",
+			"datetime": "2024-04-24 17:05:00",
+			"time3": "17:02:28",
+			"time4": "17:45:31",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 21:03:54",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:50:40",
+			"id_st1": "224",
+			"id_st2": "106"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 65,
+		"fields": {
+			"id": "487917",
+			"datetime": "2024-04-24 18:15:00",
+			"time3": "18:07:30",
+			"time4": "19:05:09",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 22:55:34",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:30:30",
+			"id_st1": "316",
+			"id_st2": "122"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 66,
+		"fields": {
+			"id": "487918",
+			"datetime": "2024-04-24 22:10:00",
+			"time3": "21:58:11",
+			"time4": "22:45:11",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-19 22:56:10",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:30:30",
+			"id_st1": "122",
+			"id_st2": "316"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 67,
+		"fields": {
+			"id": "487932",
+			"datetime": "2024-04-24 07:50:00",
+			"time3": "07:53:22",
+			"time4": "08:28:00",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 07:20:28",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:46:00",
+			"id_st1": "51",
+			"id_st2": "246"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 68,
+		"fields": {
+			"id": "487937",
+			"datetime": "2024-04-24 11:50:00",
+			"time3": "11:47:56",
+			"time4": "12:28:08",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 07:21:40",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "246",
+			"id_st2": "344"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 69,
+		"fields": {
+			"id": "487960",
+			"datetime": "2024-04-24 10:30:00",
+			"time3": "10:12:15",
+			"time4": "11:10:58",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 09:51:41",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:01:00",
+			"id_st1": "364",
+			"id_st2": "18"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 70,
+		"fields": {
+			"id": "487964",
+			"datetime": "2024-04-24 18:15:00",
+			"time3": "18:17:00",
+			"time4": "18:53:51",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 09:52:52",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:01:00",
+			"id_st1": "18",
+			"id_st2": "364"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 71,
+		"fields": {
+			"id": "487995",
+			"datetime": "2024-04-24 09:00:00",
+			"time3": "09:02:25",
+			"time4": "09:39:45",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 11:04:33",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:59:40",
+			"id_st1": "116",
+			"id_st2": "122"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 72,
+		"fields": {
+			"id": "488000",
+			"datetime": "2024-04-24 16:50:00",
+			"time3": "16:43:39",
+			"time4": "17:39:35",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 11:05:02",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:04:40",
+			"id_st1": "122",
+			"id_st2": "116"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 73,
+		"fields": {
+			"id": "488037",
+			"datetime": "2024-04-24 09:30:00",
+			"time3": "09:22:10",
+			"time4": "09:51:44",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 12:06:20",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "149",
+			"id_st2": "174"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 74,
+		"fields": {
+			"id": "488041",
+			"datetime": "2024-04-24 16:15:00",
+			"time3": "16:08:45",
+			"time4": "16:52:19",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 12:07:36",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "174",
+			"id_st2": "149"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 75,
+		"fields": {
+			"id": "488045",
+			"datetime": "2024-04-24 09:00:00",
+			"time3": "08:57:52",
+			"time4": "09:27:48",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 12:09:46",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:49:00",
+			"id_st1": "110",
+			"id_st2": "126"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 76,
+		"fields": {
+			"id": "488050",
+			"datetime": "2024-04-24 14:15:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-20 12:11:43",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:54:00",
+			"id_st1": "126",
+			"id_st2": "110"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 77,
+		"fields": {
+			"id": "488059",
+			"datetime": "2024-04-24 09:45:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-20 12:36:41",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:01:30",
+			"id_st1": "64",
+			"id_st2": "17"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 78,
+		"fields": {
+			"id": "488062",
+			"datetime": "2024-04-24 07:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-20 12:44:09",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:39:50",
+			"id_st1": "115",
+			"id_st2": "109"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 79,
+		"fields": {
+			"id": "488067",
+			"datetime": "2024-04-24 15:10:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-20 12:44:45",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:39:50",
+			"id_st1": "109",
+			"id_st2": "115"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 80,
+		"fields": {
+			"id": "488098",
+			"datetime": "2024-04-24 09:10:00",
+			"time3": "09:12:47",
+			"time4": "09:54:33",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 13:47:51",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:53:45",
+			"id_st1": "347",
+			"id_st2": "90"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 81,
+		"fields": {
+			"id": "488099",
+			"datetime": "2024-04-24 19:00:00",
+			"time3": "19:03:47",
+			"time4": "19:57:41",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 13:48:23",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:55:45",
+			"id_st1": "90",
+			"id_st2": "347"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 82,
+		"fields": {
+			"id": "488104",
+			"datetime": "2024-04-24 07:30:00",
+			"time3": "07:33:11",
+			"time4": "08:02:44",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 13:52:38",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:37:50",
+			"id_st1": "114",
+			"id_st2": "109"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 83,
+		"fields": {
+			"id": "488135",
+			"datetime": "2024-04-24 08:25:00",
+			"time3": "08:39:37",
+			"time4": "09:05:37",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 15:58:34",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:31:55",
+			"id_st1": "190",
+			"id_st2": "187"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 84,
+		"fields": {
+			"id": "488139",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "15:01:09",
+			"time4": "15:17:26",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 15:59:00",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:31:55",
+			"id_st1": "187",
+			"id_st2": "190"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 85,
+		"fields": {
+			"id": "488176",
+			"datetime": "2024-04-24 08:00:00",
+			"time3": "08:03:00",
+			"time4": "08:48:39",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 19:11:56",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:53:10",
+			"id_st1": "213",
+			"id_st2": "224"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 86,
+		"fields": {
+			"id": "488180",
+			"datetime": "2024-04-24 19:05:00",
+			"time3": "19:08:18",
+			"time4": "20:01:08",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 19:13:25",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:53:10",
+			"id_st1": "224",
+			"id_st2": "213"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 87,
+		"fields": {
+			"id": "488196",
+			"datetime": "2024-04-24 09:50:00",
+			"time3": "09:54:19",
+			"time4": "10:42:31",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 19:36:02",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:47:00",
+			"id_st1": "83",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 88,
+		"fields": {
+			"id": "488198",
+			"datetime": "2024-04-24 16:10:00",
+			"time3": "16:01:46",
+			"time4": "16:56:38",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 19:37:09",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:46:40",
+			"id_st1": "96",
+			"id_st2": "83"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 89,
+		"fields": {
+			"id": "488202",
+			"datetime": "2024-04-24 09:30:00",
+			"time3": "09:27:16",
+			"time4": "10:46:15",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 19:40:20",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:48:00",
+			"id_st1": "42",
+			"id_st2": "64"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 90,
+		"fields": {
+			"id": "488203",
+			"datetime": "2024-04-24 16:00:00",
+			"time3": "15:41:40",
+			"time4": "17:38:24",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 19:41:09",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:53:00",
+			"id_st1": "64",
+			"id_st2": "42"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 91,
+		"fields": {
+			"id": "488210",
+			"datetime": "2024-04-24 07:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-20 20:06:57",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:58:50",
+			"id_st1": "168",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 92,
+		"fields": {
+			"id": "488233",
+			"datetime": "2024-04-24 10:20:00",
+			"time3": "10:17:03",
+			"time4": "10:58:07",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 22:13:53",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:14:00",
+			"id_st1": "322",
+			"id_st2": "31"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 93,
+		"fields": {
+			"id": "488235",
+			"datetime": "2024-04-24 17:00:00",
+			"time3": "17:00:57",
+			"time4": "18:10:42",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 22:15:52",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:14:00",
+			"id_st1": "31",
+			"id_st2": "322"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 94,
+		"fields": {
+			"id": "488237",
+			"datetime": "2024-04-24 10:15:00",
+			"time3": "10:21:59",
+			"time4": "11:29:05",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 22:26:17",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:55:10",
+			"id_st1": "19",
+			"id_st2": "90"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 95,
+		"fields": {
+			"id": "488240",
+			"datetime": "2024-04-24 17:00:00",
+			"time3": "16:56:21",
+			"time4": "17:39:02",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 22:27:06",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:55:10",
+			"id_st1": "90",
+			"id_st2": "19"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 96,
+		"fields": {
+			"id": "488248",
+			"datetime": "2024-04-24 07:00:00",
+			"time3": "06:53:27",
+			"time4": "08:08:34",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-20 22:42:23",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:03:40",
+			"id_st1": "172",
+			"id_st2": "29"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 97,
+		"fields": {
+			"id": "488255",
+			"datetime": "2024-04-24 12:00:00",
+			"time3": "11:55:08",
+			"time4": "12:58:43",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 05:57:03",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:03:20",
+			"id_st1": "117",
+			"id_st2": "164"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 98,
+		"fields": {
+			"id": "488260",
+			"datetime": "2024-04-24 19:10:00",
+			"time3": "19:10:00",
+			"time4": "20:00:45",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 05:58:13",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:03:20",
+			"id_st1": "164",
+			"id_st2": "117"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 99,
+		"fields": {
+			"id": "488273",
+			"datetime": "2024-04-24 08:10:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-21 08:09:18",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:59:35",
+			"id_st1": "149",
+			"id_st2": "73"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 100,
+		"fields": {
+			"id": "488275",
+			"datetime": "2024-04-24 15:50:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-21 08:10:05",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:01:35",
+			"id_st1": "73",
+			"id_st2": "149"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 101,
+		"fields": {
+			"id": "488286",
+			"datetime": "2024-04-24 09:40:00",
+			"time3": "09:45:09",
+			"time4": "10:19:18",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 09:14:49",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:43:20",
+			"id_st1": "182",
+			"id_st2": "140"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 102,
+		"fields": {
+			"id": "488287",
+			"datetime": "2024-04-24 12:10:00",
+			"time3": "12:09:03",
+			"time4": "13:09:19",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 09:15:08",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:05:00",
+			"id_st1": "140",
+			"id_st2": "118"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 103,
+		"fields": {
+			"id": "488293",
+			"datetime": "2024-04-24 07:45:00",
+			"time3": "07:43:50",
+			"time4": "08:07:48",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 09:55:49",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:37:00",
+			"id_st1": "256",
+			"id_st2": "243"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 104,
+		"fields": {
+			"id": "488298",
+			"datetime": "2024-04-24 15:30:00",
+			"time3": "15:21:38",
+			"time4": "15:47:39",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 09:56:28",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:37:00",
+			"id_st1": "243",
+			"id_st2": "256"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 105,
+		"fields": {
+			"id": "488318",
+			"datetime": "2024-04-24 07:35:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ОВ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-21 10:34:07",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:49:30",
+			"id_st1": "74",
+			"id_st2": "133"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 106,
+		"fields": {
+			"id": "488337",
+			"datetime": "2024-04-24 11:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-21 11:11:14",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:04:00",
+			"id_st1": "251",
+			"id_st2": "97"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 107,
+		"fields": {
+			"id": "488357",
+			"datetime": "2024-04-24 08:40:00",
+			"time3": "08:41:17",
+			"time4": "09:21:00",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 12:13:27",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:44:20",
+			"id_st1": "170",
+			"id_st2": "109"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 108,
+		"fields": {
+			"id": "488361",
+			"datetime": "2024-04-24 13:00:00",
+			"time3": "13:00:37",
+			"time4": "13:31:17",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 12:14:08",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:44:20",
+			"id_st1": "109",
+			"id_st2": "170"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 109,
+		"fields": {
+			"id": "488365",
+			"datetime": "2024-04-24 07:00:00",
+			"time3": "06:53:18",
+			"time4": "07:14:57",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 12:25:25",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:43:00",
+			"id_st1": "59",
+			"id_st2": "91"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 110,
+		"fields": {
+			"id": "488370",
+			"datetime": "2024-04-24 14:30:00",
+			"time3": "14:33:16",
+			"time4": "15:06:12",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 12:26:02",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:41:00",
+			"id_st1": "91",
+			"id_st2": "81"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 111,
+		"fields": {
+			"id": "488384",
+			"datetime": "2024-04-24 17:45:00",
+			"time3": "17:40:15",
+			"time4": "18:07:46",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 12:58:01",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:41:00",
+			"id_st1": "165",
+			"id_st2": "159"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 112,
+		"fields": {
+			"id": "488406",
+			"datetime": "2024-04-24 07:00:00",
+			"time3": "06:46:56",
+			"time4": "07:51:57",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 14:14:46",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:06:15",
+			"id_st1": "184",
+			"id_st2": "246"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 113,
+		"fields": {
+			"id": "488411",
+			"datetime": "2024-04-24 18:30:00",
+			"time3": "18:30:36",
+			"time4": "19:40:13",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 14:15:42",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:08:50",
+			"id_st1": "246",
+			"id_st2": "184"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 114,
+		"fields": {
+			"id": "488437",
+			"datetime": "2024-04-24 07:10:00",
+			"time3": "07:09:35",
+			"time4": "07:55:36",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 15:19:03",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:50:00",
+			"id_st1": "3",
+			"id_st2": "91"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 115,
+		"fields": {
+			"id": "488443",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "14:48:49",
+			"time4": "15:27:05",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 15:19:54",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:50:00",
+			"id_st1": "91",
+			"id_st2": "3"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 116,
+		"fields": {
+			"id": "488449",
+			"datetime": "2024-04-24 08:40:00",
+			"time3": "08:42:28",
+			"time4": "09:37:16",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 15:21:55",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:59:00",
+			"id_st1": "63",
+			"id_st2": "364"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 117,
+		"fields": {
+			"id": "488454",
+			"datetime": "2024-04-24 08:40:00",
+			"time3": "08:42:00",
+			"time4": "09:37:24",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 15:24:45",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:59:00",
+			"id_st1": "63",
+			"id_st2": "364"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 118,
+		"fields": {
+			"id": "488497",
+			"datetime": "2024-04-24 15:45:00",
+			"time3": "15:38:52",
+			"time4": "16:09:32",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 17:29:30",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:32:00",
+			"id_st1": "97",
+			"id_st2": "94"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 119,
+		"fields": {
+			"id": "488504",
+			"datetime": "2024-04-24 06:55:00",
+			"time3": "06:57:36",
+			"time4": "07:55:07",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 18:31:13",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:20:10",
+			"id_st1": "422",
+			"id_st2": "224"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 120,
+		"fields": {
+			"id": "488510",
+			"datetime": "2024-04-24 18:00:00",
+			"time3": "18:07:00",
+			"time4": "19:05:01",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 18:33:05",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:20:10",
+			"id_st1": "224",
+			"id_st2": "422"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 121,
+		"fields": {
+			"id": "488515",
+			"datetime": "2024-04-24 07:50:00",
+			"time3": "07:48:07",
+			"time4": "08:29:07",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 18:35:00",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:58:25",
+			"id_st1": "97",
+			"id_st2": "246"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 122,
+		"fields": {
+			"id": "488521",
+			"datetime": "2024-04-24 16:45:00",
+			"time3": "16:48:00",
+			"time4": "17:27:00",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 18:35:51",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:52:00",
+			"id_st1": "246",
+			"id_st2": "97"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 123,
+		"fields": {
+			"id": "488523",
+			"datetime": "2024-04-24 14:20:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗ",
+			"status": "Отмена заявки по неявке пассажира",
+			"tpz": "2024-04-21 18:35:55",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:35:00",
+			"id_st1": "3",
+			"id_st2": "81"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 124,
+		"fields": {
+			"id": "488527",
+			"datetime": "2024-04-24 14:20:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗ",
+			"status": "Отмена заявки по неявке пассажира",
+			"tpz": "2024-04-21 18:37:27",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:35:00",
+			"id_st1": "3",
+			"id_st2": "81"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 125,
+		"fields": {
+			"id": "488554",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИО",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-21 19:42:01",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:53:10",
+			"id_st1": "105",
+			"id_st2": "128"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 126,
+		"fields": {
+			"id": "488559",
+			"datetime": "2024-04-24 19:50:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИО",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-21 19:43:19",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:53:10",
+			"id_st1": "128",
+			"id_st2": "105"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 127,
+		"fields": {
+			"id": "488575",
+			"datetime": "2024-04-24 09:10:00",
+			"time3": "09:11:08",
+			"time4": "09:41:55",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 20:10:36",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:45:00",
+			"id_st1": "6",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 128,
+		"fields": {
+			"id": "488579",
+			"datetime": "2024-04-24 13:30:00",
+			"time3": "13:30:00",
+			"time4": "14:28:12",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 20:31:16",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:03:00",
+			"id_st1": "171",
+			"id_st2": "133"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 129,
+		"fields": {
+			"id": "488580",
+			"datetime": "2024-04-24 16:15:00",
+			"time3": "16:26:34",
+			"time4": "17:02:41",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 20:31:58",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:03:00",
+			"id_st1": "133",
+			"id_st2": "171"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 130,
+		"fields": {
+			"id": "488584",
+			"datetime": "2024-04-24 09:00:00",
+			"time3": "08:55:55",
+			"time4": "09:31:21",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 20:41:13",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:43:50",
+			"id_st1": "92",
+			"id_st2": "8"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 131,
+		"fields": {
+			"id": "488594",
+			"datetime": "2024-04-24 12:00:00",
+			"time3": "12:05:41",
+			"time4": "13:15:32",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 21:38:34",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:06:00",
+			"id_st1": "66",
+			"id_st2": "60"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 132,
+		"fields": {
+			"id": "488599",
+			"datetime": "2024-04-24 18:30:00",
+			"time3": "18:15:10",
+			"time4": "19:05:10",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 21:39:19",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:06:00",
+			"id_st1": "60",
+			"id_st2": "66"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 133,
+		"fields": {
+			"id": "488606",
+			"datetime": "2024-04-24 10:00:00",
+			"time3": "10:09:21",
+			"time4": "10:57:50",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 21:47:20",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:52:00",
+			"id_st1": "170",
+			"id_st2": "173"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 134,
+		"fields": {
+			"id": "488610",
+			"datetime": "2024-04-24 14:20:00",
+			"time3": "14:40:34",
+			"time4": "15:23:45",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 21:47:46",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:52:00",
+			"id_st1": "173",
+			"id_st2": "170"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 135,
+		"fields": {
+			"id": "488622",
+			"datetime": "2024-04-24 09:00:00",
+			"time3": "08:59:36",
+			"time4": "10:03:08",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 22:41:53",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:08:40",
+			"id_st1": "111",
+			"id_st2": "1"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 136,
+		"fields": {
+			"id": "488623",
+			"datetime": "2024-04-24 18:30:00",
+			"time3": "18:30:28",
+			"time4": "19:16:01",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 22:42:19",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:47:20",
+			"id_st1": "102",
+			"id_st2": "111"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 137,
+		"fields": {
+			"id": "488625",
+			"datetime": "2024-04-24 14:00:00",
+			"time3": "13:55:51",
+			"time4": "15:00:37",
+			"cat_pas": "ПЛ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-21 23:38:14",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:12:25",
+			"id_st1": "179",
+			"id_st2": "289"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 138,
+		"fields": {
+			"id": "488648",
+			"datetime": "2024-04-24 07:00:00",
+			"time3": "07:01:59",
+			"time4": "08:14:29",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 07:49:37",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:32:20",
+			"id_st1": "51",
+			"id_st2": "250"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 139,
+		"fields": {
+			"id": "488652",
+			"datetime": "2024-04-24 09:07:00",
+			"time3": "09:08:06",
+			"time4": "09:40:05",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 08:22:30",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:36:00",
+			"id_st1": "80",
+			"id_st2": "103"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 140,
+		"fields": {
+			"id": "488653",
+			"datetime": "2024-04-24 12:15:00",
+			"time3": "12:12:08",
+			"time4": "12:42:16",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 08:23:00",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:41:00",
+			"id_st1": "103",
+			"id_st2": "80"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 141,
+		"fields": {
+			"id": "488657",
+			"datetime": "2024-04-24 14:30:00",
+			"time3": "14:28:30",
+			"time4": "15:37:35",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 08:45:18",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:47:00",
+			"id_st1": "132",
+			"id_st2": "73"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 142,
+		"fields": {
+			"id": "488658",
+			"datetime": "2024-04-24 18:00:00",
+			"time3": "18:00:23",
+			"time4": "18:40:34",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 08:45:34",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:49:00",
+			"id_st1": "73",
+			"id_st2": "132"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 143,
+		"fields": {
+			"id": "488668",
+			"datetime": "2024-04-24 11:30:00",
+			"time3": "11:16:54",
+			"time4": "12:14:45",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 09:16:21",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:06:40",
+			"id_st1": "139",
+			"id_st2": "97"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 144,
+		"fields": {
+			"id": "488669",
+			"datetime": "2024-04-24 18:30:00",
+			"time3": "18:33:41",
+			"time4": "19:31:14",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 09:16:38",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:06:40",
+			"id_st1": "97",
+			"id_st2": "139"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 145,
+		"fields": {
+			"id": "488674",
+			"datetime": "2024-04-24 09:00:00",
+			"time3": "09:08:24",
+			"time4": "09:37:10",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 09:29:58",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:37:00",
+			"id_st1": "89",
+			"id_st2": "81"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 146,
+		"fields": {
+			"id": "488686",
+			"datetime": "2024-04-24 06:30:00",
+			"time3": "06:38:11",
+			"time4": "07:28:48",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 09:57:26",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:58:25",
+			"id_st1": "43",
+			"id_st2": "142"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 147,
+		"fields": {
+			"id": "488692",
+			"datetime": "2024-04-24 07:55:00",
+			"time3": "07:57:25",
+			"time4": "08:41:18",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 10:03:24",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:36:00",
+			"id_st1": "80",
+			"id_st2": "29"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 148,
+		"fields": {
+			"id": "488716",
+			"datetime": "2024-04-24 08:15:00",
+			"time3": "08:24:05",
+			"time4": "09:17:10",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 11:01:22",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:04:25",
+			"id_st1": "66",
+			"id_st2": "50"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 149,
+		"fields": {
+			"id": "488717",
+			"datetime": "2024-04-24 13:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по неявке пассажира",
+			"tpz": "2024-04-22 11:01:35",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "02:01:35",
+			"id_st1": "51",
+			"id_st2": "66"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 150,
+		"fields": {
+			"id": "488734",
+			"datetime": "2024-04-24 08:58:00",
+			"time3": "09:00:00",
+			"time4": "09:34:28",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 11:30:53",
+			"INSP_SEX_M": "5",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:40:40",
+			"id_st1": "29",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 151,
+		"fields": {
+			"id": "488736",
+			"datetime": "2024-04-24 10:10:00",
+			"time3": "10:04:44",
+			"time4": "10:47:19",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 11:33:22",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:51:15",
+			"id_st1": "183",
+			"id_st2": "121"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 152,
+		"fields": {
+			"id": "488739",
+			"datetime": "2024-04-24 08:58:00",
+			"time3": "09:00:00",
+			"time4": "09:39:34",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 11:33:55",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:40:40",
+			"id_st1": "29",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 153,
+		"fields": {
+			"id": "488742",
+			"datetime": "2024-04-24 17:20:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-22 11:37:00",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:44:10",
+			"id_st1": "164",
+			"id_st2": "128"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 154,
+		"fields": {
+			"id": "488743",
+			"datetime": "2024-04-24 21:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-22 11:37:15",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:40:55",
+			"id_st1": "128",
+			"id_st2": "183"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 155,
+		"fields": {
+			"id": "488744",
+			"datetime": "2024-04-24 12:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-22 11:58:28",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:43:05",
+			"id_st1": "53",
+			"id_st2": "90"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 156,
+		"fields": {
+			"id": "488745",
+			"datetime": "2024-04-24 18:40:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-22 11:58:45",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:45:05",
+			"id_st1": "90",
+			"id_st2": "53"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 157,
+		"fields": {
+			"id": "488747",
+			"datetime": "2024-04-24 10:15:00",
+			"time3": "10:14:02",
+			"time4": "10:54:51",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 12:12:24",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:56:45",
+			"id_st1": "353",
+			"id_st2": "181"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 158,
+		"fields": {
+			"id": "488750",
+			"datetime": "2024-04-24 14:45:00",
+			"time3": "14:47:16",
+			"time4": "15:17:45",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 12:13:12",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:56:45",
+			"id_st1": "181",
+			"id_st2": "353"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 159,
+		"fields": {
+			"id": "488754",
+			"datetime": "2024-04-24 07:20:00",
+			"time3": "07:20:29",
+			"time4": "08:12:07",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 12:18:59",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:58:25",
+			"id_st1": "80",
+			"id_st2": "246"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 160,
+		"fields": {
+			"id": "488760",
+			"datetime": "2024-04-24 17:25:00",
+			"time3": "17:38:42",
+			"time4": "18:19:53",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 12:19:49",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:55:45",
+			"id_st1": "246",
+			"id_st2": "80"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 161,
+		"fields": {
+			"id": "488770",
+			"datetime": "2024-04-24 14:00:00",
+			"time3": "13:51:00",
+			"time4": "14:44:52",
+			"cat_pas": "ПЛ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 12:54:06",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:00:00",
+			"id_st1": "140",
+			"id_st2": "118"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 162,
+		"fields": {
+			"id": "488771",
+			"datetime": "2024-04-24 10:40:00",
+			"time3": "10:39:32",
+			"time4": "11:42:15",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 13:02:41",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:10:15",
+			"id_st1": "134",
+			"id_st2": "250"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 163,
+		"fields": {
+			"id": "488776",
+			"datetime": "2024-04-24 12:45:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ОГД",
+			"status": "Отказ по регламенту",
+			"tpz": "2024-04-22 13:10:38",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "2",
+			"TIME_OVER": "00:46:20",
+			"id_st1": "93",
+			"id_st2": "5"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 164,
+		"fields": {
+			"id": "488778",
+			"datetime": "2024-04-24 09:20:00",
+			"time3": "09:23:43",
+			"time4": "10:23:28",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 13:22:19",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:08:50",
+			"id_st1": "170",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 165,
+		"fields": {
+			"id": "488779",
+			"datetime": "2024-04-24 12:45:00",
+			"time3": "12:45:34",
+			"time4": "13:30:28",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 13:23:09",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:00:25",
+			"id_st1": "96",
+			"id_st2": "246"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 166,
+		"fields": {
+			"id": "488780",
+			"datetime": "2024-04-24 20:15:00",
+			"time3": "20:13:12",
+			"time4": "21:15:38",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 13:23:36",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:13:20",
+			"id_st1": "246",
+			"id_st2": "170"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 167,
+		"fields": {
+			"id": "488784",
+			"datetime": "2024-04-24 06:45:00",
+			"time3": "06:46:55",
+			"time4": "07:20:12",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 13:26:18",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:38:00",
+			"id_st1": "80",
+			"id_st2": "145"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 168,
+		"fields": {
+			"id": "488821",
+			"datetime": "2024-04-24 07:10:00",
+			"time3": "07:13:37",
+			"time4": "08:01:33",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 16:02:45",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:07:20",
+			"id_st1": "109",
+			"id_st2": "361"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 169,
+		"fields": {
+			"id": "488825",
+			"datetime": "2024-04-24 11:50:00",
+			"time3": "11:38:22",
+			"time4": "12:31:02",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 16:04:32",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:07:20",
+			"id_st1": "361",
+			"id_st2": "109"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 170,
+		"fields": {
+			"id": "488829",
+			"datetime": "2024-04-24 09:40:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "РДК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-22 16:17:43",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:36:50",
+			"id_st1": "364",
+			"id_st2": "107"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 171,
+		"fields": {
+			"id": "488831",
+			"datetime": "2024-04-24 12:40:00",
+			"time3": "12:47:14",
+			"time4": "13:22:16",
+			"cat_pas": "РДК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 16:18:08",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:36:50",
+			"id_st1": "107",
+			"id_st2": "364"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 172,
+		"fields": {
+			"id": "488842",
+			"datetime": "2024-04-24 14:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-22 17:03:15",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:00:10",
+			"id_st1": "1",
+			"id_st2": "17"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 173,
+		"fields": {
+			"id": "488843",
+			"datetime": "2024-04-24 18:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-22 17:03:32",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:00:10",
+			"id_st1": "17",
+			"id_st2": "1"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 174,
+		"fields": {
+			"id": "488848",
+			"datetime": "2024-04-24 11:30:00",
+			"time3": "11:20:32",
+			"time4": "12:13:04",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 17:09:48",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:00:40",
+			"id_st1": "1",
+			"id_st2": "57"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 175,
+		"fields": {
+			"id": "488849",
+			"datetime": "2024-04-24 21:40:00",
+			"time3": "21:39:03",
+			"time4": "22:15:37",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 17:10:08",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:00:40",
+			"id_st1": "57",
+			"id_st2": "1"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 176,
+		"fields": {
+			"id": "488858",
+			"datetime": "2024-04-24 15:45:00",
+			"time3": "15:40:00",
+			"time4": "16:19:00",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 17:54:33",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:16:10",
+			"id_st1": "96",
+			"id_st2": "122"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 177,
+		"fields": {
+			"id": "488859",
+			"datetime": "2024-04-24 18:45:00",
+			"time3": "18:29:54",
+			"time4": "19:25:33",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 17:54:54",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:16:10",
+			"id_st1": "122",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 178,
+		"fields": {
+			"id": "488862",
+			"datetime": "2024-04-24 09:00:00",
+			"time3": "08:54:04",
+			"time4": "09:41:14",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 18:06:52",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:11:00",
+			"id_st1": "113",
+			"id_st2": "109"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 179,
+		"fields": {
+			"id": "488863",
+			"datetime": "2024-04-24 19:25:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-22 18:07:24",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:06:00",
+			"id_st1": "29",
+			"id_st2": "187"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 180,
+		"fields": {
+			"id": "488864",
+			"datetime": "2024-04-24 10:15:00",
+			"time3": "09:54:40",
+			"time4": "10:46:20",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 18:07:37",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:11:00",
+			"id_st1": "109",
+			"id_st2": "113"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 181,
+		"fields": {
+			"id": "488871",
+			"datetime": "2024-04-24 07:10:00",
+			"time3": "07:14:17",
+			"time4": "07:57:42",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 18:23:48",
+			"INSP_SEX_M": "5",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:57:30",
+			"id_st1": "6",
+			"id_st2": "139"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 182,
+		"fields": {
+			"id": "488872",
+			"datetime": "2024-04-24 06:52:00",
+			"time3": "06:55:06",
+			"time4": "07:46:50",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 18:24:05",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:01:40",
+			"id_st1": "34",
+			"id_st2": "228"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 183,
+		"fields": {
+			"id": "488874",
+			"datetime": "2024-04-24 13:00:00",
+			"time3": "12:56:32",
+			"time4": "13:12:20",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 18:25:04",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:34:20",
+			"id_st1": "145",
+			"id_st2": "86"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 184,
+		"fields": {
+			"id": "488875",
+			"datetime": "2024-04-24 21:30:00",
+			"time3": "21:31:09",
+			"time4": "22:01:21",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 18:25:48",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:34:20",
+			"id_st1": "86",
+			"id_st2": "145"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 185,
+		"fields": {
+			"id": "488879",
+			"datetime": "2024-04-24 17:39:00",
+			"time3": "17:41:04",
+			"time4": "18:40:50",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 18:39:08",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:03:00",
+			"id_st1": "2",
+			"id_st2": "332"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 186,
+		"fields": {
+			"id": "488880",
+			"datetime": "2024-04-24 11:40:00",
+			"time3": "11:31:48",
+			"time4": "12:17:33",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 18:50:03",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:11:20",
+			"id_st1": "151",
+			"id_st2": "122"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 187,
+		"fields": {
+			"id": "488881",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "15:09:21",
+			"time4": "16:00:58",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 18:50:39",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:16:20",
+			"id_st1": "122",
+			"id_st2": "151"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 188,
+		"fields": {
+			"id": "488886",
+			"datetime": "2024-04-24 06:46:00",
+			"time3": "06:52:08",
+			"time4": "07:40:14",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 19:13:19",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:11:30",
+			"id_st1": "6",
+			"id_st2": "107"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 189,
+		"fields": {
+			"id": "488894",
+			"datetime": "2024-04-24 09:30:00",
+			"time3": "09:26:56",
+			"time4": "09:40:57",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 19:58:13",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:34:00",
+			"id_st1": "37",
+			"id_st2": "365"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 190,
+		"fields": {
+			"id": "488895",
+			"datetime": "2024-04-24 12:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "РДК",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-22 20:03:47",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:49:00",
+			"id_st1": "1",
+			"id_st2": "143"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 191,
+		"fields": {
+			"id": "488896",
+			"datetime": "2024-04-24 14:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "РДК",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-22 20:04:42",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:49:00",
+			"id_st1": "143",
+			"id_st2": "1"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 192,
+		"fields": {
+			"id": "488903",
+			"datetime": "2024-04-24 09:30:00",
+			"time3": "09:32:55",
+			"time4": "10:26:30",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 21:00:46",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:03:40",
+			"id_st1": "139",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 193,
+		"fields": {
+			"id": "488915",
+			"datetime": "2024-04-24 17:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-22 22:26:55",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:37:45",
+			"id_st1": "29",
+			"id_st2": "156"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 194,
+		"fields": {
+			"id": "488918",
+			"datetime": "2024-04-24 11:30:00",
+			"time3": "11:30:23",
+			"time4": "12:27:44",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 22:44:28",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:30:00",
+			"id_st1": "174",
+			"id_st2": "363"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 195,
+		"fields": {
+			"id": "488926",
+			"datetime": "2024-04-24 14:30:00",
+			"time3": "14:36:52",
+			"time4": "14:48:06",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 22:46:21",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:30:00",
+			"id_st1": "363",
+			"id_st2": "174"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 196,
+		"fields": {
+			"id": "488934",
+			"datetime": "2024-04-24 17:00:00",
+			"time3": "17:04:26",
+			"time4": "18:04:49",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 23:11:23",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:59:30",
+			"id_st1": "136",
+			"id_st2": "89"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 197,
+		"fields": {
+			"id": "488935",
+			"datetime": "2024-04-24 17:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Отмена заявки по неявке пассажира",
+			"tpz": "2024-04-22 23:11:58",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:59:30",
+			"id_st1": "136",
+			"id_st2": "89"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 198,
+		"fields": {
+			"id": "488936",
+			"datetime": "2024-04-24 22:00:00",
+			"time3": "21:55:44",
+			"time4": "22:48:07",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 23:12:12",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:59:30",
+			"id_st1": "89",
+			"id_st2": "136"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 199,
+		"fields": {
+			"id": "488937",
+			"datetime": "2024-04-24 22:00:00",
+			"time3": "21:55:57",
+			"time4": "22:48:11",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-22 23:12:44",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:57:40",
+			"id_st1": "29",
+			"id_st2": "136"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 200,
+		"fields": {
+			"id": "488942",
+			"datetime": "2024-04-24 12:40:00",
+			"time3": "12:44:22",
+			"time4": "13:41:09",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 05:48:37",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:05:10",
+			"id_st1": "24",
+			"id_st2": "107"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 201,
+		"fields": {
+			"id": "488944",
+			"datetime": "2024-04-24 17:50:00",
+			"time3": "17:51:21",
+			"time4": "18:26:25",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 07:17:53",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:46:00",
+			"id_st1": "246",
+			"id_st2": "174"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 202,
+		"fields": {
+			"id": "488946",
+			"datetime": "2024-04-24 07:10:00",
+			"time3": "06:54:57",
+			"time4": "07:56:10",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 07:38:58",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:09:15",
+			"id_st1": "40",
+			"id_st2": "246"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 203,
+		"fields": {
+			"id": "488952",
+			"datetime": "2024-04-24 17:10:00",
+			"time3": "17:05:29",
+			"time4": "18:25:07",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 07:40:31",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:13:30",
+			"id_st1": "246",
+			"id_st2": "40"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 204,
+		"fields": {
+			"id": "488962",
+			"datetime": "2024-04-24 07:40:00",
+			"time3": "07:41:33",
+			"time4": "09:10:20",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 08:16:54",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:38:40",
+			"id_st1": "110",
+			"id_st2": "93"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 205,
+		"fields": {
+			"id": "488964",
+			"datetime": "2024-04-24 16:00:00",
+			"time3": "15:56:32",
+			"time4": "16:09:49",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 08:17:23",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:05:00",
+			"id_st1": "111",
+			"id_st2": "111"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 206,
+		"fields": {
+			"id": "488966",
+			"datetime": "2024-04-24 07:10:00",
+			"time3": "07:06:25",
+			"time4": "07:40:58",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 08:29:51",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:56:20",
+			"id_st1": "250",
+			"id_st2": "361"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 207,
+		"fields": {
+			"id": "488968",
+			"datetime": "2024-04-24 09:30:00",
+			"time3": "09:32:59",
+			"time4": "10:15:26",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 08:53:31",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:46:10",
+			"id_st1": "6",
+			"id_st2": "15"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 208,
+		"fields": {
+			"id": "488972",
+			"datetime": "2024-04-24 15:30:00",
+			"time3": "15:26:47",
+			"time4": "16:00:48",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:23:57",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:47:50",
+			"id_st1": "117",
+			"id_st2": "116"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 209,
+		"fields": {
+			"id": "488973",
+			"datetime": "2024-04-24 16:30:00",
+			"time3": "16:27:00",
+			"time4": "17:00:19",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:24:16",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:47:50",
+			"id_st1": "116",
+			"id_st2": "117"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 210,
+		"fields": {
+			"id": "488974",
+			"datetime": "2024-04-24 12:20:00",
+			"time3": "12:17:32",
+			"time4": "12:29:41",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:24:58",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:32:00",
+			"id_st1": "365",
+			"id_st2": "40"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 211,
+		"fields": {
+			"id": "488977",
+			"datetime": "2024-04-24 17:30:00",
+			"time3": "17:26:24",
+			"time4": "17:59:10",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:25:30",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:47:50",
+			"id_st1": "117",
+			"id_st2": "116"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 212,
+		"fields": {
+			"id": "488978",
+			"datetime": "2024-04-24 18:30:00",
+			"time3": "18:34:26",
+			"time4": "19:19:23",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:26:46",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:47:50",
+			"id_st1": "116",
+			"id_st2": "117"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 213,
+		"fields": {
+			"id": "488979",
+			"datetime": "2024-04-24 07:45:00",
+			"time3": "07:40:50",
+			"time4": "08:30:13",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:27:25",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:08:30",
+			"id_st1": "149",
+			"id_st2": "246"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 214,
+		"fields": {
+			"id": "488983",
+			"datetime": "2024-04-24 17:45:00",
+			"time3": "17:44:28",
+			"time4": "18:38:28",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:28:14",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:58:20",
+			"id_st1": "246",
+			"id_st2": "149"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 215,
+		"fields": {
+			"id": "488988",
+			"datetime": "2024-04-24 08:10:00",
+			"time3": "07:59:03",
+			"time4": "08:17:42",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:32:34",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:50:50",
+			"id_st1": "177",
+			"id_st2": "97"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 216,
+		"fields": {
+			"id": "488989",
+			"datetime": "2024-04-24 15:30:00",
+			"time3": "15:30:33",
+			"time4": "16:52:10",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:33:00",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:23:55",
+			"id_st1": "97",
+			"id_st2": "190"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 217,
+		"fields": {
+			"id": "488991",
+			"datetime": "2024-04-24 09:30:00",
+			"time3": "09:30:00",
+			"time4": "10:19:00",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:33:50",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:49:00",
+			"id_st1": "297",
+			"id_st2": "304"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 218,
+		"fields": {
+			"id": "488992",
+			"datetime": "2024-04-24 10:00:00",
+			"time3": "10:14:39",
+			"time4": "10:44:33",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:34:27",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:13:30",
+			"id_st1": "304",
+			"id_st2": "122"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 219,
+		"fields": {
+			"id": "488994",
+			"datetime": "2024-04-24 14:00:00",
+			"time3": "14:03:01",
+			"time4": "14:30:33",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:34:58",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:13:30",
+			"id_st1": "122",
+			"id_st2": "304"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 220,
+		"fields": {
+			"id": "488996",
+			"datetime": "2024-04-24 14:30:00",
+			"time3": "14:30:00",
+			"time4": "15:19:00",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 09:35:10",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:49:00",
+			"id_st1": "304",
+			"id_st2": "297"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 221,
+		"fields": {
+			"id": "489018",
+			"datetime": "2024-04-24 14:00:00",
+			"time3": "13:55:55",
+			"time4": "14:52:14",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 10:22:56",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:01:45",
+			"id_st1": "256",
+			"id_st2": "6"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 222,
+		"fields": {
+			"id": "489019",
+			"datetime": "2024-04-24 10:20:00",
+			"time3": "10:23:14",
+			"time4": "11:08:07",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 10:23:00",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:58:30",
+			"id_st1": "3",
+			"id_st2": "181"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 223,
+		"fields": {
+			"id": "489022",
+			"datetime": "2024-04-24 11:50:00",
+			"time3": "11:58:43",
+			"time4": "12:50:36",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 10:25:11",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:58:30",
+			"id_st1": "181",
+			"id_st2": "3"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 224,
+		"fields": {
+			"id": "489029",
+			"datetime": "2024-04-24 13:10:00",
+			"time3": "13:11:08",
+			"time4": "13:44:02",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 10:29:27",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:44:30",
+			"id_st1": "73",
+			"id_st2": "224"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 225,
+		"fields": {
+			"id": "489030",
+			"datetime": "2024-04-24 20:40:00",
+			"time3": "20:35:18",
+			"time4": "21:12:58",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 10:29:58",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:55:30",
+			"id_st1": "224",
+			"id_st2": "30"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 226,
+		"fields": {
+			"id": "489033",
+			"datetime": "2024-04-24 14:40:00",
+			"time3": "14:30:14",
+			"time4": "15:14:00",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 10:37:28",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:53:40",
+			"id_st1": "134",
+			"id_st2": "97"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 227,
+		"fields": {
+			"id": "489034",
+			"datetime": "2024-04-24 15:55:00",
+			"time3": "15:27:52",
+			"time4": "15:45:16",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 10:37:40",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:37:00",
+			"id_st1": "97",
+			"id_st2": "90"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 228,
+		"fields": {
+			"id": "489035",
+			"datetime": "2024-04-24 21:40:00",
+			"time3": "21:40:04",
+			"time4": "22:17:41",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 10:48:46",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:34:20",
+			"id_st1": "30",
+			"id_st2": "73"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 229,
+		"fields": {
+			"id": "489043",
+			"datetime": "2024-04-24 10:50:00",
+			"time3": "11:15:19",
+			"time4": "11:54:23",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 11:18:41",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:01:50",
+			"id_st1": "72",
+			"id_st2": "133"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 230,
+		"fields": {
+			"id": "489044",
+			"datetime": "2024-04-24 13:50:00",
+			"time3": "13:21:40",
+			"time4": "14:20:53",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 11:19:15",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:59:50",
+			"id_st1": "133",
+			"id_st2": "72"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 231,
+		"fields": {
+			"id": "489045",
+			"datetime": "2024-04-24 11:00:00",
+			"time3": "10:51:46",
+			"time4": "12:00:14",
+			"cat_pas": "ПЛ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 11:30:14",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:44:30",
+			"id_st1": "129",
+			"id_st2": "138"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 232,
+		"fields": {
+			"id": "489046",
+			"datetime": "2024-04-24 11:40:00",
+			"time3": "11:46:10",
+			"time4": "12:25:35",
+			"cat_pas": "РДК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 11:31:26",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:51:00",
+			"id_st1": "39",
+			"id_st2": "6"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 233,
+		"fields": {
+			"id": "489047",
+			"datetime": "2024-04-24 11:00:00",
+			"time3": "11:06:25",
+			"time4": "11:32:09",
+			"cat_pas": "РДК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 11:33:15",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:32:10",
+			"id_st1": "347",
+			"id_st2": "16"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 234,
+		"fields": {
+			"id": "489048",
+			"datetime": "2024-04-24 15:37:00",
+			"time3": "15:36:11",
+			"time4": "16:26:39",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 11:37:06",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "29",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 235,
+		"fields": {
+			"id": "489049",
+			"datetime": "2024-04-24 20:00:00",
+			"time3": "20:07:00",
+			"time4": "20:44:02",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 11:37:41",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "96",
+			"id_st2": "29"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 236,
+		"fields": {
+			"id": "489050",
+			"datetime": "2024-04-24 06:30:00",
+			"time3": "06:37:46",
+			"time4": "06:59:28",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 11:39:07",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:33:40",
+			"id_st1": "35",
+			"id_st2": "29"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 237,
+		"fields": {
+			"id": "489051",
+			"datetime": "2024-04-24 15:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "РДК",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 11:39:24",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:20:00",
+			"id_st1": "16",
+			"id_st2": "16"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 238,
+		"fields": {
+			"id": "489057",
+			"datetime": "2024-04-24 17:00:00",
+			"time3": "16:54:50",
+			"time4": "17:44:03",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 11:49:53",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:49:10",
+			"id_st1": "109",
+			"id_st2": "56"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 239,
+		"fields": {
+			"id": "489062",
+			"datetime": "2024-04-24 13:50:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 12:17:38",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:03:00",
+			"id_st1": "311",
+			"id_st2": "91"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 240,
+		"fields": {
+			"id": "489063",
+			"datetime": "2024-04-24 17:15:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 12:18:49",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:12:00",
+			"id_st1": "91",
+			"id_st2": "122"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 241,
+		"fields": {
+			"id": "489065",
+			"datetime": "2024-04-24 11:05:00",
+			"time3": "11:11:57",
+			"time4": "12:50:35",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:25:58",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:30:15",
+			"id_st1": "408",
+			"id_st2": "129"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 242,
+		"fields": {
+			"id": "489066",
+			"datetime": "2024-04-24 17:30:00",
+			"time3": "17:35:26",
+			"time4": "19:10:18",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:26:20",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:31:05",
+			"id_st1": "129",
+			"id_st2": "408"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 243,
+		"fields": {
+			"id": "489067",
+			"datetime": "2024-04-24 10:20:00",
+			"time3": "10:23:14",
+			"time4": "11:16:57",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:27:50",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:58:30",
+			"id_st1": "3",
+			"id_st2": "181"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 244,
+		"fields": {
+			"id": "489068",
+			"datetime": "2024-04-24 11:50:00",
+			"time3": "11:56:43",
+			"time4": "12:46:44",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:28:10",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:03:30",
+			"id_st1": "181",
+			"id_st2": "3"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 245,
+		"fields": {
+			"id": "489069",
+			"datetime": "2024-04-24 10:45:00",
+			"time3": "10:43:28",
+			"time4": "11:25:26",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:28:10",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:44:00",
+			"id_st1": "133",
+			"id_st2": "84"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 246,
+		"fields": {
+			"id": "489070",
+			"datetime": "2024-04-24 16:05:00",
+			"time3": "15:57:00",
+			"time4": "17:11:18",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:29:42",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:49:00",
+			"id_st1": "250",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 247,
+		"fields": {
+			"id": "489071",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "20:10:37",
+			"time4": "21:03:19",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:29:58",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:49:00",
+			"id_st1": "96",
+			"id_st2": "250"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 248,
+		"fields": {
+			"id": "489072",
+			"datetime": "2024-04-24 16:20:00",
+			"time3": "16:16:00",
+			"time4": "17:11:22",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:31:01",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:40:00",
+			"id_st1": "151",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 249,
+		"fields": {
+			"id": "489073",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "20:10:41",
+			"time4": "20:47:20",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:31:12",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:40:00",
+			"id_st1": "96",
+			"id_st2": "151"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 250,
+		"fields": {
+			"id": "489074",
+			"datetime": "2024-04-24 16:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ОГД",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 12:32:29",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:33:00",
+			"id_st1": "80",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 251,
+		"fields": {
+			"id": "489075",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ОГД",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 12:32:51",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:33:00",
+			"id_st1": "96",
+			"id_st2": "80"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 252,
+		"fields": {
+			"id": "489076",
+			"datetime": "2024-04-24 15:30:00",
+			"time3": "15:29:37",
+			"time4": "16:44:34",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:34:05",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:18:00",
+			"id_st1": "171",
+			"id_st2": "66"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 253,
+		"fields": {
+			"id": "489077",
+			"datetime": "2024-04-24 23:00:00",
+			"time3": "23:04:00",
+			"time4": "00:13:00",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:34:40",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:18:00",
+			"id_st1": "66",
+			"id_st2": "171"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 254,
+		"fields": {
+			"id": "489078",
+			"datetime": "2024-04-24 15:45:00",
+			"time3": "15:49:28",
+			"time4": "17:10:32",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:34:52",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:10:50",
+			"id_st1": "173",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 255,
+		"fields": {
+			"id": "489080",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "20:14:14",
+			"time4": "21:06:39",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:35:13",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:10:50",
+			"id_st1": "96",
+			"id_st2": "173"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 256,
+		"fields": {
+			"id": "489081",
+			"datetime": "2024-04-24 16:05:00",
+			"time3": "16:05:31",
+			"time4": "17:10:36",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:36:03",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:58:50",
+			"id_st1": "168",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 257,
+		"fields": {
+			"id": "489082",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "20:14:18",
+			"time4": "20:52:43",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:36:18",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:58:50",
+			"id_st1": "96",
+			"id_st2": "168"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 258,
+		"fields": {
+			"id": "489083",
+			"datetime": "2024-04-24 16:05:00",
+			"time3": "16:05:36",
+			"time4": "17:10:44",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:39:20",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:58:50",
+			"id_st1": "168",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 259,
+		"fields": {
+			"id": "489084",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "20:14:27",
+			"time4": "20:52:29",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:39:34",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:58:50",
+			"id_st1": "96",
+			"id_st2": "168"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 260,
+		"fields": {
+			"id": "489085",
+			"datetime": "2024-04-24 16:10:00",
+			"time3": "16:12:08",
+			"time4": "17:11:00",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:42:16",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:54:50",
+			"id_st1": "166",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 261,
+		"fields": {
+			"id": "489086",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "20:14:36",
+			"time4": "20:48:24",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:42:42",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:54:50",
+			"id_st1": "96",
+			"id_st2": "166"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 262,
+		"fields": {
+			"id": "489087",
+			"datetime": "2024-04-24 10:58:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по неявке пассажира",
+			"tpz": "2024-04-23 12:45:25",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:59:20",
+			"id_st1": "310",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 263,
+		"fields": {
+			"id": "489088",
+			"datetime": "2024-04-24 15:55:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ОГД",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 12:47:23",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:54:00",
+			"id_st1": "185",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 264,
+		"fields": {
+			"id": "489089",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ОГД",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 12:47:43",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:54:00",
+			"id_st1": "96",
+			"id_st2": "185"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 265,
+		"fields": {
+			"id": "489090",
+			"datetime": "2024-04-24 16:05:00",
+			"time3": "15:55:45",
+			"time4": "17:10:29",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:48:28",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:51:00",
+			"id_st1": "184",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 266,
+		"fields": {
+			"id": "489091",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "20:12:13",
+			"time4": "20:57:18",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:48:42",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:51:00",
+			"id_st1": "96",
+			"id_st2": "184"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 267,
+		"fields": {
+			"id": "489092",
+			"datetime": "2024-04-24 16:30:00",
+			"time3": "16:32:22",
+			"time4": "17:10:32",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:50:06",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:38:40",
+			"id_st1": "130",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 268,
+		"fields": {
+			"id": "489093",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "20:12:22",
+			"time4": "20:29:35",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:50:47",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:38:40",
+			"id_st1": "96",
+			"id_st2": "130"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 269,
+		"fields": {
+			"id": "489094",
+			"datetime": "2024-04-24 10:30:00",
+			"time3": "10:34:14",
+			"time4": "10:49:38",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:51:38",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:29:00",
+			"id_st1": "2",
+			"id_st2": "3"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 270,
+		"fields": {
+			"id": "489095",
+			"datetime": "2024-04-24 16:05:00",
+			"time3": "15:59:14",
+			"time4": "17:12:51",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:55:03",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:56:00",
+			"id_st1": "66",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 271,
+		"fields": {
+			"id": "489096",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "20:10:23",
+			"time4": "20:52:35",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:55:17",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:56:00",
+			"id_st1": "96",
+			"id_st2": "66"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 272,
+		"fields": {
+			"id": "489101",
+			"datetime": "2024-04-24 16:00:00",
+			"time3": "15:55:29",
+			"time4": "17:12:42",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:56:40",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:56:00",
+			"id_st1": "66",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 273,
+		"fields": {
+			"id": "489102",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "20:10:28",
+			"time4": "21:02:40",
+			"cat_pas": "ОГД",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:56:53",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:56:00",
+			"id_st1": "96",
+			"id_st2": "66"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 274,
+		"fields": {
+			"id": "489103",
+			"datetime": "2024-04-24 09:45:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 12:58:24",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:30:30",
+			"id_st1": "107",
+			"id_st2": "103"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 275,
+		"fields": {
+			"id": "489104",
+			"datetime": "2024-04-24 14:00:00",
+			"time3": "13:59:03",
+			"time4": "14:22:32",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 12:58:46",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:30:30",
+			"id_st1": "103",
+			"id_st2": "107"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 276,
+		"fields": {
+			"id": "489105",
+			"datetime": "2024-04-24 16:15:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ОГД",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 13:02:01",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:51:00",
+			"id_st1": "64",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 277,
+		"fields": {
+			"id": "489106",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ОГД",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 13:02:15",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:51:00",
+			"id_st1": "96",
+			"id_st2": "64"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 278,
+		"fields": {
+			"id": "489109",
+			"datetime": "2024-04-24 08:00:00",
+			"time3": "07:58:31",
+			"time4": "09:02:10",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:11:11",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:52:45",
+			"id_st1": "210",
+			"id_st2": "6"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 279,
+		"fields": {
+			"id": "489110",
+			"datetime": "2024-04-24 08:00:00",
+			"time3": "08:09:25",
+			"time4": "09:07:23",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:12:00",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:59:10",
+			"id_st1": "73",
+			"id_st2": "139"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 280,
+		"fields": {
+			"id": "489111",
+			"datetime": "2024-04-24 16:45:00",
+			"time3": "16:42:17",
+			"time4": "17:42:21",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:12:25",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:52:10",
+			"id_st1": "139",
+			"id_st2": "73"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 281,
+		"fields": {
+			"id": "489112",
+			"datetime": "2024-04-24 09:10:00",
+			"time3": "09:09:00",
+			"time4": "09:56:08",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:13:13",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:49:10",
+			"id_st1": "6",
+			"id_st2": "140"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 282,
+		"fields": {
+			"id": "489113",
+			"datetime": "2024-04-24 11:15:00",
+			"time3": "10:59:12",
+			"time4": "11:26:40",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:14:47",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:30:00",
+			"id_st1": "140",
+			"id_st2": "142"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 283,
+		"fields": {
+			"id": "489114",
+			"datetime": "2024-04-24 18:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 13:15:42",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:46:30",
+			"id_st1": "62",
+			"id_st2": "122"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 284,
+		"fields": {
+			"id": "489115",
+			"datetime": "2024-04-24 08:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 13:16:04",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:12:40",
+			"id_st1": "40",
+			"id_st2": "26"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 285,
+		"fields": {
+			"id": "489116",
+			"datetime": "2024-04-24 14:00:00",
+			"time3": "13:47:46",
+			"time4": "14:43:39",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:17:04",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:32:40",
+			"id_st1": "26",
+			"id_st2": "35"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 286,
+		"fields": {
+			"id": "489117",
+			"datetime": "2024-04-24 22:00:00",
+			"time3": "22:02:25",
+			"time4": "22:39:49",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:17:58",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:20:00",
+			"id_st1": "35",
+			"id_st2": "40"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 287,
+		"fields": {
+			"id": "489118",
+			"datetime": "2024-04-24 16:30:00",
+			"time3": "16:32:15",
+			"time4": "17:50:59",
+			"cat_pas": "ИУ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:18:44",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:14:20",
+			"id_st1": "44",
+			"id_st2": "94"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 288,
+		"fields": {
+			"id": "489119",
+			"datetime": "2024-04-24 16:30:00",
+			"time3": "16:31:43",
+			"time4": "17:51:06",
+			"cat_pas": "ИУ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:19:12",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:14:20",
+			"id_st1": "44",
+			"id_st2": "94"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 289,
+		"fields": {
+			"id": "489127",
+			"datetime": "2024-04-24 10:30:00",
+			"time3": "10:35:05",
+			"time4": "11:13:10",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:23:36",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:51:00",
+			"id_st1": "133",
+			"id_st2": "90"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 290,
+		"fields": {
+			"id": "489128",
+			"datetime": "2024-04-24 12:00:00",
+			"time3": "12:03:58",
+			"time4": "12:52:58",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:24:10",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:52:10",
+			"id_st1": "90",
+			"id_st2": "133"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 291,
+		"fields": {
+			"id": "489129",
+			"datetime": "2024-04-24 12:30:00",
+			"time3": "12:28:34",
+			"time4": "13:16:09",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:40:03",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:54:20",
+			"id_st1": "121",
+			"id_st2": "357"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 292,
+		"fields": {
+			"id": "489131",
+			"datetime": "2024-04-24 14:00:00",
+			"time3": "14:00:32",
+			"time4": "15:03:44",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:42:30",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:13:20",
+			"id_st1": "187",
+			"id_st2": "118"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 293,
+		"fields": {
+			"id": "489133",
+			"datetime": "2024-04-24 05:45:00",
+			"time3": "05:44:17",
+			"time4": "06:40:23",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:46:10",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "80",
+			"id_st2": "65"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 294,
+		"fields": {
+			"id": "489135",
+			"datetime": "2024-04-24 14:00:00",
+			"time3": "14:06:05",
+			"time4": "14:52:34",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 13:47:10",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:42:00",
+			"id_st1": "65",
+			"id_st2": "80"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 295,
+		"fields": {
+			"id": "489141",
+			"datetime": "2024-04-24 08:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 14:06:08",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:02:25",
+			"id_st1": "140",
+			"id_st2": "50"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 296,
+		"fields": {
+			"id": "489142",
+			"datetime": "2024-04-24 13:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 14:06:31",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:59:35",
+			"id_st1": "51",
+			"id_st2": "140"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 297,
+		"fields": {
+			"id": "489143",
+			"datetime": "2024-04-24 12:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 14:13:07",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:02:40",
+			"id_st1": "173",
+			"id_st2": "10"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 298,
+		"fields": {
+			"id": "489145",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "14:57:25",
+			"time4": "15:20:14",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:16:41",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:36:00",
+			"id_st1": "32",
+			"id_st2": "6"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 299,
+		"fields": {
+			"id": "489146",
+			"datetime": "2024-04-24 09:30:00",
+			"time3": "09:29:42",
+			"time4": "10:06:27",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:17:40",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:45:20",
+			"id_st1": "96",
+			"id_st2": "7"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 300,
+		"fields": {
+			"id": "489147",
+			"datetime": "2024-04-24 14:25:00",
+			"time3": "14:12:48",
+			"time4": "14:56:29",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:18:57",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:50:00",
+			"id_st1": "7",
+			"id_st2": "91"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 301,
+		"fields": {
+			"id": "489148",
+			"datetime": "2024-04-24 12:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 14:19:13",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:02:40",
+			"id_st1": "173",
+			"id_st2": "10"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 302,
+		"fields": {
+			"id": "489149",
+			"datetime": "2024-04-24 15:40:00",
+			"time3": "15:46:12",
+			"time4": "16:50:15",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:20:42",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:45:00",
+			"id_st1": "91",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 303,
+		"fields": {
+			"id": "489150",
+			"datetime": "2024-04-24 12:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 14:24:07",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:02:40",
+			"id_st1": "173",
+			"id_st2": "10"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 304,
+		"fields": {
+			"id": "489151",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "14:51:42",
+			"time4": "15:14:47",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:25:31",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:30:00",
+			"id_st1": "32",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 305,
+		"fields": {
+			"id": "489152",
+			"datetime": "2024-04-24 08:50:00",
+			"time3": "08:50:00",
+			"time4": "10:18:00",
+			"cat_pas": "ИУ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:26:26",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:28:00",
+			"id_st1": "311",
+			"id_st2": "330"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 306,
+		"fields": {
+			"id": "489153",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "14:57:33",
+			"time4": "15:20:32",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:28:31",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:41:00",
+			"id_st1": "32",
+			"id_st2": "6"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 307,
+		"fields": {
+			"id": "489154",
+			"datetime": "2024-04-24 08:30:00",
+			"time3": "08:30:00",
+			"time4": "09:04:00",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:29:50",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:34:00",
+			"id_st1": "296",
+			"id_st2": "292"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 308,
+		"fields": {
+			"id": "489155",
+			"datetime": "2024-04-24 13:30:00",
+			"time3": "13:30:00",
+			"time4": "14:04:00",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:30:25",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:34:00",
+			"id_st1": "292",
+			"id_st2": "296"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 309,
+		"fields": {
+			"id": "489156",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "14:58:12",
+			"time4": "15:22:31",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:33:46",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:43:00",
+			"id_st1": "107",
+			"id_st2": "8"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 310,
+		"fields": {
+			"id": "489157",
+			"datetime": "2024-04-24 18:30:00",
+			"time3": "18:30:12",
+			"time4": "19:28:23",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:34:46",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:51:30",
+			"id_st1": "8",
+			"id_st2": "24"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 311,
+		"fields": {
+			"id": "489158",
+			"datetime": "2024-04-24 13:31:00",
+			"time3": "13:26:56",
+			"time4": "14:10:40",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:36:02",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:51:30",
+			"id_st1": "61",
+			"id_st2": "175"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 312,
+		"fields": {
+			"id": "489159",
+			"datetime": "2024-04-24 15:40:00",
+			"time3": "15:40:47",
+			"time4": "16:46:51",
+			"cat_pas": "РДК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 14:54:16",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "117",
+			"id_st2": "10"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 313,
+		"fields": {
+			"id": "489162",
+			"datetime": "2024-04-24 17:40:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "РДК",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 15:02:38",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "10",
+			"id_st2": "117"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 314,
+		"fields": {
+			"id": "489163",
+			"datetime": "2024-04-24 12:20:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 15:07:36",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:39:05",
+			"id_st1": "151",
+			"id_st2": "157"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 315,
+		"fields": {
+			"id": "489165",
+			"datetime": "2024-04-24 18:00:00",
+			"time3": "18:05:29",
+			"time4": "18:35:34",
+			"cat_pas": "ИК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 15:09:39",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:39:05",
+			"id_st1": "157",
+			"id_st2": "151"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 316,
+		"fields": {
+			"id": "489169",
+			"datetime": "2024-04-24 16:40:00",
+			"time3": "16:47:30",
+			"time4": "17:16:08",
+			"cat_pas": "РДК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 15:25:15",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:29:00",
+			"id_st1": "158",
+			"id_st2": "162"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 317,
+		"fields": {
+			"id": "489170",
+			"datetime": "2024-04-24 10:30:00",
+			"time3": "10:24:56",
+			"time4": "11:42:05",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 15:25:43",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:40:20",
+			"id_st1": "117",
+			"id_st2": "64"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 318,
+		"fields": {
+			"id": "489171",
+			"datetime": "2024-04-24 19:10:00",
+			"time3": "19:11:03",
+			"time4": "19:33:54",
+			"cat_pas": "РДК",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 15:25:48",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:29:00",
+			"id_st1": "162",
+			"id_st2": "158"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 319,
+		"fields": {
+			"id": "489172",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "15:01:17",
+			"time4": "16:13:00",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 15:26:11",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:40:20",
+			"id_st1": "64",
+			"id_st2": "117"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 320,
+		"fields": {
+			"id": "489177",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "14:56:07",
+			"time4": "15:24:33",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 15:38:19",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:41:35",
+			"id_st1": "190",
+			"id_st2": "189"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 321,
+		"fields": {
+			"id": "489178",
+			"datetime": "2024-04-24 18:30:00",
+			"time3": "18:24:10",
+			"time4": "19:10:02",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 15:38:34",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:41:35",
+			"id_st1": "189",
+			"id_st2": "190"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 322,
+		"fields": {
+			"id": "489179",
+			"datetime": "2024-04-24 09:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 15:44:52",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "341",
+			"id_st2": "122"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 323,
+		"fields": {
+			"id": "489180",
+			"datetime": "2024-04-24 14:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 15:45:29",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:53:00",
+			"id_st1": "122",
+			"id_st2": "341"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 324,
+		"fields": {
+			"id": "489182",
+			"datetime": "2024-04-24 13:30:00",
+			"time3": "13:35:10",
+			"time4": "14:39:25",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 15:57:14",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:05:00",
+			"id_st1": "1",
+			"id_st2": "24"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 325,
+		"fields": {
+			"id": "489190",
+			"datetime": "2024-04-24 20:00:00",
+			"time3": "19:51:15",
+			"time4": "20:55:46",
+			"cat_pas": "ДИ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 16:38:41",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:13:20",
+			"id_st1": "118",
+			"id_st2": "187"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 326,
+		"fields": {
+			"id": "489192",
+			"datetime": "2024-04-24 13:15:00",
+			"time3": "13:07:16",
+			"time4": "14:16:19",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 16:42:53",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:17:20",
+			"id_st1": "169",
+			"id_st2": "46"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 327,
+		"fields": {
+			"id": "489193",
+			"datetime": "2024-04-24 18:00:00",
+			"time3": "17:57:46",
+			"time4": "19:17:56",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 16:43:51",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:13:20",
+			"id_st1": "46",
+			"id_st2": "364"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 328,
+		"fields": {
+			"id": "489194",
+			"datetime": "2024-04-24 14:40:00",
+			"time3": "14:21:00",
+			"time4": "15:09:21",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 16:47:47",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:47:50",
+			"id_st1": "17",
+			"id_st2": "169"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 329,
+		"fields": {
+			"id": "489200",
+			"datetime": "2024-04-24 09:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 17:05:09",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:28:25",
+			"id_st1": "259",
+			"id_st2": "187"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 330,
+		"fields": {
+			"id": "489201",
+			"datetime": "2024-04-24 11:30:00",
+			"time3": "11:30:14",
+			"time4": "11:51:20",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 17:06:00",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:33:00",
+			"id_st1": "99",
+			"id_st2": "91"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 331,
+		"fields": {
+			"id": "489202",
+			"datetime": "2024-04-24 12:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 17:06:22",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:28:25",
+			"id_st1": "187",
+			"id_st2": "259"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 332,
+		"fields": {
+			"id": "489203",
+			"datetime": "2024-04-24 12:30:00",
+			"time3": "12:15:18",
+			"time4": "12:26:27",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 17:06:49",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:33:00",
+			"id_st1": "91",
+			"id_st2": "99"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 333,
+		"fields": {
+			"id": "489204",
+			"datetime": "2024-04-24 12:54:00",
+			"time3": "12:59:02",
+			"time4": "13:54:12",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 17:07:50",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:55:00",
+			"id_st1": "80",
+			"id_st2": "18"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 334,
+		"fields": {
+			"id": "489205",
+			"datetime": "2024-04-24 09:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-23 17:18:18",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:57:40",
+			"id_st1": "135",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 335,
+		"fields": {
+			"id": "489206",
+			"datetime": "2024-04-24 18:30:00",
+			"time3": "18:32:35",
+			"time4": "19:36:30",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 17:26:46",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:03:20",
+			"id_st1": "46",
+			"id_st2": "255"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 336,
+		"fields": {
+			"id": "489207",
+			"datetime": "2024-04-24 18:45:00",
+			"time3": "18:42:35",
+			"time4": "19:29:27",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 18:14:27",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:47:20",
+			"id_st1": "35",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 337,
+		"fields": {
+			"id": "489208",
+			"datetime": "2024-04-24 15:30:00",
+			"time3": "15:16:16",
+			"time4": "16:19:32",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 18:18:09",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:23:30",
+			"id_st1": "41",
+			"id_st2": "122"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 338,
+		"fields": {
+			"id": "489209",
+			"datetime": "2024-04-24 13:10:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 18:19:22",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:46:30",
+			"id_st1": "112",
+			"id_st2": "103"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 339,
+		"fields": {
+			"id": "489210",
+			"datetime": "2024-04-24 16:10:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 18:19:47",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:49:00",
+			"id_st1": "103",
+			"id_st2": "113"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 340,
+		"fields": {
+			"id": "489211",
+			"datetime": "2024-04-24 11:10:00",
+			"time3": "10:55:58",
+			"time4": "12:36:45",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 18:25:16",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:56:05",
+			"id_st1": "410",
+			"id_st2": "124"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 341,
+		"fields": {
+			"id": "489212",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "15:07:42",
+			"time4": "16:02:22",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 18:25:50",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:56:05",
+			"id_st1": "124",
+			"id_st2": "410"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 342,
+		"fields": {
+			"id": "489219",
+			"datetime": "2024-04-24 16:00:00",
+			"time3": "15:59:30",
+			"time4": "17:09:51",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 18:53:19",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:07:30",
+			"id_st1": "130",
+			"id_st2": "122"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 343,
+		"fields": {
+			"id": "489220",
+			"datetime": "2024-04-24 18:30:00",
+			"time3": "18:25:31",
+			"time4": "19:10:12",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 18:53:38",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:07:30",
+			"id_st1": "122",
+			"id_st2": "130"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 344,
+		"fields": {
+			"id": "489226",
+			"datetime": "2024-04-24 14:15:00",
+			"time3": "14:08:15",
+			"time4": "14:54:38",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 19:24:18",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:49:05",
+			"id_st1": "153",
+			"id_st2": "91"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 345,
+		"fields": {
+			"id": "489227",
+			"datetime": "2024-04-24 16:30:00",
+			"time3": "16:33:24",
+			"time4": "17:19:02",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 19:24:46",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:49:05",
+			"id_st1": "91",
+			"id_st2": "153"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 346,
+		"fields": {
+			"id": "489228",
+			"datetime": "2024-04-24 10:00:00",
+			"time3": "09:41:19",
+			"time4": "10:19:36",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 19:40:38",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:50:10",
+			"id_st1": "158",
+			"id_st2": "181"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 347,
+		"fields": {
+			"id": "489229",
+			"datetime": "2024-04-24 07:45:00",
+			"time3": "07:52:39",
+			"time4": "08:10:45",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 19:48:45",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:20:00",
+			"id_st1": "6",
+			"id_st2": "6"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 348,
+		"fields": {
+			"id": "489230",
+			"datetime": "2024-04-24 09:00:00",
+			"time3": "08:56:45",
+			"time4": "09:04:44",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 19:49:23",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:20:00",
+			"id_st1": "6",
+			"id_st2": "6"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 349,
+		"fields": {
+			"id": "489231",
+			"datetime": "2024-04-24 22:44:00",
+			"time3": "22:51:34",
+			"time4": "23:33:20",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 19:57:13",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:40:10",
+			"id_st1": "80",
+			"id_st2": "12"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 350,
+		"fields": {
+			"id": "489236",
+			"datetime": "2024-04-24 09:40:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "РДК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 20:30:32",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:45:10",
+			"id_st1": "94",
+			"id_st2": "125"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 351,
+		"fields": {
+			"id": "489239",
+			"datetime": "2024-04-24 13:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "РДК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 20:31:17",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:45:10",
+			"id_st1": "125",
+			"id_st2": "94"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 352,
+		"fields": {
+			"id": "489249",
+			"datetime": "2024-04-24 12:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 20:37:30",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:02:40",
+			"id_st1": "173",
+			"id_st2": "10"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 353,
+		"fields": {
+			"id": "489250",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 20:39:19",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:44:00",
+			"id_st1": "10",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 354,
+		"fields": {
+			"id": "489258",
+			"datetime": "2024-04-24 17:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-23 21:40:19",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:46:00",
+			"id_st1": "198",
+			"id_st2": "167"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 355,
+		"fields": {
+			"id": "489259",
+			"datetime": "2024-04-24 07:50:00",
+			"time3": "08:10:00",
+			"time4": "09:56:49",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 21:56:57",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:42:05",
+			"id_st1": "256",
+			"id_st2": "35"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 356,
+		"fields": {
+			"id": "489260",
+			"datetime": "2024-04-24 12:50:00",
+			"time3": "12:41:43",
+			"time4": "13:17:20",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 21:57:51",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:17:10",
+			"id_st1": "35",
+			"id_st2": "157"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 357,
+		"fields": {
+			"id": "489261",
+			"datetime": "2024-04-24 12:10:00",
+			"time3": "12:08:42",
+			"time4": "13:23:49",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 22:01:24",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:13:00",
+			"id_st1": "128",
+			"id_st2": "332"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 358,
+		"fields": {
+			"id": "489267",
+			"datetime": "2024-04-24 13:40:00",
+			"time3": "13:42:02",
+			"time4": "14:32:21",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 22:59:58",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:48:45",
+			"id_st1": "250",
+			"id_st2": "56"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 359,
+		"fields": {
+			"id": "489268",
+			"datetime": "2024-04-24 15:15:00",
+			"time3": "15:02:51",
+			"time4": "15:48:14",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 23:06:55",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:48:45",
+			"id_st1": "56",
+			"id_st2": "250"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 360,
+		"fields": {
+			"id": "489269",
+			"datetime": "2024-04-24 16:40:00",
+			"time3": "16:37:31",
+			"time4": "17:40:24",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 23:34:27",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:27:30",
+			"id_st1": "122",
+			"id_st2": "66"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 361,
+		"fields": {
+			"id": "489270",
+			"datetime": "2024-04-24 13:00:00",
+			"time3": "12:56:11",
+			"time4": "13:47:09",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 23:37:47",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:04:00",
+			"id_st1": "251",
+			"id_st2": "97"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 362,
+		"fields": {
+			"id": "489271",
+			"datetime": "2024-04-24 16:00:00",
+			"time3": "16:10:00",
+			"time4": "16:48:35",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-23 23:40:46",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:43:00",
+			"id_st1": "129",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 363,
+		"fields": {
+			"id": "489272",
+			"datetime": "2024-04-24 16:10:00",
+			"time3": "16:13:03",
+			"time4": "16:44:44",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-24 00:32:19",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:43:30",
+			"id_st1": "73",
+			"id_st2": "224"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 364,
+		"fields": {
+			"id": "489277",
+			"datetime": "2024-04-24 20:30:00",
+			"time3": "20:44:45",
+			"time4": "21:18:00",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-24 00:34:07",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:41:30",
+			"id_st1": "224",
+			"id_st2": "73"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 365,
+		"fields": {
+			"id": "489284",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИО",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 05:39:35",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:25:30",
+			"id_st1": "138",
+			"id_st2": "60"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 366,
+		"fields": {
+			"id": "489285",
+			"datetime": "2024-04-24 17:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИО",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 05:40:18",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:31:40",
+			"id_st1": "60",
+			"id_st2": "138"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 367,
+		"fields": {
+			"id": "489288",
+			"datetime": "2024-04-24 14:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по неявке пассажира",
+			"tpz": "2024-04-24 07:40:46",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:57:30",
+			"id_st1": "262",
+			"id_st2": "209"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 368,
+		"fields": {
+			"id": "489289",
+			"datetime": "2024-04-24 14:30:00",
+			"time3": "14:27:39",
+			"time4": "15:00:10",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-24 08:04:44",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:54:30",
+			"id_st1": "107",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 369,
+		"fields": {
+			"id": "489300",
+			"datetime": "2024-04-24 17:50:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИО",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 08:51:19",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:55:30",
+			"id_st1": "332",
+			"id_st2": "105"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 370,
+		"fields": {
+			"id": "489304",
+			"datetime": "2024-04-24 16:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 09:07:54",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:32:55",
+			"id_st1": "183",
+			"id_st2": "180"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 371,
+		"fields": {
+			"id": "489305",
+			"datetime": "2024-04-24 19:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 09:08:32",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:32:55",
+			"id_st1": "180",
+			"id_st2": "183"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 372,
+		"fields": {
+			"id": "489311",
+			"datetime": "2024-04-24 23:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 10:01:49",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:40:55",
+			"id_st1": "128",
+			"id_st2": "183"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 373,
+		"fields": {
+			"id": "489312",
+			"datetime": "2024-04-24 11:20:00",
+			"time3": "10:36:52",
+			"time4": "11:15:16",
+			"cat_pas": "ИЗ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-24 10:08:00",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:50:10",
+			"id_st1": "181",
+			"id_st2": "158"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 374,
+		"fields": {
+			"id": "489321",
+			"datetime": "2024-04-24 22:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 10:28:35",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:23:50",
+			"id_st1": "226",
+			"id_st2": "210"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 375,
+		"fields": {
+			"id": "489323",
+			"datetime": "2024-04-24 17:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-24 10:30:19",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:06:40",
+			"id_st1": "25",
+			"id_st2": "185"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 376,
+		"fields": {
+			"id": "489327",
+			"datetime": "2024-04-24 13:00:00",
+			"time3": "12:50:09",
+			"time4": "13:33:36",
+			"cat_pas": "ИУ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-24 10:32:33",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:47:00",
+			"id_st1": "210",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 377,
+		"fields": {
+			"id": "489334",
+			"datetime": "2024-04-24 16:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 10:51:04",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:49:10",
+			"id_st1": "15",
+			"id_st2": "140"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 378,
+		"fields": {
+			"id": "489354",
+			"datetime": "2024-04-24 12:30:00",
+			"time3": "12:19:43",
+			"time4": "12:51:38",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-24 11:28:45",
+			"INSP_SEX_M": "1",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:34:00",
+			"id_st1": "81",
+			"id_st2": "34"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 379,
+		"fields": {
+			"id": "489361",
+			"datetime": "2024-04-24 17:00:00",
+			"time3": "17:56:00",
+			"time4": "18:12:52",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-24 11:44:37",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:28:00",
+			"id_st1": "81",
+			"id_st2": "57"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 380,
+		"fields": {
+			"id": "489376",
+			"datetime": "2024-04-24 16:05:00",
+			"time3": "16:05:26",
+			"time4": "17:03:44",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-24 12:29:06",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "00:53:30",
+			"id_st1": "9",
+			"id_st2": "66"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 381,
+		"fields": {
+			"id": "489377",
+			"datetime": "2024-04-24 21:30:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ДИ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 12:33:57",
+			"INSP_SEX_M": "3",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:19:00",
+			"id_st1": "37",
+			"id_st2": "409"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 382,
+		"fields": {
+			"id": "489378",
+			"datetime": "2024-04-24 16:20:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИЗТ",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 12:45:43",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:41:45",
+			"id_st1": "1",
+			"id_st2": "409"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 383,
+		"fields": {
+			"id": "489388",
+			"datetime": "2024-04-24 16:00:00",
+			"time3": "15:38:25",
+			"time4": "16:47:13",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-24 13:09:41",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:02:05",
+			"id_st1": "412",
+			"id_st2": "124"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 384,
+		"fields": {
+			"id": "489389",
+			"datetime": "2024-04-24 21:00:00",
+			"time3": "20:57:22",
+			"time4": "22:04:02",
+			"cat_pas": "ИЗТ",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-24 13:10:25",
+			"INSP_SEX_M": "0",
+			"INSP_SEX_F": "1",
+			"TIME_OVER": "01:02:05",
+			"id_st1": "124",
+			"id_st2": "412"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 385,
+		"fields": {
+			"id": "489403",
+			"datetime": "2024-04-24 15:00:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "РДК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 14:09:18",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:02:30",
+			"id_st1": "269",
+			"id_st2": "57"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 386,
+		"fields": {
+			"id": "489415",
+			"datetime": "2024-04-24 15:37:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "ИК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 14:37:31",
+			"INSP_SEX_M": "4",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:48:00",
+			"id_st1": "29",
+			"id_st2": "96"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 387,
+		"fields": {
+			"id": "489452",
+			"datetime": "2024-04-24 17:35:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "РДК",
+			"status": "Отмена заявки по просьбе пассажира",
+			"tpz": "2024-04-24 17:10:49",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:23:00",
+			"id_st1": "159",
+			"id_st2": "126"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 388,
+		"fields": {
+			"id": "489482",
+			"datetime": "2024-04-24 18:20:00",
+			"time3": "00:00:00",
+			"time4": "00:00:00",
+			"cat_pas": "РДК",
+			"status": "Не подтверждена",
+			"tpz": "2024-04-24 18:19:58",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "00:37:45",
+			"id_st1": "243",
+			"id_st2": "88"
+		}
+	},
+	{
+		"model": "applications.Application",
+		"pk": 389,
+		"fields": {
+			"id": "489489",
+			"datetime": "2024-04-24 23:20:00",
+			"time3": "23:19:00",
+			"time4": "00:14:00",
+			"cat_pas": "ИО",
+			"status": "Заявка закончена",
+			"tpz": "2024-04-24 18:33:11",
+			"INSP_SEX_M": "2",
+			"INSP_SEX_F": "0",
+			"TIME_OVER": "01:00:00",
+			"id_st1": "89",
+			"id_st2": "139"
+		}
+	}
+]

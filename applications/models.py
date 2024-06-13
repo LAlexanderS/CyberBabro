@@ -4,23 +4,27 @@ from metro.models import Station
 
 
 class Application(models.Model):
-    id_z = models.AutoField(primary_key=True)
-    id_pas = models.ForeignKey(Passengers, on_delete=models.CASCADE, verbose_name='Пассажир')
+    id = models.AutoField(primary_key=True)
+    id_pas = models.ForeignKey(Passengers, on_delete=models.CASCADE, verbose_name='Пассажир', blank=True, null=True)
     datetime = models.DateTimeField(verbose_name='Дата и время начала заявки')
-    in_p = models.DateTimeField(verbose_name='Время встречи с пассажиром',unique=True)
-    out_p = models.DateTimeField(verbose_name='Время исполнения заявки')
+    tpz = models.DateTimeField(verbose_name='Дата и время окончания заявки')
+    time3 = models.TimeField(verbose_name='Время встречи с пассажиром')
+    time4 = models.TimeField(verbose_name='Время исполнения заявки')
     tpz = models.DateTimeField(verbose_name='Время регистрации заявки')
-    insp_sex_m = models.IntegerField(verbose_name='Количество сотрудников мужчин')
-    insp_sex_f = models.IntegerField(verbose_name='Количество сотрудников женщин')
-    time_over = models.TimeField(verbose_name='Время окончания заявки', blank=True, null=True)
-    id_st1 = models.ForeignKey(Station, related_name='departure_station', on_delete=models.CASCADE, verbose_name='Станция отправления')
-    id_st2 = models.ForeignKey(Station, related_name='arrival_station', on_delete=models.CASCADE, verbose_name='Станция прибытия')
+    INSP_SEX_M = models.IntegerField(verbose_name='Количество сотрудников мужчин')
+    INSP_SEX_F = models.IntegerField(verbose_name='Количество сотрудников женщин')
+    TIME_OVER = models.TimeField(verbose_name='Время окончания заявки', blank=True, null=True)
+    cat_pas = models.CharField(max_length=50, verbose_name='Категория пассажиров',blank=True, null=True)
+    # id_st1 = models.ForeignKey(Station, related_name='departure_station', on_delete=models.CASCADE, verbose_name='Станция отправления')
+    # id_st1 = models.ForeignKey(Station, related_name='arrival_station', on_delete=models.CASCADE, verbose_name='Станция прибытия')
+    id_st1 = models.CharField(max_length=100,verbose_name='ID станции отправления')
+    id_st2 = models.CharField(max_length=100,verbose_name='ID станции прибытия')
     status = models.CharField(max_length=50, verbose_name='Текущий статус заявки')
     vokzal = models.BooleanField(verbose_name='Необходимость встретить с воказала', blank=True, null=True)
     dop_inf = models.TextField(verbose_name='Дополнительная информация', blank=True, null=True)
     bag_s = models.BooleanField(verbose_name='Наличие багажа', blank=True, null=True)
-    pass_count = models.IntegerField(verbose_name='Количество пассажиров')
-    method_p = models.CharField(max_length=50, verbose_name='Метод приёма заявки')
+    pass_count = models.IntegerField(verbose_name='Количество пассажиров',blank=True, null=True)
+    method_p = models.CharField(max_length=50, verbose_name='Метод приёма заявки',blank=True, null=True)
 
     class Meta:
         db_table = 'Application'
@@ -28,14 +32,17 @@ class Application(models.Model):
         verbose_name_plural = 'Заявки'
 
     def __str__(self):
-        return f'Заявка {self.id_z}'
+        return f'Заявка {self.id}'
 
 class ApplicationTransfer(models.Model):
     id_adit = models.AutoField(primary_key=True)
-    id_bid = models.ForeignKey(Application, on_delete=models.CASCADE, verbose_name='Заявка')
-    time_edit = models.DateTimeField(verbose_name='Время изменения')
-    time_s = models.ForeignKey(Application, on_delete=models.CASCADE, verbose_name='Изначальное время заявки', to_field='in_p', related_name='initial_transfers')
-    time_f = models.DateTimeField(verbose_name='Желаемое время')
+   # id_bid = models.ForeignKey(Application, on_delete=models.CASCADE, verbose_name='Заявка',blank =True,null=True,to_field='id',related_name= 'bid')
+    id_bid = models.CharField(max_length=50, verbose_name='ID заявки',blank=True, null=True)
+    time_edit = models.DateTimeField(verbose_name='Время изменения',blank=True, null=True)
+   # time_s = models.ForeignKey(Application, on_delete=models.CASCADE, verbose_name='Изначальное время заявки', to_field='time3', related_name='initial_transfers')
+    time_s = models.TimeField(verbose_name='Начальное время',blank=True, null=True)
+    time_f = models.TimeField(verbose_name='Желаемое время',blank=True, null=True)
+    date_time = models.DateTimeField(verbose_name='Время неявки /Отмены',blank=True, null=True)
 
     class Meta:
         db_table = 'ApplicationTransfer'
@@ -44,4 +51,7 @@ class ApplicationTransfer(models.Model):
    
     def __str__(self):
         return f'Перенос заявки {self.id_adit}'
+    
+
+
 # Create your models here.
