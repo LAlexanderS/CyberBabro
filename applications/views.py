@@ -1,7 +1,12 @@
 from django.shortcuts import render, redirect
 from .forms import ApplicationForm, ApplicationTransferForm
+from model import routes, schedule
 
 def add_all_forms(request):
+    routes = routes.Routes()
+    routes.CalcDistance(id1, id2)
+    routes.CreateShortestPath(id,id2)
+
     if request.method == 'POST':
         application_form = ApplicationForm(request.POST)
         application_transfer_form = ApplicationTransferForm(request.POST)
@@ -18,4 +23,4 @@ def add_all_forms(request):
         'application_form': application_form,
         'application_transfer_form': application_transfer_form,
     }
-    return render(request, 'applications.html', context)
+    return render(request, 'applications/applications.html', context, routes)

@@ -30,8 +30,8 @@ class Station(models.Model):
     # def __str__(self):
         # return self.name_station
     
-
-class Stationtime(models.Model):
+#1111111111
+class Stationtime(models.Model): 
     id_st_time = models.AutoField(primary_key=True, verbose_name = 'ID')
     time = models.CharField(max_length=50,verbose_name='Время в пути',blank=True, null=True)
     id_st1 = models.CharField(max_length=50,verbose_name='Станция 1')
@@ -46,7 +46,7 @@ class Stationtime(models.Model):
         verbose_name = 'Время прибития'
         verbose_name_plural = 'Время прибития'
        	
-
+#222222222222
 class Transfertime(models.Model):
     id_t_time = models.AutoField(primary_key=True, verbose_name = 'ID')
   #  tr_1 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция пересадки 1',related_name='transfer_1')
