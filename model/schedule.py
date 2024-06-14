@@ -23,6 +23,9 @@ class Scheduler:
 		self.routes = routes.Routes(data['vertexes'])
 		self.lastOrder = dict()
 
+	def CalcCost(self, stuff, dest):
+		return stuff[0] + self.routes.CalcDistance(self.lastOrder.get(stuff[1]['ID'], -1), dest)
+	
 	def CreateSchedule(self):
 		for request in self.data['requests']:
 			self.requests.append((-1, request['datetime'], request['Id']))
@@ -44,8 +47,8 @@ class Scheduler:
 	def CalcDistance(self):
 		return 0
 
-	def FindStaff(self, sex, time, stationID):
-		if len(self.free[sex]) > 0:
-			minCost = self.free[sex][0] + self.routes.CalcDistance()
+	def FindStaff(self, sex, dest):
+		for stuff in self.free[sex]:
+			heapq.heappush(self.free[sex + '_queue'], (self.CalcCost(stuff, dest)))
 
 

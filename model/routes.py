@@ -6,8 +6,10 @@ class Routes:
 		for record in vertexes:
 			record['time'] = record['time'].replace(',', '.')
 			if 'id_st1' in record:
+				print('add edge ', int(record['id_st1']), int(record['id_st2']), " weight = ", float(record['time']))
 				self.graph.add_edge(int(record['id_st1']), int(record['id_st2']), weight=float(record['time']))
 			else:
+				print('add edge ', int(record['id1']), int(record['id2']), " weight = ", float(record['time']))
 				self.graph.add_edge(int(record['id1']), int(record['id2']), weight=float(record['time']))
 
 	def GetGraph(self):
