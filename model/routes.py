@@ -15,6 +15,7 @@ class Routes:
 	def GetGraph(self):
 		return self.graph
 	
+	#на выходе цифра - растояние между 2 станциями source - id 1 destination id 2
 	def CalcDistance(self, source, destination):
 		try:
 			return nx.shortest_path_length(self.graph, source=source, target=destination)

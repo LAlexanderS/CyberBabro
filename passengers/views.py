@@ -1,18 +1,13 @@
 from django.shortcuts import render, redirect
-from .forms import PassengerForm
+from .forms import PassengersForm
 
 def add_passenger(request):
     if request.method == 'POST':
-        form = PassengerForm(request.POST)
+        form = PassengersForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('passengers:passengers')
+            return redirect('success')
     else:
-        form = PassengerForm()
+        form = PassengersForm()
     
-    context = {
-    "title": "Пассажиры",
-    'form': form,
-		
-	}
-    return render(request, 'passengers/passengers.html', context)
+    return render(request, 'passengers/passengers.html', {'form': form})

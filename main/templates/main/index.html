@@ -1,16 +1,27 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
-<p>jjjj</p>
-
+{% extends 'base.html' %} {% load static %} {% block content %} <h1>Заявки сотрудников</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Сотрудник</th>
+            <th>Заявка</th>
+        </tr>
+    </thead>
+    <tbody> {% for pa in personal_applications %} <tr>
+            <td>{{ pa.id_pa }}</td>
+            <td>{{ pa.person.FIO }}</td>
+            <td>{{ pa.application.id }}</td>
+        </tr> {% endfor %} </tbody>
+</table>
 <!-- Кнопка для выполнения действия -->
 <button id="actionButton" type="button" class="btn btn-dark">Распределить</button>
-
 <!-- Элемент для отображения сообщения -->
 <div id="message" class="mt-3" style="display: none">Выполнено</div>
-
+<P>distance {{ distance }}</P>
+<P>shortest_path {{ shortest_path }}</P>
 <script>
-    // JavaScript для обработки нажатия кнопки
+    // нажатие кнопки
     document.getElementById("actionButton").addEventListener("click", function () {
-        document.getElementById("message").style.display = "block";
+        document.getElementById("message").style.display = "block"
     });
-</script>
-{% endblock content %}
+</script> {% endblock content %}

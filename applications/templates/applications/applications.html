@@ -1,4 +1,294 @@
-{% extends 'base.html' %} {% load static %} 
-{% block content %}
-	<p>applications</p>
-{% endblock content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container-fluid" style="min-height: 80vh">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body text-center">
+                    <h2 class="card-title">Добавить заявку</h2>
+                    <!-- Кнопка для вызова модального окна "Добавить заявку" -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addApplicationModal">Добавить заявку</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body text-center">
+                    <h2 class="card-title">Перенос заявки</h2>
+                    <!-- Кнопка для вызова модального окна "Перенос заявки" -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transferApplicationModal">Перенести заявку</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для формы "Добавить заявку" -->
+<div class="modal fade" id="addApplicationModal" tabindex="-1" aria-labelledby="addApplicationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addApplicationModalLabel">Добавить заявку</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    {% csrf_token %} {{ application_form.as_p }}
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Сохранить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для формы "Перенос заявки" -->
+<div class="modal fade" id="transferApplicationModal" tabindex="-1" aria-labelledby="transferApplicationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="transferApplicationModalLabel">Перенос заявки</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    {% csrf_token %} {{ transfer_form.as_p }}
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Сохранить перенос</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% comment %} Все заявки {% endcomment %}
+<div class="container-fluid" style="min-height: 80vh">
+    <h3 class="text-center mb-4">Активные заявки</h3>
+    <!-- Разметка Заявки -->
+    {% for application in applications %} {% if application.status == "Отмена заявки по просьбе пассажира" %}
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading{{ application.id }}">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ application.id }}" aria-expanded="false" aria-controls="collapse{{ application.id }}">
+                        Заявка {{ application.id }} - {{ application.datetime }} | Статус:<strong class="mx-2">{{ application.status }}</strong>
+                    </button>
+                </h2>
+                <div id="collapse{{ application.id }}" class="accordion-collapse collapse" aria-labelledby="heading{{ application.id }}" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <table class="table table-dark table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Заявка</th>
+                                    <th>Время встречи с пассажиром</th>
+                                    <th>Пассажир</th>
+                                    <th>Время исполнения заявки:</th>
+                                    <th>ID станции отправления</th>
+                                    <th>ID станции прибытия:</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a
+                                            class="text-white"
+                                            href="#"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#applicationModal"
+                                            data-id="{{ application.id }}"
+                                            data-datetime="{{ application.datetime }}"
+                                            data-tpz="{{ application.tpz }}"
+                                            data-time3="{{ application.time3 }}"
+                                            data-time4="{{ application.time4 }}"
+                                            data-tpz="{{ application.tpz }}"
+                                            data-insp_sex_m="{{ application.INSP_SEX_M }}"
+                                            data-insp_sex_f="{{ application.INSP_SEX_F }}"
+                                            data-time_over="{{ application.TIME_OVER }}"
+                                            data-cat_pas="{{ application.cat_pas }}"
+                                            data-id_st1="{{ application.id_st1 }}"
+                                            data-id_st2="{{ application.id_st2 }}"
+                                            data-status="{{ application.status }}"
+                                            data-vokzal="{{ application.vokzal }}"
+                                            data-dop_inf="{{ application.dop_inf }}"
+                                            data-bag_s="{{ application.bag_s }}"
+                                            data-pass_count="{{ application.pass_count }}"
+                                            data-method_p="{{ application.method_p }}"
+                                            >{{ application.id }}</a
+                                        >
+                                    </td>
+                                    <td>{{ application.tpz }}</td>
+                                    <td>{{ application.id_pas }}</td>
+                                    <td>{{ application.time3 }}</td>
+                                    <td>{{ application.id_st1 }}</td>
+                                    <td>{{ application.id_st2 }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-flex justify-content-between">
+                            <p><strong>Примечание:</strong></p>
+                            <p><strong>Не любит славян</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %} {% endfor %}
+    <!-- Закончилась разметка Заявки -->
+</div>
+
+<!-- Модальное окно для полной информации о заявке -->
+<div class="modal fade" id="applicationModal" tabindex="-1" aria-labelledby="applicationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="applicationModalLabel">Полная информация о заявке</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>ID заявки:</strong> <span id="modal-application-id"></span></p>
+                <p><strong>Дата и время начала:</strong> <span id="modal-application-datetime"></span></p>
+                <p><strong>Дата и время окончания:</strong> <span id="modal-application-tpz"></span></p>
+                <p><strong>Время встречи с пассажиром:</strong> <span id="modal-application-time3"></span></p>
+                <p><strong>Время исполнения заявки:</strong> <span id="modal-application-time4"></span></p>
+                <p><strong>Время регистрации заявки:</strong> <span id="modal-application-tpz"></span></p>
+                <p><strong>Количество сотрудников мужчин:</strong> <span id="modal-application-insp_sex_m"></span></p>
+                <p><strong>Количество сотрудников женщин:</strong> <span id="modal-application-insp_sex_f"></span></p>
+                <p><strong>Время окончания заявки:</strong> <span id="modal-application-time_over"></span></p>
+                <p><strong>Категория пассажиров:</strong> <span id="modal-application-cat_pas"></span></p>
+                <p><strong>ID станции отправления:</strong> <span id="modal-application-id_st1"></span></p>
+                <p><strong>ID станции прибытия:</strong> <span id="modal-application-id_st2"></span></p>
+                <p><strong>Текущий статус заявки:</strong> <span id="modal-application-status"></span></p>
+                <p><strong>Необходимость встретить с вокзала:</strong> <span id="modal-application-vokzal"></span></p>
+                <p><strong>Дополнительная информация:</strong> <span id="modal-application-dop_inf"></span></p>
+                <p><strong>Наличие багажа:</strong> <span id="modal-application-bag_s"></span></p>
+                <p><strong>Количество пассажиров:</strong> <span id="modal-application-pass_count"></span></p>
+                <p><strong>Метод приёма заявки:</strong> <span id="modal-application-method_p"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var applicationModal = document.getElementById("applicationModal");
+        applicationModal.addEventListener("show.bs.modal", function (event) {
+            var button = event.relatedTarget;
+
+            function getSafeAttribute(attribute) {
+                return attribute ? attribute : "";
+            }
+
+            var applicationId = getSafeAttribute(button.getAttribute("data-id"));
+            var applicationDatetime = getSafeAttribute(button.getAttribute("data-datetime"));
+            var applicationTpz = getSafeAttribute(button.getAttribute("data-tpz"));
+            var applicationTime3 = getSafeAttribute(button.getAttribute("data-time3"));
+            var applicationTime4 = getSafeAttribute(button.getAttribute("data-time4"));
+            var applicationInspSexM = getSafeAttribute(button.getAttribute("data-insp_sex_m"));
+            var applicationInspSexF = getSafeAttribute(button.getAttribute("data-insp_sex_f"));
+            var applicationTimeOver = getSafeAttribute(button.getAttribute("data-time_over"));
+            var applicationCatPas = getSafeAttribute(button.getAttribute("data-cat_pas"));
+            var applicationIdSt1 = getSafeAttribute(button.getAttribute("data-id_st1"));
+            var applicationIdSt2 = getSafeAttribute(button.getAttribute("data-id_st2"));
+            var applicationStatus = getSafeAttribute(button.getAttribute("data-status"));
+            var applicationVokzal = getSafeAttribute(button.getAttribute("data-vokzal"));
+            var applicationDopInf = getSafeAttribute(button.getAttribute("data-dop_inf"));
+            var applicationBagS = getSafeAttribute(button.getAttribute("data-bag_s"));
+            var applicationPassCount = getSafeAttribute(button.getAttribute("data-pass_count"));
+            var applicationMethodP = getSafeAttribute(button.getAttribute("data-method_p"));
+
+            document.getElementById("modal-application-id").innerText = applicationId;
+            document.getElementById("modal-application-datetime").innerText = applicationDatetime;
+            document.getElementById("modal-application-tpz").innerText = applicationTpz;
+            document.getElementById("modal-application-time3").innerText = applicationTime3;
+            document.getElementById("modal-application-time4").innerText = applicationTime4;
+            document.getElementById("modal-application-insp_sex_m").innerText = applicationInspSexM;
+            document.getElementById("modal-application-insp_sex_f").innerText = applicationInspSexF;
+            document.getElementById("modal-application-time_over").innerText = applicationTimeOver;
+            document.getElementById("modal-application-cat_pas").innerText = applicationCatPas;
+            document.getElementById("modal-application-id_st1").innerText = applicationIdSt1;
+            document.getElementById("modal-application-id_st2").innerText = applicationIdSt2;
+            document.getElementById("modal-application-status").innerText = applicationStatus;
+            document.getElementById("modal-application-vokzal").innerText = applicationVokzal;
+            document.getElementById("modal-application-dop_inf").innerText = applicationDopInf;
+            document.getElementById("modal-application-bag_s").innerText = applicationBagS;
+            document.getElementById("modal-application-pass_count").innerText = applicationPassCount;
+            document.getElementById("modal-application-method_p").innerText = applicationMethodP;
+        });
+    });
+</script>
+
+<div class="container-fluid" style="min-height: 80vh">
+    <h2 class="text-center">Все заявки</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Дата и время начала</th>
+                <th>Дата и время окончания</th>
+                <th>Время встречи с пассажиром</th>
+                <th>Время исполнения заявки</th>
+                <th>Время окончания заявки</th>
+                <th>ID станции отправления</th>
+                <th>ID станции прибытия</th>
+                <th>Текущий статус заявки</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for application in applications %}
+            <tr>
+                <td>{{ application.id }}</td>
+                <td>{{ application.datetime }}</td>
+                <td>{{ application.tpz }}</td>
+                <td>{{ application.time3 }}</td>
+                <td>{{ application.time4 }}</td>
+                <td>{{ application.TIME_OVER }}</td>
+                <td>{{ application.id_st1 }}</td>
+                <td>{{ application.id_st2 }}</td>
+                <td>{{ application.status }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %} {% comment %}
+<th>Пассажир</th>
+<th>Дата и время начала</th>
+<th>Дата и время окончания</th>
+<th>Время встречи с пассажиром</th>
+<th>Время исполнения заявки</th>
+<th>Время регистрации заявки</th>
+<th>Количество сотрудников мужчин</th>
+<th>Количество сотрудников женщин</th>
+<th>Время окончания заявки</th>
+<th>Категория пассажиров</th>
+<th>ID станции отправления</th>
+<th>ID станции прибытия</th>
+<th>Текущий статус заявки</th>
+<th>Необходимость встретить с воказала</th>
+<th>Дополнительная информация</th>
+<th>Наличие багажа</th>
+<th>Количество пассажиров</th>
+<th>Метод приёма заявки</th>
+
+<td>{{ application.id }}</td>
+<td>{{ application.id_pas }}</td>
+<td>{{ application.datetime }}</td>
+<td>{{ application.tpz }}</td>
+<td>{{ application.time3 }}</td>
+<td>{{ application.time4 }}</td>
+<td>{{ application.tpz }}</td>
+<td>{{ application.INSP_SEX_M }}</td>
+<td>{{ application.INSP_SEX_F }}</td>
+<td>{{ application.TIME_OVER }}</td>
+<td>{{ application.cat_pas }}</td>
+<td>{{ application.id_st1 }}</td>
+<td>{{ application.id_st2 }}</td>
+<td>{{ application.status }}</td>
+<td>{{ application.vokzal }}</td>
+<td>{{ application.dop_inf }}</td>
+<td>{{ application.bag_s }}</td>
+<td>{{ application.pass_count }}</td>
+<td>{{ application.method_p }}</td>
+{% endcomment %}

@@ -1,3 +1,43 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-<p>Станции</p>
+<div class="container-fluid" style="min-height: 80vh">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Добавить станцию</h2>
+                    <form method="post">
+                        {% csrf_token %} {{ station_form.as_p }}
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Сохранить станцию</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Добавить время прибытия</h2>
+                    <form method="post">
+                        {% csrf_token %} {{ stationtime_form.as_p }}
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Сохранить время прибытия</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Добавить время пересадки</h2>
+                    <form method="post">
+                        {% csrf_token %} {{ transfertime_form.as_p }}
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Сохранить время пересадки</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}
