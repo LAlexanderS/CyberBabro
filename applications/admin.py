@@ -19,16 +19,11 @@ class ApplicationTransferAdmin(admin.ModelAdmin):
     search_fields = ('id_bid__id',)
 
     def get_time3(self, obj):
-        return obj.time_s.time3
+        if obj.time_s:
+            return obj.time_s.time3
+        return None
     get_time3.short_description = 'Изначальное время заявки'
 
 
 admin.site.register(Application, ApplicationAdmin)
 admin.site.register(ApplicationTransfer, ApplicationTransferAdmin)
-
-
-
-
-
-
-# Register your models here.
