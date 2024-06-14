@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect
 from .forms import ApplicationForm, ApplicationTransferForm
 from model import routes,schedule
+from .models import Application
 
 def add_all_forms(request):
+    applications = Application.objects.all()
     # routes = routes.Routes()
     # routes.CalcDistance(id1, id2)
     # routes.CreateShortestPath(id,id2)
@@ -19,6 +21,7 @@ def add_all_forms(request):
         transfer_form = ApplicationTransferForm()
 
     context = {
+        "applications": applications,
         'application_form': application_form,
         'transfer_form': transfer_form,
     }
