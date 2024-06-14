@@ -175,26 +175,28 @@
         var applicationModal = document.getElementById("applicationModal");
         applicationModal.addEventListener("show.bs.modal", function (event) {
             var button = event.relatedTarget;
-            var applicationId = button.getAttribute("data-id");
-            var applicationDatetime = button.getAttribute("data-datetime");
-            var applicationTpz = button.getAttribute("data-tpz");
-            var applicationTime3 = button.getAttribute("data-time3");
-            var applicationTime4 = button.getAttribute("data-time4");
-            var applicationInspSexM = button.getAttribute("data-insp_sex_m");
-            var applicationInspSexF = button.getAttribute("data-insp_sex_f");
-            var applicationTimeOver = button.getAttribute("data-time_over");
-            var applicationCatPas = button.getAttribute("data-cat_pas");
-            var applicationIdSt1 = button.getAttribute("data-id_st1");
-            var applicationIdSt2 = button.getAttribute("data-id_st2");
-            var applicationStatus = button.getAttribute("data-status");
-            var applicationVokzal = button.getAttribute("data-vokzal");
-            var applicationDopInf = button.getAttribute("data-dop_inf");
-            var applicationBagS = button.getAttribute("data-bag_s");
-            var applicationPassCount = button.getAttribute("data-pass_count");
-            var applicationMethodP = button.getAttribute("data-method_p");
 
-            var modalTitle = applicationModal.querySelector(".modal-title");
-            var modalBody = applicationModal.querySelector(".modal-body");
+            function getSafeAttribute(attribute) {
+                return attribute ? attribute : "";
+            }
+
+            var applicationId = getSafeAttribute(button.getAttribute("data-id"));
+            var applicationDatetime = getSafeAttribute(button.getAttribute("data-datetime"));
+            var applicationTpz = getSafeAttribute(button.getAttribute("data-tpz"));
+            var applicationTime3 = getSafeAttribute(button.getAttribute("data-time3"));
+            var applicationTime4 = getSafeAttribute(button.getAttribute("data-time4"));
+            var applicationInspSexM = getSafeAttribute(button.getAttribute("data-insp_sex_m"));
+            var applicationInspSexF = getSafeAttribute(button.getAttribute("data-insp_sex_f"));
+            var applicationTimeOver = getSafeAttribute(button.getAttribute("data-time_over"));
+            var applicationCatPas = getSafeAttribute(button.getAttribute("data-cat_pas"));
+            var applicationIdSt1 = getSafeAttribute(button.getAttribute("data-id_st1"));
+            var applicationIdSt2 = getSafeAttribute(button.getAttribute("data-id_st2"));
+            var applicationStatus = getSafeAttribute(button.getAttribute("data-status"));
+            var applicationVokzal = getSafeAttribute(button.getAttribute("data-vokzal"));
+            var applicationDopInf = getSafeAttribute(button.getAttribute("data-dop_inf"));
+            var applicationBagS = getSafeAttribute(button.getAttribute("data-bag_s"));
+            var applicationPassCount = getSafeAttribute(button.getAttribute("data-pass_count"));
+            var applicationMethodP = getSafeAttribute(button.getAttribute("data-method_p"));
 
             document.getElementById("modal-application-id").innerText = applicationId;
             document.getElementById("modal-application-datetime").innerText = applicationDatetime;
