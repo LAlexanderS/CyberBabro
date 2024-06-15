@@ -1,7 +1,40 @@
 from django import forms
 from .models import Personal, Shift
 
+class TimeRangeWidget(forms.MultiWidget):
+    def __init__(self, attrs=None):
+        widgets = [
+            forms.TimeInput(attrs={'class': 'form-control', 'type': 'time'}),
+            forms.TimeInput(attrs={'class': 'form-control', 'type': 'time'}),
+        ]
+        super().__init__(widgets, attrs)
+
+    def decompress(self, value):
+        if value:
+            return value.split('-')
+        return [None, None]
+
+    def format_output(self, rendered_widgets):
+        return '{} - {}'.format(*rendered_widgets)
+
+class TimeRangeField(forms.MultiValueField):
+    widget = TimeRangeWidget
+
+    def __init__(self, *args, **kwargs):
+        fields = [
+            forms.TimeField(),
+            forms.TimeField(),
+        ]
+        super().__init__(fields, *args, **kwargs)
+
+    def compress(self, data_list):
+        if data_list:
+            return '{}-{}'.format(*data_list)
+        return ''
+
 class PersonalForm(forms.ModelForm):
+    TIME_WORK = TimeRangeField()
+
     class Meta:
         model = Personal
         fields = [
@@ -12,7 +45,6 @@ class PersonalForm(forms.ModelForm):
             'FIO': forms.TextInput(attrs={'class': 'form-control'}),
             'UCHASTOK': forms.TextInput(attrs={'class': 'form-control'}),
             'SEX': forms.Select(attrs={'class': 'form-control'}),
-            'TIME_WORK': forms.TextInput(attrs={'class': 'form-control'}),
             'SMENA': forms.TextInput(attrs={'class': 'form-control'}),
             'RANK': forms.TextInput(attrs={'class': 'form-control'}),
             'DATE': forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}),

@@ -6,7 +6,6 @@
                 <div class="card-body text-center">
                     {% if user.is_admin or user.is_staff %}
                     <h2 class="card-title">Добавить заявку</h2>
-                    <!-- Кнопка для вызова модального окна "Добавить заявку" -->
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addApplicationModal">Добавить заявку</button>
                     {% endif %}
                 </div>
@@ -17,7 +16,6 @@
                 <div class="card-body text-center">
                     {% if user.is_admin or user.is_staff %}
                     <h2 class="card-title">Перенос заявки</h2>
-                    <!-- Кнопка для вызова модального окна "Перенос заявки" -->
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transferApplicationModal">Перенести заявку</button>
                     {% endif %}
                 </div>
@@ -26,7 +24,6 @@
     </div>
 </div>
 
-<!-- Модальное окно для формы "Добавить заявку" -->
 <div class="modal fade" id="addApplicationModal" tabindex="-1" aria-labelledby="addApplicationModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -35,7 +32,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="post">
+                <form id="applicationForm" method="post">
                     {% csrf_token %} {{ application_form.as_p }}
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary">Сохранить заявку</button>
@@ -46,7 +43,6 @@
     </div>
 </div>
 
-<!-- Модальное окно для формы "Перенос заявки" -->
 <div class="modal fade" id="transferApplicationModal" tabindex="-1" aria-labelledby="transferApplicationModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -55,7 +51,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="post">
+                <form id="transferForm" method="post">
                     {% csrf_token %} {{ transfer_form.as_p }}
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary">Сохранить перенос</button>
@@ -66,55 +62,20 @@
     </div>
 </div>
 
-<!-- Модальное окно для запроса добавления заявки -->
-<div class="modal fade" id="requestAddApplicationModal" tabindex="-1" aria-labelledby="requestAddApplicationModalLabel" aria-hidden="true">
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="requestAddApplicationModalLabel">Запросить добавление заявки</h5>
+                <h5 class="modal-title" id="successModalLabel">Успешно</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <form id="requestAddApplicationForm">
-                    {% csrf_token %}
-                    <div class="mb-3">
-                        <label for="requestAddApplicationDetails" class="form-label">Детали заявки</label>
-                        <textarea class="form-control" id="requestAddApplicationDetails" rows="3" required></textarea>
-                    </div>
-                    <div class="d-grid">
-                        <button type="button" class="btn btn-primary" id="submitRequestAddApplication">Отправить запрос</button>
-                    </div>
-                </form>
+            <div class="modal-body">Данные были успешно сохранены.</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
             </div>
         </div>
     </div>
 </div>
-
-<!-- Модальное окно для запроса переноса заявки -->
-<div class="modal fade" id="requestTransferApplicationModal" tabindex="-1" aria-labelledby="requestTransferApplicationModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="requestTransferApplicationModalLabel">Запросить перенос заявки</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="requestTransferApplicationForm">
-                    {% csrf_token %}
-                    <div class="mb-3">
-                        <label for="requestTransferApplicationDetails" class="form-label">Детали переноса заявки</label>
-                        <textarea class="form-control" id="requestTransferApplicationDetails" rows="3" required></textarea>
-                    </div>
-                    <div class="d-grid">
-                        <button type="button" class="btn btn-primary" id="submitRequestTransferApplication">Отправить запрос</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-{% comment %} Все заявки {% endcomment %}
 <div class="container-fluid" style="min-height: 80vh">
     <h3 class="text-center mb-4">Активные заявки</h3>
     <!-- Разметка Заявки -->
@@ -137,7 +98,7 @@
                                     <th>Пассажир</th>
                                     <th>Время исполнения заявки:</th>
                                     <th>ID станции отправления</th>
-                                    <th>ID станции прибытия:</th>
+                                    <th>ID станции прибытия</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -148,32 +109,31 @@
                                             href="#"
                                             data-bs-toggle="modal"
                                             data-bs-target="#applicationModal"
-                                            data-id="{{ application.id }}"
-                                            data-datetime="{{ application.datetime }}"
-                                            data-tpz="{{ application.tpz }}"
-                                            data-time3="{{ application.time3 }}"
-                                            data-time4="{{ application.time4 }}"
-                                            data-tpz="{{ application.tpz }}"
-                                            data-insp_sex_m="{{ application.INSP_SEX_M }}"
-                                            data-insp_sex_f="{{ application.INSP_SEX_F }}"
-                                            data-time_over="{{ application.TIME_OVER }}"
-                                            data-cat_pas="{{ application.cat_pas }}"
-                                            data-id_st1="{{ application.id_st1 }}"
-                                            data-id_st2="{{ application.id_st2 }}"
-                                            data-status="{{ application.status }}"
-                                            data-vokzal="{{ application.vokzal }}"
-                                            data-dop_inf="{{ application.dop_inf }}"
-                                            data-bag_s="{{ application.bag_s }}"
-                                            data-pass_count="{{ application.pass_count }}"
-                                            data-method_p="{{ application.method_p }}"
+                                            data-id="{{ application.id|default:"нет информации" }}"
+                                            data-datetime="{{ application.datetime|default:"нет информации" }}"
+                                            data-tpz="{{ application.tpz|default:"нет информации" }}"
+                                            data-time3="{{ application.time3|default:"нет информации" }}"
+                                            data-time4="{{ application.time4|default:"нет информации" }}"
+                                            data-insp_sex_m="{{ application.INSP_SEX_M|default:"нет информации" }}"
+                                            data-insp_sex_f="{{ application.INSP_SEX_F|default:"нет информации" }}"
+                                            data-time_over="{{ application.TIME_OVER|default:"нет информации" }}"
+                                            data-cat_pas="{{ application.cat_pas|default:"нет информации" }}"
+                                            data-id_st1="{{ application.id_st1|default:"нет информации" }}"
+                                            data-id_st2="{{ application.id_st2|default:"нет информации" }}"
+                                            data-status="{{ application.status|default:"нет информации" }}"
+                                            data-vokzal="{{ application.vokzal|default:"нет информации" }}"
+                                            data-dop_inf="{{ application.dop_inf|default:"нет информации" }}"
+                                            data-bag_s="{{ application.bag_s|yesno:"Да,нет информации" }}"
+                                            data-pass_count="{{ application.pass_count|default:"нет информации" }}"
+                                            data-method_p="{{ application.method_p|default:"нет информации" }}"
                                             >{{ application.id }}</a
                                         >
                                     </td>
-                                    <td>{{ application.tpz }}</td>
-                                    <td>{{ application.id_pas }}</td>
-                                    <td>{{ application.time3 }}</td>
-                                    <td>{{ application.id_st1 }}</td>
-                                    <td>{{ application.id_st2 }}</td>
+                                    <td>{{ application.tpz|default:"нет информации" }}</td>
+                                    <td>{{ application.id_pas|default:"нет информации" }}</td>
+                                    <td>{{ application.time3|default:"нет информации" }}</td>
+                                    <td>{{ application.id_st1|default:"нет информации" }}</td>
+                                    <td>{{ application.id_st2|default:"нет информации" }}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -229,7 +189,7 @@
             var button = event.relatedTarget;
 
             function getSafeAttribute(attribute) {
-                return attribute ? attribute : "";
+                return attribute ? attribute : "нет информации";
             }
 
             var applicationId = getSafeAttribute(button.getAttribute("data-id"));
@@ -291,20 +251,20 @@
             {% for application in applications %}
             <tr>
                 <td>{{ application.id }}</td>
-                <td>{{ application.datetime }}</td>
-                <td>{{ application.tpz }}</td>
-                <td>{{ application.time3 }}</td>
-                <td>{{ application.time4 }}</td>
-                <td>{{ application.TIME_OVER }}</td>
-                <td>{{ application.id_st1 }}</td>
-                <td>{{ application.id_st2 }}</td>
-                <td>{{ application.status }}</td>
+                <td>{{ application.datetime|default:"нет информации" }}</td>
+                <td>{{ application.tpz|default:"нет информации" }}</td>
+                <td>{{ application.time3|default:"нет информации" }}</td>
+                <td>{{ application.time4|default:"нет информации" }}</td>
+                <td>{{ application.TIME_OVER|default:"нет информации" }}</td>
+                <td>{{ application.id_st1|default:"нет информации" }}</td>
+                <td>{{ application.id_st2|default:"нет информации" }}</td>
+                <td>{{ application.status|default:"нет информации" }}</td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
 </div>
-{% endblock content %} {% comment %}
+{% comment %}
 <th>Пассажир</th>
 <th>Дата и время начала</th>
 <th>Дата и время окончания</th>
@@ -344,3 +304,64 @@
 <td>{{ application.pass_count }}</td>
 <td>{{ application.method_p }}</td>
 {% endcomment %}
+<script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
+<script>
+    $(document).ready(function () {
+        $("#applicationForm").on("submit", function (e) {
+            e.preventDefault();
+            let form = $(this);
+
+            $.ajax({
+                type: "POST",
+                url: "",
+                data: form.serialize() + "&application_form=1",
+                success: function (response) {
+                    if (response.success) {
+                        $("#addApplicationModal").modal("hide");
+                        $("#addApplicationModal").on("hidden.bs.modal", function () {
+                            $("#successModal").modal("show");
+                        });
+                    }
+                },
+                error: function (response) {
+                    let errorMessage = "Ошибка при добавлении заявки.\n";
+                    if (response.responseJSON && response.responseJSON.errors) {
+                        $.each(response.responseJSON.errors, function (field, errors) {
+                            errorMessage += `${field}: ${errors.join(", ")}\n`;
+                        });
+                    }
+                    alert(errorMessage);
+                },
+            });
+        });
+
+        $("#transferForm").on("submit", function (e) {
+            e.preventDefault();
+            let form = $(this);
+
+            $.ajax({
+                type: "POST",
+                url: "",
+                data: form.serialize() + "&transfer_form=1",
+                success: function (response) {
+                    if (response.success) {
+                        $("#transferApplicationModal").modal("hide");
+                        $("#transferApplicationModal").on("hidden.bs.modal", function () {
+                            $("#successModal").modal("show");
+                        });
+                    }
+                },
+                error: function (response) {
+                    let errorMessage = "Ошибка при добавлении переноса заявки.\n";
+                    if (response.responseJSON && response.responseJSON.errors) {
+                        $.each(response.responseJSON.errors, function (field, errors) {
+                            errorMessage += `${field}: ${errors.join(", ")}\n`;
+                        });
+                    }
+                    alert(errorMessage);
+                },
+            });
+        });
+    });
+</script>
+{% endblock content %}

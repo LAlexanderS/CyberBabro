@@ -1,29 +1,35 @@
 from django.shortcuts import render, redirect
+from django.http import JsonResponse
 from .forms import ApplicationForm, ApplicationTransferForm
-from model import routes,schedule
 from .models import Application
 from django.contrib.auth.decorators import login_required
 
 @login_required
 def add_all_forms(request):
     applications = Application.objects.all()
-    # routes = routes.Routes()
-    # routes.CalcDistance(id1, id2)
-    # routes.CreateShortestPath(id,id2)
+    
+    application_form = ApplicationForm()
+    transfer_form = ApplicationTransferForm()
 
     if request.method == 'POST':
-        application_form = ApplicationForm(request.POST)
-        transfer_form = ApplicationTransferForm(request.POST)
-        if application_form.is_valid() and transfer_form.is_valid():
-            application_form.save()
-            transfer_form.save()
-            return redirect('success_page')  # Замените на ваш URL успешной страницы
-    else:
-        application_form = ApplicationForm()
-        transfer_form = ApplicationTransferForm()
+        if 'application_form' in request.POST:
+            application_form = ApplicationForm(request.POST)
+            if application_form.is_valid():
+                application_form.save()
+                return JsonResponse({'success': True, 'form': 'application'})
+            else:
+                return JsonResponse({'success': False, 'errors': application_form.errors}, status=400)
+        
+        if 'transfer_form' in request.POST:
+            transfer_form = ApplicationTransferForm(request.POST)
+            if transfer_form.is_valid():
+                transfer_form.save()
+                return JsonResponse({'success': True, 'form': 'transfer'})
+            else:
+                return JsonResponse({'success': False, 'errors': transfer_form.errors}, status=400)
 
     context = {
-        "applications": applications,
+        'applications': applications,
         'application_form': application_form,
         'transfer_form': transfer_form,
     }

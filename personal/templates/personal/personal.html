@@ -1,34 +1,60 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
-<div class="container-fluid" style="min-height: 80vh;">
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container-fluid" style="min-height: 80vh">
     <div class="row">
         <div class="col-md-6">
             <div class="card mb-3">
-                <div class="card-body">
-                    <h2 class="card-title text-center">Добавить сотрудника</h2>
-                    <form id="personalForm" method="post"> 
-                        {% csrf_token %} 
-                        {{ personal_form.as_p }} 
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Сохранить сотрудника</button>
-                        </div>
-                    </form>
+                <div class="card-body text-center">
+                    <h2 class="card-title">Добавить сотрудника</h2>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPersonalModal">Добавить сотрудника</button>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card mb-3">
-                <div class="card-body">
-                    <h2 class="card-title text-center">Добавить смену</h2>
-                    <form id="shiftForm" method="post"> 
-                        {% csrf_token %} 
-                        {{ shift_form.as_p }} 
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Сохранить смену</button>
-                        </div>
-                    </form>
+                <div class="card-body text-center">
+                    <h2 class="card-title">Добавить смену</h2>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addShiftModal">Добавить смену</button>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для формы "Добавить сотрудника" -->
+<div class="modal fade" id="addPersonalModal" tabindex="-1" aria-labelledby="addPersonalModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addPersonalModalLabel">Добавить сотрудника</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="personalForm" method="post">
+                    {% csrf_token %} {{ personal_form.as_p }}
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Сохранить сотрудника</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для формы "Добавить смену" -->
+<div class="modal fade" id="addShiftModal" tabindex="-1" aria-labelledby="addShiftModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addShiftModalLabel">Добавить смену</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="shiftForm" method="post">
+                    {% csrf_token %} {{ shift_form.as_p }}
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Сохранить смену</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -42,9 +68,7 @@
                 <h5 class="modal-title" id="successModalLabel">Успешно</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                Данные были успешно сохранены.
-            </div>
+            <div class="modal-body">Данные были успешно сохранены.</div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
             </div>
@@ -56,47 +80,49 @@
 <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
 <script>
     $(document).ready(function () {
-        $('#personalForm').on('submit', function (e) {
+        $("#personalForm").on("submit", function (e) {
             e.preventDefault();
 
             $.ajax({
-                type: 'POST',
-                url: '',
-                data: $(this).serialize(),
+                type: "POST",
+                url: "",
+                data: $(this).serialize() + "&personal_form=1",
                 success: function (response) {
-                    $('#successModal').modal('show');
+                    $("#addPersonalModal").modal("hide");
+                    $("#successModal").modal("show");
                 },
                 error: function (response) {
-                    let errorMessage = 'Ошибка при добавлении сотрудника.\n';
+                    let errorMessage = "Ошибка при добавлении сотрудника.\n";
                     if (response.responseJSON && response.responseJSON.errors) {
                         $.each(response.responseJSON.errors, function (field, errors) {
-                            errorMessage += `${field}: ${errors.join(', ')}\n`;
+                            errorMessage += `${field}: ${errors.join(", ")}\n`;
                         });
                     }
                     alert(errorMessage);
-                }
+                },
             });
         });
 
-        $('#shiftForm').on('submit', function (e) {
+        $("#shiftForm").on("submit", function (e) {
             e.preventDefault();
 
             $.ajax({
-                type: 'POST',
-                url: '',
-                data: $(this).serialize(),
+                type: "POST",
+                url: "",
+                data: $(this).serialize() + "&shift_form=1",
                 success: function (response) {
-                    $('#successModal').modal('show');
+                    $("#addShiftModal").modal("hide");
+                    $("#successModal").modal("show");
                 },
                 error: function (response) {
-                    let errorMessage = 'Ошибка при добавлении смены.\n';
+                    let errorMessage = "Ошибка при добавлении смены.\n";
                     if (response.responseJSON && response.responseJSON.errors) {
                         $.each(response.responseJSON.errors, function (field, errors) {
-                            errorMessage += `${field}: ${errors.join(', ')}\n`;
+                            errorMessage += `${field}: ${errors.join(", ")}\n`;
                         });
                     }
                     alert(errorMessage);
-                }
+                },
             });
         });
     });
