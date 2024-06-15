@@ -52,7 +52,7 @@ class Application(models.Model):
 class ApplicationTransfer(models.Model):
     id_adit = models.AutoField(primary_key=True)
    # id_bid = models.ForeignKey(Application, on_delete=models.CASCADE, verbose_name='Заявка',blank =True,null=True,to_field='id',related_name= 'bid')
-    id_bid = models.CharField(max_length=50, verbose_name='ID заявки',blank=True, null=True)
+    id_bid = models.ForeignKey(Application, related_name='ID_Application', on_delete=models.CASCADE, verbose_name='ID Заявки',to_field='id')
     time_edit = models.DateTimeField(verbose_name='Время изменения',blank=True, null=True)
    # time_s = models.ForeignKey(Application, on_delete=models.CASCADE, verbose_name='Изначальное время заявки', to_field='time3', related_name='initial_transfers')
     time_s = models.TimeField(verbose_name='Начальное время',blank=True, null=True)
