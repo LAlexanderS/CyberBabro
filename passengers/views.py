@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
+from django.http import JsonResponse
 from .forms import PassengersForm
 from django.contrib.auth.decorators import login_required
 
@@ -8,7 +9,9 @@ def add_passenger(request):
         form = PassengersForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('success')
+            return JsonResponse({'success': True})
+        else:
+            return JsonResponse({'success': False, 'errors': form.errors}, status=400)
     else:
         form = PassengersForm()
     

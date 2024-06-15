@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
+from django.http import JsonResponse
 from .forms import PersonalForm, ShiftForm
 from django.contrib.auth.decorators import login_required
 
@@ -11,7 +12,12 @@ def add_personal_and_shift(request):
         if personal_form.is_valid() and shift_form.is_valid():
             personal_form.save()
             shift_form.save()
-            return redirect('success')
+            return JsonResponse({'success': True})
+        else:
+            errors = {}
+            errors.update(personal_form.errors)
+            errors.update(shift_form.errors)
+            return JsonResponse({'success': False, 'errors': errors}, status=400)
     else:
         personal_form = PersonalForm()
         shift_form = ShiftForm()
