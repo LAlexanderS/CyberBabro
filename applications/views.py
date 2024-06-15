@@ -2,7 +2,9 @@ from django.shortcuts import render, redirect
 from .forms import ApplicationForm, ApplicationTransferForm
 from model import routes,schedule
 from .models import Application
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def add_all_forms(request):
     applications = Application.objects.all()
     # routes = routes.Routes()

@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from .forms import PersonalForm, ShiftForm
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def add_personal_and_shift(request):
     if request.method == 'POST':
         personal_form = PersonalForm(request.POST)

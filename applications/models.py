@@ -52,6 +52,7 @@ class ApplicationTransfer(models.Model):
     def __str__(self):
         return f'Перенос заявки {self.id_adit}'
     
+    
 
 
 # Create your models here.

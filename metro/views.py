@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from .forms import StationForm, StationtimeForm, TransfertimeForm
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def add_station(request):
     if request.method == 'POST':
         station_form = StationForm(request.POST)
