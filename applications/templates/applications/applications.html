@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-<div class="container-fluid" style="min-height: 80vh">
+<div class="container-fluid" style="min-height: 30vh">
     <div class="row">
         <div class="col-md-6">
             <div class="card mb-3">
@@ -137,10 +137,12 @@
                                 </tr>
                             </tbody>
                         </table>
+                        {% if dop_inf %}
                         <div class="d-flex justify-content-between">
                             <p><strong>Примечание:</strong></p>
-                            <p><strong>Не любит славян</strong></p>
+                            <p><strong>{{ dop_inf }}</strong></p>
                         </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
