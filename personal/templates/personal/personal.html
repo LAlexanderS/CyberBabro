@@ -1,10 +1,16 @@
-{% extends 'base.html' %} {% load static %} {% block content %} <div class="container-fluid" style="min-height: 80vh;">
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid" style="min-height: 80vh;">
     <div class="row">
         <div class="col-md-6">
             <div class="card mb-3">
                 <div class="card-body">
                     <h2 class="card-title text-center">Добавить сотрудника</h2>
-                    <form method="post"> {% csrf_token %} {{ personal_form.as_p }} <div class="d-grid">
+                    <form id="personalForm" method="post"> 
+                        {% csrf_token %} 
+                        {{ personal_form.as_p }} 
+                        <div class="d-grid">
                             <button type="submit" class="btn btn-primary">Сохранить сотрудника</button>
                         </div>
                     </form>
@@ -15,7 +21,10 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <h2 class="card-title text-center">Добавить смену</h2>
-                    <form method="post"> {% csrf_token %} {{ shift_form.as_p }} <div class="d-grid">
+                    <form id="shiftForm" method="post"> 
+                        {% csrf_token %} 
+                        {{ shift_form.as_p }} 
+                        <div class="d-grid">
                             <button type="submit" class="btn btn-primary">Сохранить смену</button>
                         </div>
                     </form>
@@ -23,4 +32,73 @@
             </div>
         </div>
     </div>
-</div> {% endblock content %}
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Успешно</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Данные были успешно сохранены.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Подключаем локальный файл jQuery -->
+<script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
+<script>
+    $(document).ready(function () {
+        $('#personalForm').on('submit', function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                type: 'POST',
+                url: '',
+                data: $(this).serialize(),
+                success: function (response) {
+                    $('#successModal').modal('show');
+                },
+                error: function (response) {
+                    let errorMessage = 'Ошибка при добавлении сотрудника.\n';
+                    if (response.responseJSON && response.responseJSON.errors) {
+                        $.each(response.responseJSON.errors, function (field, errors) {
+                            errorMessage += `${field}: ${errors.join(', ')}\n`;
+                        });
+                    }
+                    alert(errorMessage);
+                }
+            });
+        });
+
+        $('#shiftForm').on('submit', function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                type: 'POST',
+                url: '',
+                data: $(this).serialize(),
+                success: function (response) {
+                    $('#successModal').modal('show');
+                },
+                error: function (response) {
+                    let errorMessage = 'Ошибка при добавлении смены.\n';
+                    if (response.responseJSON && response.responseJSON.errors) {
+                        $.each(response.responseJSON.errors, function (field, errors) {
+                            errorMessage += `${field}: ${errors.join(', ')}\n`;
+                        });
+                    }
+                    alert(errorMessage);
+                }
+            });
+        });
+    });
+</script>
+{% endblock content %}
