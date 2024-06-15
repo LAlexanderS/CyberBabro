@@ -12,10 +12,6 @@ urlpatterns = [
     path('metro/', include('metro.urls', namespace='metro')),
     path('applications/', include('applications.urls', namespace='applications')),
     path('user/', include('users.urls', namespace='user')),
-	
-	
-	
-    
 ]
 
 if settings.DEBUG: 

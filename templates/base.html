@@ -23,7 +23,7 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="{% url 'user:login' %}">Войти</a>
                             </li>
-                            {% else %}
+                            {% else %} {% if user.is_admin or user.is_staff %}
                             <li class="nav-item">
                                 <a class="nav-link text-white" aria-current="page" href="{% url 'passengers:passengers' %}">Пассажиры</a>
                             </li>
@@ -33,6 +33,7 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white" aria-current="page" href="{% url 'Station:Station' %}">Метро</a>
                             </li>
+                            {% endif %}
                             <li class="nav-item">
                                 <a class="nav-link text-white" aria-current="page" href="{% url 'applications:applications' %}">Заявки</a>
                             </li>

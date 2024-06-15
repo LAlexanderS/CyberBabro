@@ -4,18 +4,22 @@
         <div class="col-md-6">
             <div class="card mb-3">
                 <div class="card-body text-center">
+                    {% if user.is_admin or user.is_staff %}
                     <h2 class="card-title">Добавить заявку</h2>
                     <!-- Кнопка для вызова модального окна "Добавить заявку" -->
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addApplicationModal">Добавить заявку</button>
+                    {% endif %}
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card mb-3">
                 <div class="card-body text-center">
+                    {% if user.is_admin or user.is_staff %}
                     <h2 class="card-title">Перенос заявки</h2>
                     <!-- Кнопка для вызова модального окна "Перенос заявки" -->
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transferApplicationModal">Перенести заявку</button>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -55,6 +59,54 @@
                     {% csrf_token %} {{ transfer_form.as_p }}
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary">Сохранить перенос</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для запроса добавления заявки -->
+<div class="modal fade" id="requestAddApplicationModal" tabindex="-1" aria-labelledby="requestAddApplicationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="requestAddApplicationModalLabel">Запросить добавление заявки</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="requestAddApplicationForm">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="requestAddApplicationDetails" class="form-label">Детали заявки</label>
+                        <textarea class="form-control" id="requestAddApplicationDetails" rows="3" required></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-primary" id="submitRequestAddApplication">Отправить запрос</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для запроса переноса заявки -->
+<div class="modal fade" id="requestTransferApplicationModal" tabindex="-1" aria-labelledby="requestTransferApplicationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="requestTransferApplicationModalLabel">Запросить перенос заявки</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="requestTransferApplicationForm">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="requestTransferApplicationDetails" class="form-label">Детали переноса заявки</label>
+                        <textarea class="form-control" id="requestTransferApplicationDetails" rows="3" required></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-primary" id="submitRequestTransferApplication">Отправить запрос</button>
                     </div>
                 </form>
             </div>
