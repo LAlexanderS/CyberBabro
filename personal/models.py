@@ -28,6 +28,9 @@ class Personal(models.Model):
         db_table = 'Personal'
         verbose_name = 'Сотрудник'
         verbose_name_plural = 'Сотрудники'
+    def __str__(self):
+        return self.FIO or f'{self.last_name} {self.first_name} {self.second_name}'.strip()    
+    
 
 class Shift(models.Model):
     id_SMENA = models.AutoField(primary_key=True, verbose_name='ID')
@@ -41,3 +44,6 @@ class Shift(models.Model):
         db_table = 'Shift'
         verbose_name = 'Смена'
         verbose_name_plural = 'Смены'
+
+    def __str__(self):
+        return f'Смена {self.SMENA} - Сотрудник {self.id_insp}' 

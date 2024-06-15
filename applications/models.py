@@ -47,7 +47,7 @@ class Application(models.Model):
         verbose_name_plural = 'Заявки'
 
     def __str__(self):
-        return f'Заявка {self.id}'
+        return f'{self.id}'
 
 class ApplicationTransfer(models.Model):
     id_adit = models.AutoField(primary_key=True)

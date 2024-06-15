@@ -13,8 +13,8 @@ class ApplicationAdmin(admin.ModelAdmin):
     search_fields = ('id_pas__fio_p', 'status')
 
 class ApplicationTransferAdmin(admin.ModelAdmin):
-    list_display = ('id_adit', 'id_bid', 'time_edit','time_f')
-    list_display_links = ('id_adit', 'id_bid')
+    list_display = ('id_bid', 'time_edit','time_f')
+    list_display_links = ['id_bid']
     list_filter = ('time_edit',)
     search_fields = ('id_bid__id',)
 

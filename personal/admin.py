@@ -2,14 +2,14 @@ from django.contrib import admin
 from .models import Shift,Personal
 
 class ShiftAdmin(admin.ModelAdmin):
-    list_display = ('id_SMENA', 'id_insp_display', 'SMENA', 'date', 'time_work_begin_display', 'time_work_end_display')
-    list_display_links = ('id_SMENA','id_insp_display')
+    list_display = ('id_SMENA', 'SMENA', 'date','get_inspector_FIO', 'time_work_begin_display', 'time_work_end_display')
+    list_display_links = ('id_SMENA','get_inspector_FIO')
     list_filter = ('date', 'SMENA')
-    search_fields = ('SMENA', 'id_insp__ID')
+    search_fields = ('SMENA', 'id_insp__FIO')
 
-    def id_insp_display(self, obj):
-        return obj.id_insp
-    id_insp_display.short_description = 'Инспектор'
+    def get_inspector_FIO(self, obj):
+        return obj.id_insp.FIO if obj.id_insp else 'Не указан'
+    get_inspector_FIO.short_description = 'Инспектор'
 
     def time_work_begin_display(self, obj):
         return obj.time_work_begin.strftime('%H:%M')
