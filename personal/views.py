@@ -33,3 +33,5 @@ def add_personal_and_shift(request):
     }
     return render(request, 'personal/personal.html', context)
 
+
+
