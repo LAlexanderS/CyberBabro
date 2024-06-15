@@ -8,6 +8,9 @@ class Personal(models.Model):
         (FEMALE, 'Женский'),
     ]
     ID = models.AutoField(primary_key=True, verbose_name='ID')
+    last_name = models.CharField(max_length=255, verbose_name='Фамилия', blank=True, null=True)
+    first_name = models.CharField(max_length=255, verbose_name='Имя', blank=True, null=True)
+    second_name = models.CharField(max_length=255, blank=True, null=True, verbose_name='Отчество')
     FIO = models.CharField(max_length=255, verbose_name='ФИО')
     UCHASTOK = models.CharField(max_length=10, blank=True, null=True, verbose_name='Участок работы')
     SEX = models.CharField(max_length=10, verbose_name='Пол', choices=GENDER_CHOICES)
@@ -15,9 +18,6 @@ class Personal(models.Model):
     SMENA = models.CharField(max_length=100, verbose_name='Смена')
     RANK = models.CharField(max_length=100, verbose_name='Должность')
     DATE = models.DateField(verbose_name='Дата')
-    last_name = models.CharField(max_length=255, verbose_name='Фамилия', blank=True, null=True)
-    first_name = models.CharField(max_length=255, verbose_name='Имя', blank=True, null=True)
-    second_name = models.CharField(max_length=255, blank=True, null=True, verbose_name='Отчество')
     t_n = models.CharField(max_length=8, blank=True, null=True, verbose_name='Табельный номер')
     description = models.TextField(blank=True, null=True, verbose_name='Описание')
     t_tel = models.CharField(max_length=12, blank=True, null=True, verbose_name='Рабочий телефон')

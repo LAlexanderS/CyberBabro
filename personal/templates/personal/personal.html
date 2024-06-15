@@ -85,7 +85,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "",
+                url: "{% url 'personal:personal' %}",
                 data: $(this).serialize() + "&personal_form=1",
                 success: function (response) {
                     $("#addPersonalModal").modal("hide");
@@ -108,7 +108,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "",
+                url: "{% url 'personal:personal' %}",
                 data: $(this).serialize() + "&shift_form=1",
                 success: function (response) {
                     $("#addShiftModal").modal("hide");

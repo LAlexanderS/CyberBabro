@@ -33,16 +33,15 @@ class TimeRangeField(forms.MultiValueField):
         return ''
 
 class PersonalForm(forms.ModelForm):
-    TIME_WORK = TimeRangeField()
+    TIME_WORK = TimeRangeField(label='Время работы')
 
     class Meta:
         model = Personal
         fields = [
-            'FIO', 'UCHASTOK', 'SEX', 'TIME_WORK', 'SMENA', 'RANK', 'DATE', 'last_name',
+            'UCHASTOK', 'SEX', 'TIME_WORK', 'SMENA', 'RANK', 'DATE', 'last_name',
             'first_name', 'second_name', 't_n', 'description', 't_tel', 'r_tel', 'zdo'
         ]
         widgets = {
-            'FIO': forms.TextInput(attrs={'class': 'form-control'}),
             'UCHASTOK': forms.TextInput(attrs={'class': 'form-control'}),
             'SEX': forms.Select(attrs={'class': 'form-control'}),
             'SMENA': forms.TextInput(attrs={'class': 'form-control'}),
@@ -58,14 +57,30 @@ class PersonalForm(forms.ModelForm):
             'zdo': forms.CheckboxInput(attrs={'class': 'form-check-input'}),
         }
 
+    def save(self, commit=True):
+        instance = super(PersonalForm, self).save(commit=False)
+        # Генерация значения для FIO
+        first_initial = instance.first_name[0] + '.' if instance.first_name else ''
+        second_initial = instance.second_name[0] + '.' if instance.second_name else ''
+        instance.FIO = f'{instance.last_name} {first_initial}{second_initial}'.strip()
+        if commit:
+            instance.save()
+        return instance
+
 class ShiftForm(forms.ModelForm):
+    id_insp = forms.ModelChoiceField(
+        queryset=Personal.objects.all(),
+        label="ID Сотрудника",
+        widget=forms.Select(attrs={'class': 'form-control'})
+    )
+
     class Meta:
         model = Shift
         fields = ['id_insp', 'SMENA', 'date', 'time_work_begin', 'time_work_end']
         widgets = {
-            'id_insp': forms.Select(attrs={'class': 'form-control'}),
             'SMENA': forms.TextInput(attrs={'class': 'form-control'}),
             'date': forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}),
             'time_work_begin': forms.TimeInput(attrs={'class': 'form-control', 'type': 'time'}),
             'time_work_end': forms.TimeInput(attrs={'class': 'form-control', 'type': 'time'}),
         }
+

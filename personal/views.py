@@ -32,3 +32,4 @@ def add_personal_and_shift(request):
         'shift_form': shift_form,
     }
     return render(request, 'personal/personal.html', context)
+
