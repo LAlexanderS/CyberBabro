@@ -4,7 +4,22 @@ from metro.models import Station
 
 
 class Application(models.Model):
+    
     id = models.AutoField(primary_key=True)
+    CAT_CHOICES = [
+        ('ИЗТ', 'Инвалид по зрению'),
+        ('ИЗ', 'Инвалид по зрению с остаточным зрением'),
+        ('ИС', 'Инвалид по слуху'),
+        ('ИК', 'Инвалид колясочник'),
+        ('ИО', 'Инвалид опорник'),
+        ('ДИ', 'Ребенок инвалид'),
+        ('ПЛ', 'Пожилой человек'),
+        ('РД', 'Родители с детьми'),
+        ('РДК', 'Родители с детскими колясками'),
+        ('ОГД', 'Организованные группы детей'),
+        ('ОВ', 'Временно маломобильные'),
+        ('ИУ', 'Люди с ментальной инвалидностью'),
+    ]
     id_pas = models.ForeignKey(Passengers, on_delete=models.CASCADE, verbose_name='Пассажир', blank=True, null=True)
     datetime = models.DateTimeField(verbose_name='Дата и время начала заявки')
     tpz = models.DateTimeField(verbose_name='Дата и время окончания заявки')
@@ -14,7 +29,7 @@ class Application(models.Model):
     INSP_SEX_M = models.IntegerField(verbose_name='Количество сотрудников мужчин')
     INSP_SEX_F = models.IntegerField(verbose_name='Количество сотрудников женщин')
     TIME_OVER = models.TimeField(verbose_name='Время окончания заявки', blank=True, null=True)
-    cat_pas = models.CharField(max_length=50, verbose_name='Категория пассажиров',blank=True, null=True)
+    cat_pas = models.CharField(max_length=50, verbose_name='Категория пассажиров',blank=True, null=True,choices= CAT_CHOICES)
     id_st1 = models.ForeignKey(Station, related_name='departure_station', on_delete=models.CASCADE, verbose_name='Станция отправления',to_field='id')
     id_st2 = models.ForeignKey(Station, related_name='arrival_station', on_delete=models.CASCADE, verbose_name='Станция прибытия',to_field='id')
    # id_st1 = models.CharField(max_length=100,verbose_name='ID станции отправления')
