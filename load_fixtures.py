@@ -4,14 +4,15 @@ import sys
 
 # Список файлов фикстур
 fixtures = [
-    'fixtures/Метро время между станциями_updated.json',
-    'fixtures/Метро время пересадки между станциями_updated.json',
     'fixtures/Наименование станций метро_updated.json',
+    'fixtures/Метро время пересадки между станциями_updated.json',
+    'fixtures/Метро время между станциями_updated.json',
+    'fixtures/Сотрудники_updated.json',
+    'fixtures/Заявки_updated.json',
     'fixtures/Неявка пассажира_updated.json',
     'fixtures/Отмены заявок_updated.json',
     'fixtures/Переносы заявок по времени_updated.json',
     'fixtures/Сотрудники_updated.json',
-    'fixtures/Заявки_updated.json'
 ]
 
 def load_fixtures():

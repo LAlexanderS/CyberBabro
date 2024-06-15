@@ -27,15 +27,15 @@ class Station(models.Model):
         verbose_name_plural = 'Станции'
        	
 
-    # def __str__(self):
-        # return self.name_station
+    def __str__(self):
+        return self.name_station
     
 #1111111111
 class Stationtime(models.Model): 
     id_st_time = models.AutoField(primary_key=True, verbose_name = 'ID')
     time = models.CharField(max_length=50,verbose_name='Время в пути',blank=True, null=True)
-    id_st1 = models.CharField(max_length=50,verbose_name='Станция 1')
-    id_st2 = models.CharField(max_length=50,verbose_name='Станция 2')
+    id_st1 = models.ForeignKey(Station, related_name='first_station', on_delete=models.CASCADE, verbose_name='Станция 1',to_field='id')
+    id_st2 = models.ForeignKey(Station, related_name='second_station', on_delete=models.CASCADE, verbose_name='Станция 2',to_field='id')
    # st_1 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция отправления',related_name='st_transfer_1')
    # st_2 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция прибытия',related_name='st_transfer_2')
 
@@ -52,8 +52,8 @@ class Transfertime(models.Model):
   #  tr_1 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция пересадки 1',related_name='transfer_1')
    # tr_2 = models.ForeignKey(Station,blank=True, null=True, to_field='name_station', on_delete=models.CASCADE,verbose_name='Станция пересадки 2',related_name='transfer_2')
     time = models.IntegerField(verbose_name='Время в пути')
-    id1 = models.CharField(max_length=50,verbose_name='Станция 1')
-    id2 = models.CharField(max_length=50,verbose_name='Станция 2')
+    id1 = models.ForeignKey(Station, related_name='f_station', on_delete=models.CASCADE, verbose_name='Станция 1',to_field='id')
+    id2 = models.ForeignKey(Station, related_name='s_station', on_delete=models.CASCADE, verbose_name='Станция 2',to_field='id')
 
     class Meta:
         db_table = 'Transfertime'
