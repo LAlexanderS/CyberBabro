@@ -6,6 +6,16 @@ class ShiftAdmin(admin.ModelAdmin):
     list_display_links = ('id_SMENA','get_inspector_FIO')
     list_filter = ('date', 'SMENA')
     search_fields = ('SMENA', 'id_insp__FIO')
+    exclude = ('FIO',)
+
+    def save_model(self, request, obj, form, change):
+        # Create initials from first_name and second_name
+        first_initial = obj.first_name[0] + '.' if obj.first_name else ''
+        second_initial = obj.second_name[0] + '.' if obj.second_name else ''
+        
+        # Combine last name with initials
+        obj.FIO = f'{obj.last_name} {first_initial}{second_initial}'.strip()
+        super().save_model(request, obj, form, change)
 
     def get_inspector_FIO(self, obj):
         return obj.id_insp.FIO if obj.id_insp else 'Не указан'

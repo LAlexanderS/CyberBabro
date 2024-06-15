@@ -12,7 +12,7 @@ fixtures = [
     'fixtures/Неявка пассажира_updated.json',
     'fixtures/Отмены заявок_updated.json',
     'fixtures/Переносы заявок по времени_updated.json',
-    'fixtures/Сотрудники_updated.json',
+    
 ]
 
 def load_fixtures():
