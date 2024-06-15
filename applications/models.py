@@ -20,6 +20,21 @@ class Application(models.Model):
         ('ОВ', 'Временно маломобильные'),
         ('ИУ', 'Люди с ментальной инвалидностью'),
     ]
+    SMENA_CHOICES = [
+        ('Не подтверждена', 'Не подтверждена'),
+        ('В рассмотрении', 'В рассмотрении'),
+        ('Принята', 'Принята'),
+        ('Инспектор выехал', 'Инспектор выехал'),
+        ('Инспектор на месте', 'Инспектор на месте'),
+        ('Поездка', 'Поездка'),
+        ('Заявка закончена', 'Заявка закончена'),
+        ('Выявление', 'Выявление'),
+        ('Лист Ожидания', 'Лист Ожидания'),
+        ('Отмена', 'Отмена'),
+        ('Отказ', 'Отказ'),
+        ('Пассажир опаздывает', 'Пассажир опаздывает'),
+        ('Инспектор опаздывает', 'Инспектор опаздывает'),
+    ]
     id_pas = models.ForeignKey(Passengers, on_delete=models.CASCADE, verbose_name='Пассажир', blank=True, null=True)
     datetime = models.DateTimeField(verbose_name='Дата и время начала заявки')
     tpz = models.DateTimeField(verbose_name='Дата и время окончания заявки')
@@ -34,7 +49,7 @@ class Application(models.Model):
     id_st2 = models.ForeignKey(Station, related_name='arrival_station', on_delete=models.CASCADE, verbose_name='Станция прибытия',to_field='id')
    # id_st1 = models.CharField(max_length=100,verbose_name='ID станции отправления')
     #id_st2 = models.CharField(max_length=100,verbose_name='ID станции прибытия')
-    status = models.CharField(max_length=50, verbose_name='Текущий статус заявки')
+    status = models.CharField(max_length=50, verbose_name='Текущий статус заявки',blank=True, null=True,choices= SMENA_CHOICES)
     vokzal = models.BooleanField(verbose_name='Необходимость встретить с воказала', blank=True, null=True)
     dop_inf = models.TextField(verbose_name='Дополнительная информация', blank=True, null=True)
     bag_s = models.BooleanField(verbose_name='Наличие багажа', blank=True, null=True)
