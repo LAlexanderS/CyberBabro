@@ -6,8 +6,12 @@ def add_passenger(request):
         form = PassengersForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('success')
+            return redirect('passengers:success')
     else:
         form = PassengersForm()
     
     return render(request, 'passengers/passengers.html', {'form': form})
+
+def success_view(request):
+    return render(request, 'passengers/success.html')
+

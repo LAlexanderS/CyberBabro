@@ -1,12 +1,12 @@
 import json
 
 # Укажите путь к вашему исходному и конечному файлам JSON
-input_file = 'fixtures/Отмены заявок.json'
+input_file = 'fixtures/Неявка пассажира.json'
 output_file = 'fixtures/Отмены заявок_updated.json'
 
 # Укажите имя вашего приложения и модели
 app_name = 'applications'
-model_name = 'ApplicationTransfer'
+model_name = 'NO'
 
 # Откройте исходный файл
 with open(input_file, 'r', encoding='utf-8') as file:

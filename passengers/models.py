@@ -7,11 +7,25 @@ class Passengers(models.Model):
         (MALE, 'Мужской'),
         (FEMALE, 'Женский'),
     ]
+    CAT_CHOICES = [
+        ('ИЗТ', 'Инвалид по зрению'),
+        ('ИЗ', 'Инвалид по зрению с остаточным зрением'),
+        ('ИС', 'Инвалид по слуху'),
+        ('ИК', 'Инвалид колясочник'),
+        ('ИО', 'Инвалид опорник'),
+        ('ДИ', 'Ребенок инвалид'),
+        ('ПЛ', 'Пожилой человек'),
+        ('РД', 'Родители с детьми'),
+        ('РДК', 'Родители с детскими колясками'),
+        ('ОГД', 'Организованные группы детей'),
+        ('ОВ', 'Временно маломобильные'),
+        ('ИУ', 'Люди с ментальной инвалидностью'),
+    ]
     id_pas = models.AutoField(primary_key=True, verbose_name = 'ID')
     fio_p = models.CharField(max_length=255, verbose_name = 'ФИО Пассажира')
     tep_p = models.CharField(max_length=50, verbose_name = 'Номер телефона')
     sex_p = models.CharField(max_length=10,blank=False, null=False, verbose_name = 'Пол',choices=GENDER_CHOICES)
-    pass_category = models.CharField(max_length=50,verbose_name = 'Категория пасажира')
+    pass_category = models.CharField(max_length=50,verbose_name = 'Категория пасажира',choices= CAT_CHOICES)
     dop_inf = models.TextField(blank=True, null=True,verbose_name = 'Дополнительная информация')
     eks = models.BooleanField(verbose_name = 'Наличие кардиостимулятора')
 

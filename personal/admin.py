@@ -20,10 +20,10 @@ class ShiftAdmin(admin.ModelAdmin):
     time_work_end_display.short_description = 'Окончание рабочего дня'
     
 class PersonalAdmin(admin.ModelAdmin):
-    list_display = ('ID', 't_n', 'UCHASTOK', 'RANK', 'SEX', 't_tel', 'r_tel', 'zdo_display')
-    list_display_links = ['ID']
-    list_filter = ('SEX', 'UCHASTOK', 'RANK', 'zdo')
-    search_fields = ('last_name', 'first_name', 't_n', 't_tel', 'r_tel')
+    list_display = ('ID','FIO', 't_n', 'UCHASTOK', 'RANK', 'SEX', 't_tel', 'r_tel', 'zdo_display')
+    list_display_links = ('ID','FIO')
+    list_filter = ('SEX', 'UCHASTOK', 'RANK', 'zdo','FIO')
+    search_fields = ('last_name', 'first_name','FIO', 't_n', 't_tel', 'r_tel')
 
     def zdo_display(self, obj):
         return 'Да' if obj.zdo else 'Нет'
