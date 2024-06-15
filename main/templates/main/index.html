@@ -22,12 +22,26 @@
 <button id="actionButton" type="button" class="btn btn-dark">Распределить</button>
 <!-- Элемент для отображения сообщения -->
 <div id="message" class="mt-3" style="display: none">Выполнено</div>
-<p>distance {{ distance }}</p>
-<p>shortest_path {{ shortest_path }}</p>
+<!-- Элементы для отображения результатов -->
+<p id="distance"></p>
+<p id="shortest_path"></p>
+<!-- Подключаем локальный файл jQuery -->
+<script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
 <script>
     // нажатие кнопки
     document.getElementById("actionButton").addEventListener("click", function () {
-        document.getElementById("message").style.display = "block";
+        $.ajax({
+            url: "{% url 'main:distribute_tasks' %}",
+            type: "GET",
+            success: function (data) {
+                document.getElementById("message").style.display = "block";
+                $("#distance").text("distance: " + data.distance);
+                $("#shortest_path").text("shortest_path: " + data.shortest_path);
+            },
+            error: function () {
+                alert("Ошибка при распределении задач.");
+            },
+        });
     });
 </script>
 {% endblock content %}
