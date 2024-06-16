@@ -2,6 +2,12 @@ import datetime
 import heapq
 from . import routes
 
+# male female в passengers and personal 
+# SEX in applications and personal
+#sex_p in passengers
+#datetime in applications
+#TIME_OVER in applications
+#INSP_SEX_M in applications
 class Scheduler:
 	def __init__(self, data):
 		self.data = data

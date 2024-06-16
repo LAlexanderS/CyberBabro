@@ -1,19 +1,93 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <div class="container-fluid" style="min-height: 80vh">
     <div class="row">
-        <div class="col-md-6">
+        <!-- Column for "Добавить сотрудника" and "Сотрудники" table -->
+        <div class="col-md-8">
             <div class="card mb-3">
                 <div class="card-body text-center">
                     <h2 class="card-title">Добавить сотрудника</h2>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPersonalModal">Добавить сотрудника</button>
                 </div>
             </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="card-title">Сотрудники</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+
+                                <th>ФИО</th>
+                                <th>Участок работы</th>
+                                <th>Пол</th>
+                                <th>Время работы</th>
+                                <th>Смена</th>
+                                <th>Должность</th>
+                                <th>Дата</th>
+                                <th>Табельный номер</th>
+                                <th>Описание</th>
+                                <th>Рабочий телефон</th>
+                                <th>Личный телефон</th>
+                                <th>Тяжелая работа</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for personal in personal_list %}
+                            <tr>
+                                <td>{{ personal.ID }}</td>
+                                <td>{{ personal.FIO }}</td>
+                                <td>{{ personal.UCHASTOK }}</td>
+                                <td>{{ personal.SEX }}</td>
+                                <td>{{ personal.TIME_WORK }}</td>
+                                <td>{{ personal.SMENA }}</td>
+                                <td>{{ personal.RANK }}</td>
+                                <td>{{ personal.DATE }}</td>
+                                <td>{{ personal.t_n }}</td>
+                                <td>{{ personal.description }}</td>
+                                <td>{{ personal.t_tel }}</td>
+                                <td>{{ personal.r_tel }}</td>
+                                <td>{{ personal.zdo }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
+
+        <!-- Column for "Добавить смену" and "Смены" table -->
+        <div class="col-md-4">
             <div class="card mb-3">
                 <div class="card-body text-center">
                     <h2 class="card-title">Добавить смену</h2>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addShiftModal">Добавить смену</button>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="card-title">Смены</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>ID Сотрудника</th>
+                                <th>Смена</th>
+                                <th>Дата выхода</th>
+                                <th>Время работы</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for shift in shift_list %}
+                            <tr>
+                                <td>{{ shift.id_SMENA }}</td>
+                                <td>{{ shift.id_insp.ID }}</td>
+                                <td>{{ shift.SMENA }}</td>
+                                <td>{{ shift.date }}</td>
+                                <td>{{ shift.time_work_begin }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

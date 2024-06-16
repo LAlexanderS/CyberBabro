@@ -23,7 +23,7 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="{% url 'user:login' %}">Войти</a>
                             </li>
-                            {% else %} {% if user.is_admin or user.is_staff %}
+                            {% else %} {% if user_role == 'admin' or user_role == 'operator' or user.is_superuser %}
                             <li class="nav-item">
                                 <a class="nav-link text-white" aria-current="page" href="{% url 'passengers:passengers' %}">Пассажиры</a>
                             </li>
@@ -41,7 +41,7 @@
                                     <li>
                                         <a class="dropdown-item text-black" href="{% url 'user:profile' %}">Личный кабинет</a>
                                     </li>
-                                    {% if user.is_admin or user.is_staff %}
+                                    {% if user.is_admin or user.is_superuser %}
                                     <li>
                                         <a class="dropdown-item text-black" href="{% url 'admin:index' %}">Админ панель</a>
                                     </li>

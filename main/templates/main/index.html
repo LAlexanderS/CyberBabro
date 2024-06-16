@@ -1,25 +1,26 @@
-<!-- main/templates/main/index.html -->
 {% extends 'base.html' %} {% load static %} {% block content %}
 <h1>Заявки сотрудников</h1>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Номер</th>
-            <th>ID сотрудника</th>
-            <th>ID заявки</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for num, id_person, id_applic in result %}
-        <tr>
-            <td>{{ num }}</td>
-            <td>{{ id_person }}</td>
-            <td>{{ id_applic }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
-{% if user.is_superuser %}
+<div class="table-responsive" style="max-height: 400px; overflow-y: auto">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>ID сотрудника</th>
+                <th>ID заявки</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for num, id_person, id_applic in result %}
+            <tr>
+                <td>{{ num }}</td>
+                <td>{{ id_person }}</td>
+                <td>{{ id_applic }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% if user_role == 'admin' or user_role == 'operator' or user.is_superuser %}
 <!-- Кнопка для выполнения действия -->
 <button id="actionButton" type="button" class="btn btn-dark">Распределить</button>
 <!-- Элемент для отображения сообщения -->
@@ -30,7 +31,7 @@
 <p id="shortest_path"></p>
 <!-- Подключаем локальный файл jQuery -->
 <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
-{% if user.is_superuser %}
+
 <script>
     // нажатие кнопки
     document.getElementById("actionButton").addEventListener("click", function () {
@@ -48,4 +49,4 @@
         });
     });
 </script>
-{% endif %} {% endblock content %}
+{% endblock content %}

@@ -4,7 +4,7 @@
         <div class="col-md-6">
             <div class="card mb-3">
                 <div class="card-body text-center">
-                    {% if user.is_admin or user.is_staff %}
+                    {% if user_role == 'admin' or user_role == 'operator' or user.is_superuser %}
                     <h2 class="card-title">Добавить заявку</h2>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addApplicationModal">Добавить заявку</button>
                     {% endif %}
@@ -14,7 +14,7 @@
         <div class="col-md-6">
             <div class="card mb-3">
                 <div class="card-body text-center">
-                    {% if user.is_admin or user.is_staff %}
+                    {% if user_role == 'admin' or user_role == 'operator' or user.is_superuser %}
                     <h2 class="card-title">Перенос заявки</h2>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transferApplicationModal">Перенести заявку</button>
                     {% endif %}
@@ -233,6 +233,7 @@
     });
 </script>
 
+{% if user.is_admin or user.is_operator%}
 <div class="container-fluid" style="min-height: 80vh">
     <h2 class="text-center">Все заявки</h2>
     <table class="table table-bordered">
@@ -266,6 +267,7 @@
         </tbody>
     </table>
 </div>
+{% endif %}
 {% comment %}
 <th>Пассажир</th>
 <th>Дата и время начала</th>
