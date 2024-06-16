@@ -1,12 +1,65 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="container-fluid d-flex justify-content-center align-items-center" style="min-height: 80vh; padding-left: 0; padding-right: 0">
-    <div class="col-12 col-md-8 col-lg-6">
-        <div class="card">
-            <div class="card-body">
-                <h1 class="card-title text-center">Добавить пассажира</h1>
-                <form id="passengerForm" method="post"> {% csrf_token %} {{ form.as_p }} <div class="d-grid">
+<div class="container-fluid" style="min-height: 80vh">
+    <div class="row">
+        <!-- Column for "Добавить пассажира" and "Пассажиры" table -->
+        <div class="col-md-12">
+            <div class="card mb-3">
+                <div class="card-body text-center">
+                    <h2 class="card-title">Добавить пассажира</h2>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPassengerModal">Добавить пассажира</button>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="card-title">Пассажиры</h2>
+                    <div style="max-height: 400px; overflow-y: auto;">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>ФИО Пассажира</th>
+                                    <th>Номер телефона</th>
+                                    <th>Пол</th>
+                                    <th>Категория пассажира</th>
+                                    <th>Дополнительная информация</th>
+                                    <th>Наличие кардиостимулятора</th>
+                                </tr>
+                            </thead>
+                            <tbody id="passengersTableBody">
+                                {% for passenger in passengers_list %}
+                                <tr>
+                                    <td>{{ passenger.id_pas }}</td>
+                                    <td>{{ passenger.fio_p }}</td>
+                                    <td>{{ passenger.tep_p }}</td>
+                                    <td>{{ passenger.sex_p }}</td>
+                                    <td>{{ passenger.pass_category }}</td>
+                                    <td>{{ passenger.dop_inf }}</td>
+                                    <td>{{ passenger.eks }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для формы "Добавить пассажира" -->
+<div class="modal fade" id="addPassengerModal" tabindex="-1" aria-labelledby="addPassengerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addPassengerModalLabel">Добавить пассажира</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="passengerForm" method="post">
+                    {% csrf_token %} {{ form.as_p }}
+                    <div class="d-grid">
                         <button type="submit" class="btn btn-primary">Сохранить</button>
                     </div>
                 </form>
@@ -45,7 +98,21 @@
                 url: '',
                 data: $(this).serialize(),
                 success: function (response) {
+                    $('#addPassengerModal').modal('hide');
                     $('#successModal').modal('show');
+                    // Добавляем нового пассажира в таблицу
+                    const newRow = `
+                        <tr>
+                            <td>${response.id_pas}</td>
+                            <td>${response.fio_p}</td>
+                            <td>${response.tep_p}</td>
+                            <td>${response.sex_p}</td>
+                            <td>${response.pass_category}</td>
+                            <td>${response.dop_inf}</td>
+                            <td>${response.eks}</td>
+                        </tr>
+                    `;
+                    $('#passengersTableBody').append(newRow);
                 },
                 error: function (response) {
                     alert('Ошибка при добавлении пассажира.');
