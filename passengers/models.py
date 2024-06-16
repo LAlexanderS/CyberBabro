@@ -38,6 +38,9 @@ class Passengers(models.Model):
     def __str__(self):
         return self.fio_p
     
+    def eks_display(self):
+        return 'ДА' if self.eks else 'НЕТ'
+    
     # def save(self, *args, **kwargs):
     #     if not self.pk:
     #         self.category = "Пассажиры"	

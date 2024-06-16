@@ -25,6 +25,7 @@
 <button id="actionButton" type="button" class="btn btn-dark">Распределить</button>
 <!-- Элемент для отображения сообщения -->
 <div id="message" class="mt-3" style="display: none">Выполнено</div>
+<button id="runSchedulerButton" type="button" class="btn btn-primary mt-3">Запустить Планировщик</button>
 {% endif %}
 <!-- Элементы для отображения результатов -->
 <p id="distance"></p>
@@ -47,6 +48,10 @@
                 alert("Ошибка при распределении задач.");
             },
         });
+    });
+
+    document.getElementById("runSchedulerButton").addEventListener("click", function () {
+        window.location.href = "{% url 'main:run_scheduler' %}";
     });
 </script>
 {% endif %} {% endblock content %}

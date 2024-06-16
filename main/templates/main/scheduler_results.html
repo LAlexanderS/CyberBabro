@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container-fluid" style="min-height: 80vh">
+    <h3 class="text-center mb-4">Результаты Планировщика</h3>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card mb-3">
+                <div class="card-body text-center">
+                    <h2 class="card-title">Результаты</h2>
+                    <pre id="scheduler-results">{{ results }}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
