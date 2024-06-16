@@ -65,7 +65,7 @@ class Personal(models.Model):
         verbose_name_plural = 'Сотрудники'
         
     def __str__(self):
-        return self.FIO or f'{self.last_name} {self.first_name} {self.second_name}'.strip()
+        return str(self.ID) 
 
 class Shift(models.Model):
     twb_CHOICES = [

@@ -59,8 +59,8 @@ def profile(request):
 
     # Получение активных заявок для текущего пользователя
     x = request.user.id_s
-    
-    active_applications = Personalapplication.objects.filter(person=request.user.id_s)
+    y = Personalapplication.objects.all()
+    active_applications = y.filter(person=x)
 
     context = {
         "title": "Профиль",
