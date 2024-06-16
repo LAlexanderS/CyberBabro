@@ -9,6 +9,7 @@ from model.schedule import Scheduler  # Обратите внимание на �
 from model.routes import Routes  # Обратите внимание на правильный путь импорта
 from personal.models import Personal
 from applications.models import Application
+import networkx as nx
 
 def index(request):
     station_times = Stationtime.objects.all().values('id_st1', 'id_st2', 'time')
@@ -42,7 +43,6 @@ def index(request):
         })
         
     routes_instance = Routes(vertexes)
-    # print(vertexes)
     distance = None
     shortest_path = None
     
@@ -118,7 +118,7 @@ def distribute_tasks(request):
             'time': str(record['time'])
         })
         
-    routes_instance = routes.Routes(vertexes)
+    routes_instance = Routes(vertexes)
     distance = None
     shortest_path = None
     
@@ -133,3 +133,5 @@ def distribute_tasks(request):
         'shortest_path': shortest_path
     }
     return JsonResponse(response_data)
+
+

@@ -1,6 +1,5 @@
 from .routes import Routes
 
-
 class Scheduler:
     def __init__(self, data, graph):
         self.data = data
@@ -32,7 +31,7 @@ class Scheduler:
     
     def CreateSchedule(self):
         for request in self.data['requests']:
-            start = self.TranslateTime(str(request['datetime'])[11::])
+            start = self.TranslateTime(request['datetime'])
             end = start + self.TranslateTime(request['TIME_OVER'])
             self.requests.append((start, -1, request['id']))
             self.requests.append((end, 1, request['id']))
@@ -41,18 +40,22 @@ class Scheduler:
         self.Algorithm()
         return self.results
         
-    
     def Algorithm(self):
         for request in self.requests:
             if request[1] == -1:
                 results = list()
                 isCan = True
                 if len(self.free) != 0:
-                    man_amount = int(self.reqDict[request[2]]['INSP_SEX_M'])
-                    woman_amount = int(self.reqDict[request[2]]['INSP_SEX_F'])
+                    man_amount = int(self.reqDict[request[2]].get('INSP_SEX_M', 0))
+                    woman_amount = int(self.reqDict[request[2]].get('INSP_SEX_F', 0))
+
                     for i in range(man_amount):
-                        staff_first = self.FindStaff('male', self.reqDict[request[2]]['id_st1'])
-                        if staff_first == None:
+                        if 'id_st1' not in self.reqDict[request[2]]:
+                            print(f"Missing 'id_st1' in request {self.reqDict[request[2]]}")
+                            isCan = False
+                            break
+                        staff_first = self.FindStaff('male', self.reqDict[request[2]].get('id_st1', None))
+                        if staff_first is None:
                             isCan = False
                             break
                         else:
@@ -62,8 +65,12 @@ class Scheduler:
                             self.busy['male'].append(staff)
 
                     for i in range(woman_amount):
-                        staff_first = self.FindStaff('female', self.reqDict[request[2]]['id_st1'])
-                        if staff_first == None:
+                        if 'id_st1' not in self.reqDict[request[2]]:
+                            print(f"Missing 'id_st1' in request {self.reqDict[request[2]]}")
+                            isCan = False
+                            break
+                        staff_first = self.FindStaff('female', self.reqDict[request[2]].get('id_st1', None))
+                        if staff_first is None:
                             isCan = False
                             break
                         else:
@@ -75,7 +82,7 @@ class Scheduler:
                     if isCan:
                         for staff in results:
                             self.results[int(request[2])] = int(staff['ID'])
-                            self.lastOrder[int(staff['ID'])] = int(self.reqDict[request[2]]['id_st2'])
+                            self.lastOrder[int(staff['ID'])] = int(self.reqDict[request[2]].get('id_st2', 0))
                             if int(staff['ID']) in self.ordersAmount:
                                 self.ordersAmount[int(staff['ID'])] += 1
                             else:
@@ -103,16 +110,21 @@ class Scheduler:
 
     def FindStaff(self, sex, dest):
         if len(self.free[sex]) > 0:
-            min_cost = self.CalcCost(self.free[sex][0], dest)
+            min = self.CalcCost(self.free[sex][0], dest)
             staff = self.free[sex][0]
             for i in range(1, len(self.free[sex])):
                 cost = self.CalcCost(self.free[sex][i], dest)
-                if min_cost > cost:
+                if min > cost:
                     staff = self.free[sex][i]
-                    min_cost = cost
+                    min = cost
             return staff
         return None
 
     def TranslateTime(self, time):
-        time = time.split(':')
-        return int(time[0]) * 3600 + int(time[1]) * 60 + int(time[2])
+        try:
+            return time.hour * 3600 + time.minute * 60 + time.second
+        except Exception as e:
+            print(f"Ошибка при преобразовании времени: {e}")
+            return 0
+
+
