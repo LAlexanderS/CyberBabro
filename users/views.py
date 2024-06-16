@@ -6,7 +6,8 @@ from django.shortcuts import redirect, render
 from django.urls import reverse
 from .forms import ProfileForm, UserLoginForm, UserRegistrationForm
 from .models import User
-
+from personal.models import Personal
+from main.models import Personalapplication
 def login(request):
     if request.method == "POST":
         form = UserLoginForm(data=request.POST)
@@ -52,14 +53,21 @@ def profile(request):
             return HttpResponseRedirect(reverse('users:profile'))
     else:
         form = ProfileForm(instance=request.user)
-    
-    if User.objects.all().values('id_s'):
-        user_id = User.objects.all().values('id_s')
         
+    # Получение роли пользователя
+    role_s = request.user.role
+
+    # Получение активных заявок для текущего пользователя
+    x = request.user.id_s
+    
+    active_applications = Personalapplication.objects.filter(person=request.user.id_s)
+
     context = {
         "title": "Профиль",
         'form': form,
-        'user_id': user_id
+        'role_s': role_s,
+        'active_applications': active_applications,
+        'x': x,
     }
     return render(request, 'users/profile.html', context)
 

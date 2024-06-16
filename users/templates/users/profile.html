@@ -20,7 +20,7 @@
                                             {% if user.image %}
                                             <img src="{{ user.image.url }}" alt="Аватар пользователя" class="img-fluid rounded-circle" style="max-width: 150px" />
                                             {% else %}
-                                            <img src="../deps/images/baseavatar.jpg" alt="Аватар пользователя" class="img-fluid rounded-circle" style="max-width: 150px" />
+                                            <img src="{% static 'images/baseavatar.jpg' %}" alt="Аватар пользователя" class="img-fluid rounded-circle" style="max-width: 150px" />
                                             {% if form.image.errors %}
                                             <div class="alert alert-danger alert-dismissible fade show">{{ form.image.errors }}</div>
                                             {% endif %} {% endif %}
@@ -53,30 +53,41 @@
                                 </form>
                             </div>
                         </div>
-                        <!-- Заявка -->
+                        <!-- Активная заявка -->
                         <div class="col-md-7 col-12">
                             <div class="bg-white p-4 mb-4 mx-2 rounded custom-shadow">
-                                <h3 class="text-center mb-4">Активная заявка {{ user_id }}</h3>
+                                <h3 class="text-center mb-4">Активная заявка {{ active_applications }} xxxxxxx{{ x }}</h3>
                                 <div class="container" id="cart-items-container">
-                                    <!-- Разметка Заявки -->
+                                    {% for application in active_applications %}
                                     <div class="card mb-3 text-bg-light shadow-lg">
                                         <div class="card-header">
-                                            <h5 class="card-title">Активная</h5>
+                                            <h5 class="card-title">Активная заявка #{{ application.application.id }}</h5>
                                         </div>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">
-                                                <div class="row text-center"></div>
+                                                <div class="row text-center">
+                                                    <div class="col-md-4"><strong>Статус:</strong></div>
+                                                    <div class="col-md-8">{{ application.application.status }}</div>
+                                                </div>
+                                                <div class="row text-center">
+                                                    <div class="col-md-4"><strong>Дата и время начала:</strong></div>
+                                                    <div class="col-md-8">{{ application.application.datetime }}</div>
+                                                </div>
+                                                <div class="row text-center">
+                                                    <div class="col-md-4"><strong>Время встречи с пассажиром:</strong></div>
+                                                    <div class="col-md-8">{{ application.application.time3 }}</div>
+                                                </div>
+                                                <div class="row text-center">
+                                                    <div class="col-md-4"><strong>Время исполнения заявки:</strong></div>
+                                                    <div class="col-md-8">{{ application.application.time4 }}</div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="card mb-3 shadow-lg">
-                                        <div class="card-footer">
-                                            <p class="float-left">Изменений <strong>1</strong></p>
-                                        </div>
-                                    </div>
-                                    <!-- Закончилась разметка Заявки -->
+                                    {% empty %}
+                                    <p class="text-center">Нет активных заявок.</p>
+                                    {% endfor %}
                                 </div>
-                                <a class="btn btn-dark" href="../changes/changes.html">Применить</a>
                             </div>
                         </div>
                         <!-- Оформленные Заявки -->

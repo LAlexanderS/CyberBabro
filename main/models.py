@@ -11,3 +11,7 @@ class Personalapplication(models.Model):
         db_table = 'Personalapplication'
         verbose_name = 'Заявки сотрудника'
         verbose_name_plural = 'Заявки сотрудника'
+        
+    def __str__(self):
+        return f'Заявка {self.application.id} для сотрудника {self.person.FIO}'
+        verbose_name_plural = 'Заявки сотрудника'
