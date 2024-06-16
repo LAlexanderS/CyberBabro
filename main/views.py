@@ -3,10 +3,25 @@ from django.shortcuts import render
 from .models import Personalapplication
 from metro.models import Stationtime, Transfertime
 from model import routes
+from personal.models import Personal
+from applications.models import Application
 
 def index(request):
     station_times = Stationtime.objects.all().values('id_st1', 'id_st2', 'time')
     transfer_times = Transfertime.objects.all().values('id1', 'id2', 'time')
+    id_person = list(Personal.objects.all().values_list('ID', flat=True))
+    id_applic = list(Application.objects.all().values_list('id', flat=True))
+
+    if not id_person or not id_applic:
+        raise ValueError("Оба списка id_person и id_applic должны содержать данные.")
+
+    combined_list = []
+    i, j = 0, 0
+
+    while j < len(id_applic):
+        combined_list.append((i + 1, id_person[i % len(id_person)], id_applic[j]))
+        i += 1
+        j += 1
     
     vertexes = []
     for record in station_times:
@@ -35,6 +50,7 @@ def index(request):
     personal_applications = Personalapplication.objects.select_related('person', 'application').all()
     context = {
         'personal_applications': personal_applications,
+        'result': combined_list,
     }
     return render(request, 'main/index.html', context)
 

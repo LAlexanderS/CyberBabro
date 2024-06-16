@@ -32,5 +32,6 @@ def add_all_forms(request):
         'applications': applications,
         'application_form': application_form,
         'transfer_form': transfer_form,
+ 
     }
     return render(request, 'applications/applications.html', context)

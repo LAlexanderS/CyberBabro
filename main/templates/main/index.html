@@ -1,19 +1,20 @@
+<!-- main/templates/main/index.html -->
 {% extends 'base.html' %} {% load static %} {% block content %}
 <h1>Заявки сотрудников</h1>
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>ID</th>
-            <th>Сотрудник</th>
-            <th>Заявка</th>
+            <th>Номер</th>
+            <th>ID сотрудника</th>
+            <th>ID заявки</th>
         </tr>
     </thead>
     <tbody>
-        {% for pa in personal_applications %}
+        {% for num, id_person, id_applic in result %}
         <tr>
-            <td>{{ pa.id_pa }}</td>
-            <td>{{ pa.person.FIO }}</td>
-            <td>{{ pa.application.id }}</td>
+            <td>{{ num }}</td>
+            <td>{{ id_person }}</td>
+            <td>{{ id_applic }}</td>
         </tr>
         {% endfor %}
     </tbody>

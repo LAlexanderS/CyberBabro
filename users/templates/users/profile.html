@@ -42,7 +42,7 @@
                                             {% endif %}
                                         </div>
                                         <div class="col-md-12 mb-3">
-                                            <label for="id_username" class="form-label">Отчество*</label>
+                                            <label for="id_username" class="form-label">Имя пользователя*</label>
                                             <input type="text" class="form-control" id="id_username" name="username" placeholder="Введите ваше отчество" value="{{ form.username.value }}" required />
                                             {% if form.username.errors %}
                                             <div class="alert alert-danger alert-dismissible fade show">{{ form.username.errors }}</div>
@@ -56,7 +56,7 @@
                         <!-- Заявка -->
                         <div class="col-md-7 col-12">
                             <div class="bg-white p-4 mb-4 mx-2 rounded custom-shadow">
-                                <h3 class="text-center mb-4">Активная заявка</h3>
+                                <h3 class="text-center mb-4">Активная заявка {{ user_id }}</h3>
                                 <div class="container" id="cart-items-container">
                                     <!-- Разметка Заявки -->
                                     <div class="card mb-3 text-bg-light shadow-lg">
