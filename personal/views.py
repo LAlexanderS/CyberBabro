@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-
-from personal.models import Personal, Shift
+from .models import Personal, Shift
 from .forms import PersonalForm, ShiftForm
 from django.contrib.auth.decorators import login_required
 
@@ -39,3 +38,13 @@ def add_personal_and_shift(request):
         'shift_list': shift_list,
     }
     return render(request, 'personal/personal.html', context)
+
+@login_required
+def personal_list(request):
+    personals = Personal.objects.all().values('ID', 'FIO', 'UCHASTOK', 'SEX', 'TIME_WORK', 'SMENA', 'RANK', 'DATE', 't_n', 'description', 't_tel', 'r_tel', 'zdo')
+    return JsonResponse(list(personals), safe=False)
+
+@login_required
+def shift_list(request):
+    shifts = Shift.objects.all().values('id_SMENA', 'id_insp', 'SMENA', 'date', 'time_work_begin')
+    return JsonResponse(list(shifts), safe=False)

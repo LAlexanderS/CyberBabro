@@ -12,45 +12,46 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <h2 class="card-title">Сотрудники</h2>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-
-                                <th>ФИО</th>
-                                <th>Участок работы</th>
-                                <th>Пол</th>
-                                <th>Время работы</th>
-                                <th>Смена</th>
-                                <th>Должность</th>
-                                <th>Дата</th>
-                                <th>Табельный номер</th>
-                                <th>Описание</th>
-                                <th>Рабочий телефон</th>
-                                <th>Личный телефон</th>
-                                <th>Тяжелая работа</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for personal in personal_list %}
-                            <tr>
-                                <td>{{ personal.ID }}</td>
-                                <td>{{ personal.FIO }}</td>
-                                <td>{{ personal.UCHASTOK }}</td>
-                                <td>{{ personal.SEX }}</td>
-                                <td>{{ personal.TIME_WORK }}</td>
-                                <td>{{ personal.SMENA }}</td>
-                                <td>{{ personal.RANK }}</td>
-                                <td>{{ personal.DATE }}</td>
-                                <td>{{ personal.t_n }}</td>
-                                <td>{{ personal.description }}</td>
-                                <td>{{ personal.t_tel }}</td>
-                                <td>{{ personal.r_tel }}</td>
-                                <td>{{ personal.zdo }}</td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
+                    <div class="table-responsive" style="max-height: 400px; overflow-y: auto">
+                        <table class="table table-striped" id="personal-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>ФИО</th>
+                                    <th>Участок работы</th>
+                                    <th>Пол</th>
+                                    <th>Время работы</th>
+                                    <th>Смена</th>
+                                    <th>Должность</th>
+                                    <th>Дата</th>
+                                    <th>Табельный номер</th>
+                                    <th>Описание</th>
+                                    <th>Рабочий телефон</th>
+                                    <th>Личный телефон</th>
+                                    <th>Тяжелая работа</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for personal in personal_list %}
+                                <tr>
+                                    <td>{{ personal.ID }}</td>
+                                    <td>{{ personal.FIO }}</td>
+                                    <td>{{ personal.UCHASTOK }}</td>
+                                    <td>{{ personal.SEX }}</td>
+                                    <td>{{ personal.TIME_WORK }}</td>
+                                    <td>{{ personal.SMENA }}</td>
+                                    <td>{{ personal.RANK }}</td>
+                                    <td>{{ personal.DATE }}</td>
+                                    <td>{{ personal.t_n }}</td>
+                                    <td>{{ personal.description }}</td>
+                                    <td>{{ personal.t_tel }}</td>
+                                    <td>{{ personal.r_tel }}</td>
+                                    <td>{{ personal.zdo }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,28 +67,30 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <h2 class="card-title">Смены</h2>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>ID Сотрудника</th>
-                                <th>Смена</th>
-                                <th>Дата выхода</th>
-                                <th>Время работы</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for shift in shift_list %}
-                            <tr>
-                                <td>{{ shift.id_SMENA }}</td>
-                                <td>{{ shift.id_insp.ID }}</td>
-                                <td>{{ shift.SMENA }}</td>
-                                <td>{{ shift.date }}</td>
-                                <td>{{ shift.time_work_begin }}</td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
+                    <div class="table-responsive" style="max-height: 400px; overflow-y: auto">
+                        <table class="table table-striped" id="shift-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>ID Сотрудника</th>
+                                    <th>Смена</th>
+                                    <th>Дата выхода</th>
+                                    <th>Время работы</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for shift in shift_list %}
+                                <tr>
+                                    <td>{{ shift.id_SMENA }}</td>
+                                    <td>{{ shift.id_insp.ID }}</td>
+                                    <td>{{ shift.SMENA }}</td>
+                                    <td>{{ shift.date }}</td>
+                                    <td>{{ shift.time_work_begin }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,6 +167,9 @@
                 success: function (response) {
                     $("#addPersonalModal").modal("hide");
                     $("#successModal").modal("show");
+
+                    // Обновление таблицы сотрудников
+                    updatePersonalTable();
                 },
                 error: function (response) {
                     let errorMessage = "Ошибка при добавлении сотрудника.\n";
@@ -187,6 +193,9 @@
                 success: function (response) {
                     $("#addShiftModal").modal("hide");
                     $("#successModal").modal("show");
+
+                    // Обновление таблицы смен
+                    updateShiftTable();
                 },
                 error: function (response) {
                     let errorMessage = "Ошибка при добавлении смены.\n";
@@ -199,6 +208,64 @@
                 },
             });
         });
+
+        function updatePersonalTable() {
+            $.ajax({
+                url: "{% url 'personal:personal_list' %}", // Убедитесь, что у вас есть такой URL
+                type: "GET",
+                success: function (data) {
+                    var personalTableBody = $("#personal-table tbody");
+                    personalTableBody.empty();
+                    data.forEach(function (personal) {
+                        personalTableBody.append(`
+                            <tr>
+                                <td>${personal.ID}</td>
+                                <td>${personal.FIO}</td>
+                                <td>${personal.UCHASTOK}</td>
+                                <td>${personal.SEX}</td>
+                                <td>${personal.TIME_WORK}</td>
+                                <td>${personal.SMENA}</td>
+                                <td>${personal.RANK}</td>
+                                <td>${personal.DATE}</td>
+                                <td>${personal.t_n}</td>
+                                <td>${personal.description}</td>
+                                <td>${personal.t_tel}</td>
+                                <td>${personal.r_tel}</td>
+                                <td>${personal.zdo}</td>
+                            </tr>
+                        `);
+                    });
+                },
+                error: function () {
+                    alert("Ошибка при обновлении таблицы сотрудников.");
+                },
+            });
+        }
+
+        function updateShiftTable() {
+            $.ajax({
+                url: "{% url 'personal:shift_list' %}", // Убедитесь, что у вас есть такой URL
+                type: "GET",
+                success: function (data) {
+                    var shiftTableBody = $("#shift-table tbody");
+                    shiftTableBody.empty();
+                    data.forEach(function (shift) {
+                        shiftTableBody.append(`
+                            <tr>
+                                <td>${shift.id_SMENA}</td>
+                                <td>${shift.id_insp}</td>
+                                <td>${shift.SMENA}</td>
+                                <td>${shift.date}</td>
+                                <td>${shift.time_work_begin}</td>
+                            </tr>
+                        `);
+                    });
+                },
+                error: function () {
+                    alert("Ошибка при обновлении таблицы смен.");
+                },
+            });
+        }
 
         const timeWorkChoices = {
             "ЦУ-1": ["7:00 - 19:00", "8:00 - 20:00"],
@@ -223,7 +290,6 @@
             }
         });
 
-        // Trigger change event to initialize the TIME_WORK select field if UCHASTOK has a default value
         $("#uchastok-select").trigger("change");
     });
 </script>
