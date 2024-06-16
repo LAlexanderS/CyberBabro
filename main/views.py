@@ -4,13 +4,13 @@ from .models import Personalapplication
 from metro.models import Stationtime, Transfertime
 from model import routes
 from personal.models import Personal
-from applications.models import ApplicationTransfer
+from applications.models import Application
 
 def index(request):
     station_times = Stationtime.objects.all().values('id_st1', 'id_st2', 'time')
     transfer_times = Transfertime.objects.all().values('id1', 'id2', 'time')
     id_person = list(Personal.objects.all().values_list('ID', flat=True))
-    id_applic = list(ApplicationTransfer.objects.all().values_list('id_adit', flat=True))
+    id_applic = list(Application.objects.all().values_list('id', flat=True))
 
     if not id_person or not id_applic:
         raise ValueError("Оба списка id_person и id_applic должны содержать данные.")
