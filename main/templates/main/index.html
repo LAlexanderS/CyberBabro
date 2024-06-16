@@ -1,5 +1,6 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %} {% if user.is_authenticated %}
 <h1>Заявки сотрудников</h1>
+
 <div class="table-responsive" style="max-height: 400px; overflow-y: auto">
     <table class="table table-striped">
         <thead>
@@ -20,7 +21,7 @@
         </tbody>
     </table>
 </div>
-{% if user_role == 'admin' or user_role == 'operator' or user.is_superuser %}
+{% endif %} {% if user_role == 'admin' or user_role == 'operator' or user.is_superuser %}
 <!-- Кнопка для выполнения действия -->
 <button id="actionButton" type="button" class="btn btn-dark">Распределить</button>
 <!-- Элемент для отображения сообщения -->
