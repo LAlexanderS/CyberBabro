@@ -125,6 +125,32 @@
                 },
             });
         });
+
+        const timeWorkChoices = {
+            "ЦУ-1": ["7:00 - 19:00", "8:00 - 20:00"],
+            "ЦУ-2": ["7:00 - 19:00", "8:00 - 20:00"],
+            "ЦУ-3": ["7:00 - 19:00", "8:00 - 20:00", "10:00 - 22:00"],
+            "ЦУ-3(Н)": ["20:00 - 8:00"],
+            "ЦУ-4": ["7:00 - 19:00", "8:00 - 20:00", "10:00 - 22:00"],
+            "ЦУ-4(Н)": ["20:00 - 8:00"],
+            "ЦУ-5": ["7:00 - 19:00", "8:00 - 20:00", "10:00 - 22:00"],
+            "ЦУ-8": ["7:00 - 19:00", "8:00 - 20:00"],
+        };
+
+        $("#uchastok-select").change(function () {
+            const uchastok = $(this).val();
+            const timeWorkSelect = $("#time-work-select");
+            timeWorkSelect.empty();
+
+            if (uchastok in timeWorkChoices) {
+                timeWorkChoices[uchastok].forEach(function (timeRange) {
+                    timeWorkSelect.append(new Option(timeRange, timeRange));
+                });
+            }
+        });
+
+        // Trigger change event to initialize the TIME_WORK select field if UCHASTOK has a default value
+        $("#uchastok-select").trigger("change");
     });
 </script>
 {% endblock content %}
