@@ -6,10 +6,8 @@ class Routes:
 		for record in vertexes:
 			record['time'] = record['time'].replace(',', '.')
 			if 'id_st1' in record:
-				print('add edge ', int(record['id_st1']), int(record['id_st2']), " weight = ", float(record['time']))
 				self.graph.add_edge(int(record['id_st1']), int(record['id_st2']), weight=float(record['time']))
 			else:
-				print('add edge ', int(record['id1']), int(record['id2']), " weight = ", float(record['time']))
 				self.graph.add_edge(int(record['id1']), int(record['id2']), weight=float(record['time']))
 
 	def GetGraph(self):
@@ -17,13 +15,15 @@ class Routes:
 	
 	#на выходе цифра - растояние между 2 станциями source - id 1 destination id 2
 	def CalcDistance(self, source, destination):
-		try:
-			return nx.shortest_path_length(self.graph, source=source, target=destination)
-		except nx.NetworkXNoPath:
-			return float('inf')
+		if (path := self.CreateShortestPath(source, destination)) != None:
+			result = 0
+			for i in range(len(path) - 1):
+				result += self.graph.get_edge_data(path[i], path[i + 1])['weight']
+			return result
+		return None
 	
 	def CreateShortestPath(self, source, destination):
 		try:
-			return nx.shortest_path(self.graph, source=source, target=destination)
+			return nx.shortest_path(self.graph, source=source, target=destination, weight='string')
 		except nx.NetworkXNoPath:
 			return None
