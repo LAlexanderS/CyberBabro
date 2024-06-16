@@ -31,7 +31,7 @@
 <p id="shortest_path"></p>
 <!-- Подключаем локальный файл jQuery -->
 <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
-
+{% if user_role == 'admin' or user_role == 'operator' or user.is_superuser %}
 <script>
     // нажатие кнопки
     document.getElementById("actionButton").addEventListener("click", function () {
@@ -49,4 +49,4 @@
         });
     });
 </script>
-{% endblock content %}
+{% endif %} {% endblock content %}

@@ -38,7 +38,7 @@ def index(request):
         })
         
     routes_instance = routes.Routes(vertexes)
-    print(vertexes)
+    # print(vertexes)
     distance = None
     shortest_path = None
     
