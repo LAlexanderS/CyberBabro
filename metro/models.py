@@ -43,8 +43,8 @@ class Stationtime(models.Model):
 
     class Meta:
         db_table = 'Stationtime'
-        verbose_name = 'Время прибития'
-        verbose_name_plural = 'Время прибития'
+        verbose_name = 'Время прибытия'
+        verbose_name_plural = 'Время прибытия'
        	
 #222222222222
 class Transfertime(models.Model):
