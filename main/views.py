@@ -38,14 +38,20 @@ def index(request):
         })
         
     routes_instance = routes.Routes(vertexes)
+    print(vertexes)
     distance = None
     shortest_path = None
     
     for record in vertexes:
-        if 'id_st1' in record and 'id_st2' in record:
-            distance = routes_instance.CalcDistance(int(record['id_st1']), int(record['id_st2']))
-        elif 'id1' in record and 'id2' in record:
-            shortest_path = routes_instance.CreateShortestPath(int(record['id1']), int(record['id2']))
+        try:
+            if 'id_st1' in record and 'id_st2' in record:
+                distance = routes_instance.CalcDistance(int(record['id_st1']), int(record['id_st2']))
+            elif 'id1' in record and 'id2' in record:
+                shortest_path = routes_instance.CreateShortestPath(int(record['id1']), int(record['id2']))
+        except nx.NetworkXNoPath:
+            distance = float('inf')
+        except nx.NodeNotFound as e:
+            print(f"Ошибка: {e}")
 
     personal_applications = Personalapplication.objects.select_related('person', 'application').all()
     context = {
