@@ -1,4 +1,4 @@
-from .routes import Routes
+import routes
 
 # male female в passengers and personal 
 # SEX in applications and personal
